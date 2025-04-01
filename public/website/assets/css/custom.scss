@@ -1,45 +1,60 @@
-.main-header-desktop{
+.main-header-desktop {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media(max-width:991px){
+
+    @media(max-width:991px) {
         display: none;
     }
 }
-.menu-main ul li a::before, .menu-main ul li .link::before{
+
+.menu-main ul li a::before,
+.menu-main ul li .link::before {
     bottom: -3px;
     height: 2.5px;
 }
-.logo .heading4 img{
+
+.logo .heading4 img {
     height: 50px;
 }
-.bg-green{
+
+.bg-green {
     background-color: rgb(131 83 203 / 19%);
 }
-.d-none{
+
+.d-none {
     display: none;
 
 }
 
-.pt-40{
+.pt-40 {
     padding-bottom: 40px;
 }
-.pb-70{
+
+.pb-70 {
     padding-bottom: 70px;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
 
-.grid-three-sec-inner{
-    .grid-three-sec-common{
-        .grid-three-sec-block{
+.mt-70 {
+    margin-top: 70px;
+}
+
+.grid-three-sec-inner {
+    .grid-three-sec-common {
+        .grid-three-sec-block {
             padding-bottom: 40px;
             text-align: center;
-            .loader{
-                span{
+
+            .loader {
+                span {
 
                     font-size: 150px;
                     font-weight: 900;
-                   
+
                     background-clip: text;
                     background-image: linear-gradient(121.84deg, #ff7fba 13.8%, #fad6b4 69.15%);
                     -webkit-text-fill-color: transparent;
@@ -47,7 +62,8 @@
                     -webkit-background-clip: text;
                 }
             }
-            h3{
+
+            h3 {
                 font-size: 30px;
                 font-weight: 700;
             }
@@ -56,29 +72,281 @@
 }
 
 .product_sec {
-    .product-infor{
-text-align: center;
-.product-price-block{
-    justify-content: center;
-    padding: 3px 0px;
-}
-.product-name{
-    padding: 10px 0px;
-    font-size: 22px;
-}
+    .product-infor {
+        text-align: center;
+
+        .product-price-block {
+            justify-content: center;
+            padding: 3px 0px;
+        }
+
+        .product-name {
+            padding: 10px 0px;
+            font-size: 22px;
+        }
     }
-    .tax-details{
+
+    .tax-details {
         font-size: 14px;
-        padding-top:10px;
+        padding-top: 10px;
     }
-.cart_btn_wrapper{
-    padding-top: 20px;
-    .cart_btn{
-        background-color: #000;
-        color: #fff;
-        font-size: 14px;
-        padding: 9px 20px;
-        width: 100%;
+
+    .cart_btn_wrapper {
+        padding-top: 20px;
+
+        .cart_btn {
+            background-color: #000;
+            color: #fff;
+            font-size: 14px;
+            padding: 9px 20px;
+            width: 100%;
+        }
     }
 }
+
+.product-swiper {
+    .swiper-button-prev {
+        top: -50px !important;
+        right: 40px;
+        left: unset !important;
+    }
+
+    .swiper-button-next {
+        top: -50px !important;
+        right: 0;
+        left: unset !important;
+    }
+}
+
+.footer {
+
+    .footer-main {
+
+
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .left_content_wrapper {
+                max-width: 340px;
+            }
+        }
+
+        .left_grid {
+            background-color: #e8e0f5;
+            padding: 50px 50px;
+
+            .viamslogo_wrapper {
+                img {
+                    height: 70px;
+
+                }
+            }
+
+            .mydopalogo_wrapper {
+                padding: 30px 0px;
+
+                img {
+                    width: 210px;
+                }
+            }
+
+            .footerDescription {
+                padding: 20px 0px;
+            }
+        }
+
+        .right_grid {
+            padding: 50px 50px;
+            background-color: #8353cb;
+
+            .whiteText {
+                color: #fff;
+                max-width: 310px;
+            }
+
+            .yellowText {
+                color: #c2c0b0;
+                max-width: 450px;
+                padding: 20px 0px;
+                font-size: 18px;
+            }
+
+            .address {
+                color: #fff;
+                max-width: 340px;
+                padding-bottom: 20px;
+            }
+
+            .webLink {
+                color: #c1bfab;
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+
+.why_mydopa {
+    .mainTitle {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        color: #58595b;
+        text-align: center;
+    }
+.d-end{
+    align-items: end;
+}
+    .inner_block {
+        display: flex;
+   
+        padding-top: 30px;
+
+        .left_sec {
+
+            .left-content-wrapper {
+                .btn-primary {
+                    background-color: #b8a6cf;
+                    color: #fff;
+                    font-size: 12px;
+                    padding: 7px 14px;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .doctors_message {
+                padding: 20px 0px;
+                line-height: 28px;
+                max-width: 80%;
+                color: #60626a;
+            }
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .right_sec {
+            .img-wrapper {
+                img {
+                    height: 240px;
+                }
+            }
+        }
+
+    }
+}
+
+.menu-main ul li a.active,
+.menu-main ul li .link.active {
+    color: #9780b9;
+}
+
+.menu-main ul li a,
+.menu-main ul li .link {
+    color: #a0a1a2;
+    font-weight: 500 !important;
+}
+
+.menu-main ul li a::before,
+.menu-main ul li .link::before {
+    background-color: transparent !important;
+}
+
+.home-page {
+    .slider-block {
+        height: calc(100vh - 73px);
+    }
+
+    .home-banner {
+        .text-display {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 58px;
+            text-transform: capitalize;
+            color: #7f58a4;
+            max-width: 380px;
+        }
+
+        .object-cover {
+            height: calc(100vh - 73px);
+        }
+
+    }
+
+    // wellbeng sec starts
+
+    .wellbeing {
+        background-color: #f7f8f9;
+        padding: 50px 0px;
+
+    }
+
+    // wellbeng sec end
+
+    .benefit-block {
+        background-image: linear-gradient(84deg, #7b5da7, #b6a3ce);
+        padding: 50px 0px;
+        .benefit-item{
+            .body1{
+                color: #fff;
+                max-width: 180px;
+                line-height: 24px;
+            }
+            .icon-wrapper{
+                img{
+                    width: 90px;
+                }
+            }
+        }
+    }
+
+
+.thumbnailSec{
+    .thumbnail_slider {
+        max-width: 700px;
+        margin: 0px auto;
+    }
+    
+    .splide__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 580px;
+        overflow: hidden;
+        transition: .2s;
+        border-width: 2px !important;
+        margin: 10px 4px;
+    }
+    
+    .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+        box-shadow: 2px 3px 8px #000000a3;
+    }
+    
+    .splide__slide img {
+        width: auto;
+        height: auto;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .left-content-wrapper{
+        .purple_title{
+            color: #7f58a4;
+            font-size: 36px;
+    font-weight: 500;
+        }
+    }
+}
+
+
+
+
+
 }

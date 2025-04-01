@@ -29,7 +29,7 @@
                                          </li>
                                          <li class="h-full">
                                              <a href="{{route('website.shop')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 Shop </a>
+                                                 Product </a>
 
                                          </li>
 
@@ -87,7 +87,7 @@
                                  </a>
                              </li>
                              <li>
-                                 <a href="shop.html" class="text-xl font-semibold flex items-center justify-between mt-5">Shop </a>
+                                 <a href="product.html" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
                              </li>
                              <li>
                                  <a href="contact.html" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
@@ -128,7 +128,7 @@
      </div>
 
      <!-- Marquee -->
-     <div class="banner-top bg-green py-3">
+     <!-- <div class="banner-top bg-green py-3">
          <div class="marquee-block swiper-container flex items-center whitespace-nowrap">
              <div class="swiper-wrapper">
                  <div class="swiper-slide">
@@ -169,6 +169,6 @@
                  </div>
              </div>
          </div>
-     </div>
+     </div> -->
 
      <!-- Slider -->
