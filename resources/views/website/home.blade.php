@@ -333,7 +333,7 @@
 
     <div class="community-story-block md:mt-20 mt-10"  style="margin-bottom: 50px;">
         <div class="container">
-            <div class="heading3 text-center">Community Stories</div>
+            <div class="heading3 text-center">Community Storiesssss</div>
             <div class="mt-3 text-center">Trust - lovely guests</div>
             <div class="list-product grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-[30px] gap-[16px] md:mt-10 mt-6">
                 <div class="product-item block h-full relative aspect-[3/4] md:rounded-2xl rounded-xl overflow-hidden cursor-pointer" data-item="53">
