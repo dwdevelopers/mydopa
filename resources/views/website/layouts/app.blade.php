@@ -11,9 +11,14 @@
     <link rel="stylesheet" href="{{ asset('website/dist/output-scss.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/dist/output-tailwind.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}" />
+    <link rel="stylesheet" href="{{ asset('website/assets/css/bootstrap.min.css')}}" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="{{ asset('website/assets/css/themify-icons.css')}}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css" rel="stylesheet">
-    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
 
 </head>
 
@@ -862,41 +867,44 @@
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('website/assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script>
-  AOS.init();
-</script>
-<script>
-    // Primary slider.
-    var primarySlider = new Splide('#primary_slider', {
-        type: 'fade',
-        heightRatio: 0.5,
-        pagination: false,
-        arrows: false,
-        cover: true,
-    });
+        AOS.init();
+    </script>
+    <script>
+        // Primary slider.
+        var primarySlider = new Splide('#primary_slider', {
+            type: 'fade',
+            heightRatio: 0.5,
+            pagination: false,
+            arrows: false,
+            cover: true,
+        });
 
-    // Thumbnails slider.
-    var thumbnailSlider = new Splide('#thumbnail_slider', {
-        rewind: true,
-        fixedWidth: 100,
-        fixedHeight: 64,
-        isNavigation: true,
-        gap: 10,
-        focus: 'center',
-        pagination: false,
-        cover: true,
-        breakpoints: {
-            '600': {
-                fixedWidth: 66,
-                fixedHeight: 40,
+        // Thumbnails slider.
+        var thumbnailSlider = new Splide('#thumbnail_slider', {
+            rewind: true,
+            fixedWidth: 100,
+            fixedHeight: 64,
+            isNavigation: true,
+            gap: 10,
+            focus: 'center',
+            pagination: false,
+            cover: true,
+            breakpoints: {
+                '600': {
+                    fixedWidth: 66,
+                    fixedHeight: 40,
+                }
             }
-        }
-    }).mount();
+        }).mount();
 
-    // sync the thumbnails slider as a target of primary slider.
-    primarySlider.sync(thumbnailSlider).mount();
-</script>
+        // sync the thumbnails slider as a target of primary slider.
+        primarySlider.sync(thumbnailSlider).mount();
+    </script>
+
 </body>
 
 </html>

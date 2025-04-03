@@ -182,12 +182,11 @@
 
     <!-- ====================== thumbnail sec starts  =============================== -->
 
-    <div class="why_mydopa thumbnailSec">
+    <!-- <div class="why_mydopa thumbnailSec">
         <div class="container">
             <div class="inner_block ">
                 <div class="right_sec w-50">
                     <div class="thumbnail_slider">
-                        <!-- Primary Slider Start-->
                         <div id="primary_slider">
                             <div class="splide__track">
                                 <ul class="splide__list">
@@ -219,8 +218,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- Primary Slider End-->
-                        <!-- Thumbnal Slider Start-->
                         <div id="thumbnail_slider">
                             <div class="splide__track">
                                 <ul class="splide__list">
@@ -252,21 +249,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- Thumbnal Slider End-->
                     </div>
                 </div>
                 <div class="left_sec w-50">
                     <div class="left-content-wrapper">
                         <h1 class="purple_title">Mydopa</h1>
-                   <ul>
-                    <li>Controls tremors and improves motor function.</li>
-                    <li>For a healthy and active life with Parkinson’s.</li>
-                    <li>A natural alternative to artificial dopaminergic medicines</li>
-                    <li>Natural Source of L-Dopa.</li>
-                    <li>Arrests degeneration of Brain cells.</li>
-                    <li>Good Aphrodisiac</li>
-                    <li>Supports cognitive health and gut health</li>
-                   </ul>
+                        <ul>
+                            <li>Controls tremors and improves motor function.</li>
+                            <li>For a healthy and active life with Parkinson’s.</li>
+                            <li>A natural alternative to artificial dopaminergic medicines</li>
+                            <li>Natural Source of L-Dopa.</li>
+                            <li>Arrests degeneration of Brain cells.</li>
+                            <li>Good Aphrodisiac</li>
+                            <li>Supports cognitive health and gut health</li>
+                        </ul>
 
                         <a href="" class="btn btn-primary">Read More</a>
                     </div>
@@ -275,11 +271,67 @@
 
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- ========================thumbnail sec end============================= -->
 
-    <div class="community-story-block md:mt-20 mt-10">
+
+    <!-- ===============================Review sec start================================ -->
+<!-- 
+    <div class="reviewsec">
+        <div class="container">
+            <h2 class="mainTitle">Customer Reviews</h2>
+
+            <div class="review-inner_block ">
+                <div class=" review_grid all_review">
+                    <div class="rating-box">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review_text">
+                        <p>4.73 out of 5</p>
+                        <p>Based on 22 reviews</p>
+                    </div>
+                </div>
+                <div class="review_grid rating_sec">
+                    <div class="five_star_rating">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="rating_progrss">
+                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
+                                <div class="progress-bar">
+                                    <span style="width: 80%">80%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="rating_count">
+                            <span>17</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="review_grid add_rating"></div>
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ===============================Review sec end================================ -->
+
+
+    <div class="community-story-block md:mt-20 mt-10"  style="margin-bottom: 50px;">
         <div class="container">
             <div class="heading3 text-center">Community Stories</div>
             <div class="mt-3 text-center">Trust - lovely guests</div>
@@ -364,7 +416,169 @@
         </div>
     </div>
 
+    <!-- ===============================faq sec start================================ -->
 
+    <div class="why_mydopa faqSec">
+        <div class="container">
+            <h2 class="mainTitle">FAQ's</h2>
+
+            <div class="faq-inner_block ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="faq-one__right fadein">
+                            <div class="panel-group faq-accordion theme-accordion-s1 faq-one-accrodion" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading accrodion-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1"
+                                            aria-expanded="true">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                                                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+                                                duis dolore te feugait nulla facilisi.
+                                                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-2">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You can place an order easily through our mobile app.
+                                                Just download the app, select your service, and schedule a pickup.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-3">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Flat 50% off on first order when you place it through our
+                                                app.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-4">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Yes, we offer secure online payment options through our app for your
+                                                convenience.
+                                                You can pay using credit/debit cards, UPI, or other digital wallets.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-5">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Turnaround times depend on the service selected.
+                                                Typically, ironing takes minimum 4 hours, wash
+                                                and fold orders are completed within 24-48 hours,
+                                                while dry cleaning may take up to 72 hours.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-6">Who should use Parkisnsons Balance?
+                                        </a>
+                                    </div>
+                                    <div id="collapse-6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Yes, we specialize in caring for delicate fabrics
+                                                and specialty garments. Rest assured, we handle them with extra care.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-7">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-7" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>We use premium, eco-friendly detergents and cleaning agents
+                                                that are gentle on fabrics and safe for the environment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-8">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-8" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Yes, we provide contactless pickup and delivery for your safety and
+                                                convenience. </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-9">Who should use Parkisnsons Balance?
+                                        </a>
+                                    </div>
+                                    <div id="collapse-9" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>You earn reward points with every order.
+                                                These points can be redeemed for discounts on future services.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-10">Who should use Parkisnsons Balance?</a>
+                                    </div>
+                                    <div id="collapse-10" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Your satisfaction is our priority. Please reach out to our customer
+                                                support team via the app or call us directly, and we’ll resolve the
+                                                issue promptly.</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============================faq sec end================================ -->
 
     <div class="lookbook-block cos1 bg-surface md:py-20 py-10 md:mt-20 mt-10 product_sec">
         <div class="container  pt-40">
