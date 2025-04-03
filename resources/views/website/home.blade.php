@@ -277,7 +277,7 @@
 
 
     <!-- ===============================Review sec start================================ -->
-<!-- 
+
     <div class="reviewsec">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
@@ -326,7 +326,7 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- ===============================Review sec end================================ -->
 
