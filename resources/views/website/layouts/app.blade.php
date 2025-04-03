@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="{{ asset('website/dist/output-scss.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/dist/output-tailwind.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}" />
+    <link rel="stylesheet" href="{{ asset('website/assets/css/custom-product.css')}}"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- boxicons-icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
