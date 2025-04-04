@@ -5,7 +5,7 @@
 // =============banner=================
 .shop-banner{
     margin:0px 20px 0 30px;
-    background-image: url('/website/assets/images/product-shop/shop-banner.jpg');
+    // background-image: url('/website/assets/images/product-shop/shop-banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@
         }
     }
     .text-display{
-        font-size: 52px;
+        font-size: 46px;
         line-height: 1.2;
         text-transform: none;
         width:60%;
@@ -349,7 +349,9 @@ position: relative;
 
 //feature
 .feature{
-    background-image: url('/website/assets/images/product-shop/feature.jpg');
+    // background-image: url('/website/assets/images/product-shop/feature.jpg');
+    // background-image: url("{{ asset('website/assets/images/banner/main-product.png') }}");
+    
     margin-bottom: 40px;
     .list-text{
         display: flex;
@@ -556,6 +558,12 @@ position: relative;
         color: white;
         font-weight: 500;
         cursor: pointer;
+    }
+}
+
+.about-us-block{
+    .text{
+        width: 100% !important;
     }
 }
 

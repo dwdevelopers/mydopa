@@ -278,7 +278,8 @@
 
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" 
+    style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>

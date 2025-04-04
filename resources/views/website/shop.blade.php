@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- shop-banner start -->
-<div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px]">
+<div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/shop-banner.jpg') }}');">
     <div class="container w-full h-full flex items-center">
         <div class="text-content sm:w-1/2 w-2/3">
             <div class="text-display md:mt-5 mt-2">Herbal health supplement for parkinson’s disease</div>
@@ -158,7 +158,7 @@
 <!--  about mydopa end-->
 
 <!-- feature start -->
-<div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]">
+<div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
     <div class="list-text">
         <ul>
             <li>
