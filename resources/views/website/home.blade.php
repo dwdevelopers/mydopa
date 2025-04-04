@@ -400,7 +400,9 @@
 
     <!-- ===============================Review sec start================================ -->
 
-    <div class="reviewsec">
+   <!-- ===============================Review sec start================================ -->
+
+   <div class="reviewsec">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
 
@@ -540,7 +542,117 @@
 
             </div>
         </div>
+        <hr class="hrline">
+
+        <div class="review_tabs_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="faqs-block   tab-content ">
+                            <div class="container">
+                                <div class="flex max-md:flex-wrap justify-between gap-y-8 flex-col">
+                                    <div class="left ">
+                                        <div class="menu-tab flex  gap-5">
+                                            <div class=" tab-item inline-block w-fit heading6  text-secondary2 hover:text-black duration-300 active" data-item="how to buy">Reviews (12)</div>
+                                            <div class="tab-item inline-block w-fit heading6  text-secondary2 hover:text-black duration-300" data-item="payment methods">Questions (24)</div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="right list-question ">
+                                        <div class="tab-question flex flex-col " data-item="how to buy">
+
+                                            <div class="single_review">
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <h4 class="author_name">Avisweta Dash </h4>
+                                                <h3 class="review_overview">Good product , Great Benefits</h3>
+                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div class="single_review">
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <h4 class="author_name">Avisweta Dash </h4>
+                                                <h3 class="review_overview">Good product , Great Benefits</h3>
+                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+                                            <div class="single_review">
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <h4 class="author_name">Avisweta Dash </h4>
+                                                <h3 class="review_overview">Good product , Great Benefits</h3>
+                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="tab-question flex flex-col gap-5 pt-30" data-item="payment methods">
+                                            <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer ">
+                                                <div class="heading flex items-center justify-between gap-6">
+                                                    <div class="heading6">NEW! Plus sizes for Woman</div>
+                                                    <i class="ph ph-caret-right text-2xl"></i>
+                                                </div>
+                                                <div class="content body1 text-secondary">
+                                                    The courier companies have adapted their procedures to guarantee the safety of our employees and our community. We thank you for your patience, as there may be some delays to deliveries. We remind you that you can still find us at Mango.com and on all our online channels. Our customer services are still there for you, to answer any questions you may have, although due to the current situation, we are operating with longer waiting times.
+                                                </div>
+                                            </div>
+                                            <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer">
+                                                <div class="heading flex items-center justify-between gap-6">
+                                                    <div class="heading6">How does COVID-19 affect my online orders and store purchases?</div>
+                                                    <i class="ph ph-caret-right text-2xl"></i>
+                                                </div>
+                                                <div class="content body1 text-secondary">The courier companies have adapted their procedures to guarantee the safety of our employees and our community. We thank you for your patience, as there may be some delays to deliveries. We remind you that you can still find us at Mango.com</div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+    <!-- ===============================Review sec end================================ -->
 
     <!-- ===============================Review sec end================================ -->
 

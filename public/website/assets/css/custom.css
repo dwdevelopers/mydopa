@@ -632,6 +632,14 @@ p {
   background-color: #9780b9;
 }
 
+.modal_review .modal-body .rating-box .star::before {
+  color: #f4d371;
+}
+
+.modal_review .modal-body .rating-box .stars {
+  padding-top: 10px;
+}
+
 .product-container .product-details h1 {
   font-size: 40px !important;
   font-weight: 500;
