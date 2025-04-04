@@ -11,7 +11,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-item h-full w-full relative overflow-hidden">
-                            <div class="container w-full h-full flex ">
+                            <div class="container-fluid w-full h-full flex ">
                                 <div class="text-content sm:w-1/2 w-2/3">
 
                                     <div class="text-display md:mt-5 mt-2 mt-70">Herbal health
@@ -180,6 +180,128 @@
 
     <!-- ========================benefit sec end============================= -->
 
+    <!--  about mydopa start-->
+    <div class="about">
+        <section class="mydopa-section">
+            <div class="text">
+                <h2>What About <br> MYDOPA?</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <!-- <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="Doctor"> -->
+                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <h3>Why choose this?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                    <span class="number">01</span>
+                </div>
+                <div class="card">
+                    <div class="image">
+                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <h3>Who can take it</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                    <span class="number">02</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--  about mydopa end-->
+
+    <div class="product-showcase " style="padding-bottom: 40px;">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="{{ asset('website/assets/images/product-shop/product-1.jpg')}}" alt="Mydopa Product" class="main-img">
+                <div class="thumbnail-gallery">
+                    <button class="prev"><i class='bx bx-chevron-left bx-flip-vertical'></i></button>
+                    <img src="{{ asset('website/assets/images/product-shop/product-1.jpg')}}" alt="Thumbnail">
+                    <img src="{{ asset('website/assets/images/product-shop/product-2.jpg')}}" alt="Thumbnail">
+                    <img src="{{ asset('website/assets/images/product-shop/product-3.jpg')}}" alt="Thumbnail">
+                    <img src="{{ asset('website/assets/images/product-shop/product-4.jpg')}}" alt="Thumbnail">
+                    <img src="{{ asset('website/assets/images/product-shop/product-5.jpg')}}" alt="Thumbnail">
+                    <button class="next"><i class='bx bx-chevron-left bx-flip-horizontal'></i></button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Mydopa</h1>
+                <p></p>
+                <ul>
+                    <li>✔ Controls tremors and improves motor function.</li>
+                    <li>✔ For a healthy and active life with Parkinson’s.</li>
+                    <li>✔ A natural alternative to artificial dopaminergic medicines.</li>
+                    <li>✔ Natural Source of L-Dopa.</li>
+                    <li>✔ Arrests degeneration of Brain cells</li>
+                    <li>✔ Good Aphrodisiac.</li>
+                    <li>✔ Supports cognitive health and gut health.</li>
+                </ul>
+                <div class="pricing-options">
+                    <div class="plan best-result">
+                        <span class="discount">SAVE ₹ 1,495</span>
+                        <h3>3 Month</h3>
+                        <p>90 Sachets</p>
+                        <p class="rs">₹ 2,699 <span>₹ 4,104</span></p>
+                        <p class="pb-10">MRP (incl. of all taxes)</P>
+                        <div class="blk_tag">BEST RESULT</div>
+                    </div>
+                    <div class="plan most-popular">
+                        <span class="discount">SAVE ₹ 947</span>
+                        <h3>2 Month</h3>
+                        <p>60 Sachets</p>
+                        <p class="rs">₹ 1,849 <span>₹ 2,796</span></p>
+                        <p class="pb-10">MRP (incl. of all taxes)</p>
+                        <div class="blk_tag">MOST POPULAR
+                        </div>
+                    </div>
+                    <div class="plan">
+                        <span class="discount">SAVE ₹ 499</span>
+                        <h3>1 Month</h3>
+                        <p>30 Sachets</p>
+                        <p class="rs">₹ 949 <span>₹ 1,398</span></p>
+                        <p class="pb-10">MRP (incl. of all taxes)</p>
+                    </div>
+                </div>
+                <button class="buy-now">Buy It Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- feature start -->
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]">
+        <div class="list-text">
+            <ul>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-01.svg')}}" alt="icon">
+                    <h2>Natural source <br> of L-dopa</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-02.svg')}}" alt="icon">
+                    <h2>Controls tremors and <br> improves motor function</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-03.svg')}}" alt="icon">
+                    <h2>Arrests degeneration <br> of brain cells</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-04.svg')}}" alt="icon">
+                    <h2>Supports cognitives <br> and gut health</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- feature end -->
+
     <!-- ====================== thumbnail sec starts  =============================== -->
 
     <!-- <div class="why_mydopa thumbnailSec">
@@ -286,11 +408,11 @@
                 <div class=" review_grid all_review">
                     <div class="rating-box">
                         <div class="stars">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
                         </div>
                     </div>
                     <div class="review_text">
@@ -299,14 +421,98 @@
                     </div>
                 </div>
                 <div class="review_grid rating_sec">
-                    <div class="five_star_rating">
+                    <div class="five_star_rating single_star_sec">
                         <div class="rating-box">
                             <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <div class="rating_progrss">
+                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
+                                <div class="progress-bar">
+                                    <span style="width: 80%">20%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="rating_count">
+                            <span>17</span>
+                        </div>
+                    </div>
+                    <div class="five_star_rating single_star_sec">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <div class="rating_progrss">
+                            <progress max="100" value="20" class="html5" style="border-radius: 0;">
+                                <div class="progress-bar">
+                                    <span style="width: 20%">20%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="rating_count">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <div class="five_star_rating single_star_sec">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <div class="rating_progrss">
+                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
+                                <div class="progress-bar">
+                                    <span style="width: 80%">80%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="rating_count">
+                            <span>17</span>
+                        </div>
+                    </div>
+                    <div class="five_star_rating single_star_sec">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <div class="rating_progrss">
+                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
+                                <div class="progress-bar">
+                                    <span style="width: 80%">80%</span>
+                                </div>
+                            </progress>
+                        </div>
+                        <div class="rating_count">
+                            <span>17</span>
+                        </div>
+                    </div>
+                    <div class="five_star_rating single_star_sec">
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
                             </div>
                         </div>
                         <div class="rating_progrss">
@@ -322,7 +528,15 @@
                     </div>
 
                 </div>
-                <div class="review_grid add_rating"></div>
+                <div class="review_grid add_rating">
+                    <button type="button" class="btn btn-primary btn-review" data-toggle="modal" data-target="#reviewModal">
+                        Write a Review
+                    </button>
+                    <button type="button" class="btn btn-primary btn-question" data-toggle="modal" data-target="#questionModal">
+                        Ask a Question
+                    </button>
+
+                </div>
 
             </div>
         </div>
@@ -330,91 +544,6 @@
 
     <!-- ===============================Review sec end================================ -->
 
-
-    <div class="community-story-block md:mt-20 mt-10"  style="margin-bottom: 50px;">
-        <div class="container">
-            <div class="heading3 text-center">Community Storiesssss</div>
-            <div class="mt-3 text-center">Trust - lovely guests</div>
-            <div class="list-product grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 md:gap-[30px] gap-[16px] md:mt-10 mt-6">
-                <div class="product-item block h-full relative aspect-[3/4] md:rounded-2xl rounded-xl overflow-hidden cursor-pointer" data-item="53">
-                    <div class="bg-img w-full h-full">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/lnTWVAyMHg0?si=jCD4v1XxwsVwCn64&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="product-infor flex items-center sm:gap-4 gap-2 absolute sm:left-5 left-3 sm:bottom-5 bottom-3 w-full">
-                        <div class="product-img sm:w-[52px] w-10 sm:h-[52px] h-10 rounded-full overflow-hidden flex-shrink-0">
-                            <img src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="8-1" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="product-name w-full">
-                            <div class="text-white capitalize">Tinted eye Balm</div>
-                            <div class="flex items-center gap-2 mt-1">
-                                <div class="product-price text-white">$20.00</div>
-                                <div class="product-origin-price caption1 text-white">
-                                    <del>$25.00</del>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item block h-full aspect-[3/4] relative md:rounded-2xl rounded-xl overflow-hidden cursor-pointer" data-item="45">
-                    <div class="bg-img h-full w-full">
-                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/SQKGyw0d-fU?si=TylurstsiRYdJkQ-&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="product-infor flex items-center sm:gap-4 gap-2 absolute sm:left-5 left-3 sm:bottom-5 bottom-3 w-full">
-                        <div class="product-img sm:w-[52px] w-10 sm:h-[52px] h-10 rounded-full overflow-hidden flex-shrink-0">
-                            <img src="{{ asset('website/assets/images/product/1000x1000.png')}}" alt="4-1" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="product-name w-full">
-                            <div class="text-white capitalize">Tinted eye Balm</div>
-                            <div class="flex items-center gap-2 mt-1">
-                                <div class="product-price text-white">$20.00</div>
-                                <div class="product-origin-price caption1 text-white">
-                                    <del>$25.00</del>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item block h-full aspect-[3/4] relative md:rounded-2xl rounded-xl overflow-hidden cursor-pointer" data-item="41">
-                    <div class="bg-img h-full w-full">
-                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="product-infor flex items-center sm:gap-4 gap-2 absolute sm:left-5 left-3 sm:bottom-5 bottom-3 w-full">
-                        <div class="product-img sm:w-[52px] w-10 sm:h-[52px] h-10 rounded-full overflow-hidden flex-shrink-0">
-                            <img src="{{ asset('website/assets/images/product/1000x1000.png')}}" alt="3-1" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="product-name w-full">
-                            <div class="text-white capitalize">Face Tan Booster</div>
-                            <div class="flex items-center gap-2 mt-1">
-                                <div class="product-price text-white">$20.00</div>
-                                <div class="product-origin-price caption1 text-white">
-                                    <del>$25.00</del>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item block h-full aspect-[3/4] relative md:rounded-2xl rounded-xl overflow-hidden cursor-pointer" data-item="46">
-                    <div class="bg-img h-full w-full">
-                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <div class="product-infor flex items-center sm:gap-4 gap-2 absolute sm:left-5 left-3 sm:bottom-5 bottom-3 w-full">
-                        <div class="product-img sm:w-[52px] w-10 sm:h-[52px] h-10 rounded-full overflow-hidden flex-shrink-0">
-                            <img src="{{ asset('website/assets/images/product/1000x1000.png')}}" alt="5-1" class="w-full h-full object-cover" />
-                        </div>
-                        <div class="product-name w-full">
-                            <div class="text-white capitalize">Tinted eye Balm</div>
-                            <div class="flex items-center gap-2 mt-1">
-                                <div class="product-price text-white">$20.00</div>
-                                <div class="product-origin-price caption1 text-white">
-                                    <del>$25.00</del>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ===============================faq sec start================================ -->
 
@@ -580,646 +709,6 @@
 
     <!-- ===============================faq sec end================================ -->
 
-    <div class="lookbook-block cos1 bg-surface md:py-20 py-10 md:mt-20 mt-10 product_sec">
-        <div class="container  pt-40">
-            <div class="heading3 text-center">Our Best Sellers</div>
-            <div class="mt-3 text-center">Trust - lovely guests</div>
-        </div>
-        <div class="container lg:flex items-center">
-
-
-            <div class="list-product hide-product-sold  lg:pl-[15px] grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px]">
-                <div class="product-item grid-type" data-item="41">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item grid-type" data-item="52">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item grid-type" data-item="49">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item grid-type" data-item="45" style="display: block;">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="benefit-block md:py-20 py-10 grid-three-sec md:mt-20 mt-10">
-        <div class="container">
-            <div class="list-benefit grid items-start md:grid-cols-3 grid-cols-1 xl:gap-[160px] lg:gap-20 gap-10 gap-y-6 grid-three-sec-inner">
-                <div class="benefit-item flex flex-col items-center justify-center grid-three-sec-left grid-three-sec-common">
-                    <div class="grid-three-sec-block">
-                        <div class="loader">
-                            <span class="count counter-loaded">90</span>
-                            <span class="percen">%</span>
-                        </div>
-                        <h3>Your Immunity</h3>
-                        <p>With 70-80% of immune cells being present
-                            in the gut, there is an intricate interplay
-                            between the intestinal microbiota and the
-                            local mucosal immune system</p>
-                    </div>
-                    <div class="grid-three-sec-block">
-                        <div class="loader">
-                            <span class="count counter-loaded">80</span>
-                            <span class="percen">%</span>
-                        </div>
-                        <h3>Your Immunity</h3>
-                        <p>With 70-80% of immune cells being present
-                            in the gut, there is an intricate interplay
-                            between the intestinal microbiota and the
-                            local mucosal immune system</p>
-                    </div>
-
-                </div>
-                <div class="benefit-item flex flex-col items-center justify-center grid-three-sec-center" data-aos="fade-up">
-                    <img src="https://thegoodbug.com/cdn/shop/files/Stick_PNG.png?v=1675427933" alt="">
-                </div>
-                <div class="benefit-item flex flex-col items-center justify-center grid-three-sec-right grid-three-sec-common">
-                    <div class="grid-three-sec-block">
-                        <div class="loader">
-                            <span class="count counter-loaded">70</span>
-                            <span class="percen">%</span>
-                        </div>
-                        <h3>Your Immunity</h3>
-                        <p>With 70-80% of immune cells being present
-                            in the gut, there is an intricate interplay
-                            between the intestinal microbiota and the
-                            local mucosal immune system</p>
-                    </div>
-                    <div class="grid-three-sec-block">
-                        <div class="loader">
-                            <span class="count counter-loaded">60</span>
-                            <span class="percen">%</span>
-                        </div>
-                        <h3>Your Immunity</h3>
-                        <p>With 70-80% of immune cells being present
-                            in the gut, there is an intricate interplay
-                            between the intestinal microbiota and the
-                            local mucosal immune system</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- New Arrivals Start-->
-    <div class="lookbook-block cos1 bg-surface md:py-20 py-10 md:mt-20  product_sec">
-        <div class="container  pt-40">
-            <div class="heading3 text-center">New Arrivals</div>
-            <div class="mt-3 text-center">Trust - lovely guests</div>
-        </div>
-        <div class="container lg:flex items-center">
-
-
-            <div class="list-product hide-product-sold  lg:pl-[15px] grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px]">
-
-                <div class="product-item grid-type" data-item="41">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item grid-type" data-item="52">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="product-item grid-type" data-item="49">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="product-item grid-type" data-item="45" style="display: block;">
-                    <div class="product-main cursor-pointer block">
-                        <div class="product-thumb bg-white relative overflow-hidden ">
-                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                Sale</div>
-                            <div class="product-img w-full h-full aspect-[3/4]">
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                            </div>
-                        </div>
-
-                        <div class="product-infor mt-4 lg:mb-7">
-                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                <div class="product-price text-title">₹30.00</div>
-                                <div class="product-origin-price caption1 text-secondary2">
-                                    <del> ₹42.00</del>
-                                </div>
-                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                    -30%</div>
-                            </div>
-                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                            <div class="cart_btn_wrapper">
-                                <button class="cart_btn">Add To
-                                    Cart</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    <!-- New Arrivals end-->
-
-    <!-- benefits strats -->
-
-
-    <!-- benefits end -->
-
-    <div class="collection-block md:pt-20 pt-10 cos1 bg-surface pb-70 product-swiper">
-        <div class="container lg:flex mt-50">
-            <div class="heading lg:w-1/4 lg:pr-[15px] max-lg:pb-8">
-                <!-- <div class="heading3 md:pb-5 pb-3">Everything you need to prepare the look</div> -->
-                <img src="https://thegoodbug.com/cdn/shop/files/Digestive_health.jpg?v=1675428003" alt="">
-                <a href="shop-breadcrumb-img.html" class="text-button pb-1 border-b-2 border-black duration-300 hover:border-green">Shop Now</a>
-            </div>
-            <div class="list-product hide-product-sold lg:w-3/4 lg:pl-[15px]  sm:gap-[30px] gap-[20px]">
-
-                <div class="list-collection relative section-swiper-navigation style-outline style-center style-small-border ">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper swiper-collection-eight h-full relative">
-                        <div class="swiper-wrapper product_sec">
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-item grid-type" data-item="41">
-                                    <div class="product-main cursor-pointer block">
-                                        <div class="product-thumb bg-white relative overflow-hidden ">
-                                            <div class="product-tag text-button-uppercase text-white bg-red px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                                Sale</div>
-                                            <div class="product-img w-full h-full aspect-[3/4]">
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-1.png')}}" alt="img" />
-                                                <img class="w-full h-full object-cover duration-700" src="{{ asset('website/assets/images/product/cosmetic/1-2.png')}}" alt="img" />
-                                            </div>
-                                        </div>
-
-                                        <div class="product-infor mt-4 lg:mb-7">
-                                            <div class="product-name text-title duration-300" style="opacity: 1; visibility:visible">Raglan Sleeve T-shirt</div>
-                                            <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]" style="    transform: none !important;">
-                                                <div class="product-price text-title">₹30.00</div>
-                                                <div class="product-origin-price caption1 text-secondary2">
-                                                    <del> ₹42.00</del>
-                                                </div>
-                                                <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                                    -30%</div>
-                                            </div>
-                                            <p class="tax-details">MRP (incl. of all taxes)</p>
-                                            <div class="cart_btn_wrapper">
-                                                <button class="cart_btn">Add To
-                                                    Cart</button>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="testimonial-block style-four relative">
-        <div class="container relative w-full h-full">
-            <div class="content md:w-1/2 lg:py-[110px] py-16">
-                <div class="heading4 font-normal normal-case">I absolutely love this shop! The products are high-quality
-                    and the customer service is excellent. I always leave with exactly what I need and a smile on my
-                    face.</div>
-                <div class="flex items-center gap-5 mt-8">
-                    <div class="avatar">
-                        <img src="{{ asset('website/assets/images/avatar/1.png')}}" alt="avatar" class="sm:w-20 w-14 sm:h-20 h-14 rounded-full" />
-                    </div>
-                    <div class="infor">
-                        <div class="body1 font-semibold uppercase pb-1">Emma cardi</div>
-                        <div class="rate flex items-center gap-0.5">
-                            <i class="ph-fill ph-star text-[#ECB018]"></i>
-                            <i class="ph-fill ph-star text-[#ECB018]"></i>
-                            <i class="ph-fill ph-star text-[#ECB018]"></i>
-                            <i class="ph-fill ph-star text-[#ECB018]"></i>
-                            <i class="ph-fill ph-star text-[#ECB018]"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-img absolute top-0 left-0 w-full h-full z-[-1]">
-            <img src="{{ asset('website/assets/images/banner/bg-testi-cos.png')}}" alt="bg-img" class="w-full h-full object-cover" />
-        </div>
-    </div>
-
-    <div class="news-block md:pt-16 pt-10 pb-70">
-        <div class="container">
-            <div class="heading3 text-center">News insight</div>
-            <div class="list-blog grid lg:grid-cols-3 sm:grid-cols-2 md:gap-[30px] gap-4 md:mt-10 mt-6">
-                <a href="blog-detail1.html" class="blog-item style-one h-full cursor-pointer">
-                    <div class="blog-main h-full block">
-                        <div class="blog-thumb rounded-[20px] overflow-hidden">
-                            <img src="https://anvogue-html.vercel.app/assets/images/blog/1.png" alt="blog-img" class="w-full duration-500" />
-                        </div>
-                        <div class="blog-infor mt-7">
-                            <div class="blog-tag bg-green py-1 px-2.5 rounded-full text-button-uppercase inline-block">Jean, glasses</div>
-                            <div class="heading6 blog-title mt-3 duration-300">Fashion Trends to Watch Out for in Summer 2024</div>
-                            <div class="flex items-center gap-2 mt-2">
-                                <div class="blog-author caption1 text-secondary">by Chris Evans</div>
-                                <span class="w-[20px] h-[1px] bg-black"></span>
-                                <div class="blog-date caption1 text-secondary">Dec 20, 2024</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="blog-detail1.html" class="blog-item style-one h-full cursor-pointer">
-                    <div class="blog-main h-full block">
-                        <div class="blog-thumb rounded-[20px] overflow-hidden">
-                            <img src="https://anvogue-html.vercel.app/assets/images/blog/2.png" alt="blog-img" class="w-full duration-500" />
-                        </div>
-                        <div class="blog-infor mt-7">
-                            <div class="blog-tag bg-green py-1 px-2.5 rounded-full text-button-uppercase inline-block">Jean, shoes</div>
-                            <div class="heading6 blog-title mt-3 duration-300">How to Build a Sustainable and Stylish Wardrobe 2024</div>
-                            <div class="flex items-center gap-2 mt-2">
-                                <div class="blog-author caption1 text-secondary">by Alex Balde</div>
-                                <span class="w-[20px] h-[1px] bg-black"></span>
-                                <div class="blog-date caption1 text-secondary">Dec 12, 2024</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="blog-detail1.html" class="blog-item style-one h-full cursor-pointer max-lg:hidden max-sm:block">
-                    <div class="blog-main h-full block">
-                        <div class="blog-thumb rounded-[20px] overflow-hidden">
-                            <img src="https://anvogue-html.vercel.app/assets/images/blog/3.png" alt="blog-img" class="w-full duration-500" />
-                        </div>
-                        <div class="blog-infor mt-7">
-                            <div class="blog-tag bg-green py-1 px-2.5 rounded-full text-button-uppercase inline-block">Jean, skirt</div>
-                            <div class="heading6 blog-title mt-3 duration-300">Fashion and Beauty Tips for Busy Professionals 2024</div>
-                            <div class="flex items-center gap-2 mt-2">
-                                <div class="blog-author caption1 text-secondary">by Leona Pablo</div>
-                                <span class="w-[20px] h-[1px] bg-black"></span>
-                                <div class="blog-date caption1 text-secondary">Dec 10, 2024</div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
     <!-- =============================================== -->
 
@@ -1246,6 +735,17 @@
 
             updateCount(); // Start animation
         });
+    });
+</script>
+
+<script>
+    $(document).on('show.bs.modal', function() {
+        var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        $('body').css('padding-right', scrollbarWidth + 'px');
+    });
+
+    $(document).on('hidden.bs.modal', function() {
+        $('body').css('padding-right', '');
     });
 </script>
 

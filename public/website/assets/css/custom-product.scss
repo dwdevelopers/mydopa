@@ -163,7 +163,7 @@
                 border-radius: 5px;
                 border:1px solid black;
                 text-align: center;
-
+position: relative;
                 .discount {
                     background: gold;
                     padding: 5px;
@@ -187,6 +187,16 @@
                 .rs{
                     font-size: 13px;
                 }
+                .blk_tag{
+                    position: absolute;
+                    background-color: #000;
+                    font-size: 10px;
+                    color: #fff;
+                    padding: 4px 15px;
+                    border-radius: 20px;
+                    left: 50%;
+                    margin-left: -48px;
+                }
             }
         }
 
@@ -195,7 +205,7 @@
             color: white;
             padding: 10px;
             width: 85%;
-            margin-top: 20px;
+            margin-top: 40px;
             border: none;
             cursor: pointer;
             border-radius: 20px;
@@ -251,7 +261,7 @@
         display: flex;
         align-items: center;
         padding: 50px;
-        max-width: 1450px;
+        // max-width: 1450px;
         gap: 40px;
     }
     
@@ -260,6 +270,7 @@
         font-size: 24px;
         color: #666;
         font-weight: bold;
+        width: 30%;
         h2{
             font-weight: 500;
             font-size: 2.5rem;
@@ -267,6 +278,7 @@
     }
     
     .cards {
+        width: 70%;
         display: flex;
         gap: 20px;
     }
@@ -281,11 +293,14 @@
         border-radius: 20px;
         text-align: left;
         position: relative;
-        max-width: 450px;
+        // max-width: 450px;
         padding-bottom: 50px;
         
         .image {
-            margin-left: 160px;
+            border-radius: 100px;
+            overflow: hidden;
+            width: 60%;
+            margin-left: auto;
             img {
             width: 250px;
             height: 120px;
@@ -371,10 +386,11 @@
 
 //footer
 .footer {
-    background: #6f4aa1;
+    background: #795ba6;
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    padding-bottom: 20px;
 
     .container {
         max-width: 1200px;
@@ -384,14 +400,19 @@
     .footer-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        // align-items: center;
         flex-wrap: wrap;
         // gap:260px;
         @media (max-width: 1047px) {
             gap:10px;
             justify-content: center;
         }
-
+.footer-logo{
+    display: flex;
+        align-items: flex-end;
+        padding-bottom: 30px;
+    
+}
         .newsletter {
             max-width: 30%;
             text-align: left;
@@ -409,9 +430,11 @@
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 12px;
                 color: white;
                 margin-bottom: 15px;
+                padding: 25px 0px;
+
                 
             }
 
@@ -429,6 +452,7 @@
                     padding: 5px;
                     outline: none;
                     background: transparent;
+                    padding-left: 20px;
                 }
 
                 button {
@@ -440,6 +464,7 @@
                     cursor: pointer;
                     font-size: 1.2rem;
                     margin-right: 5px;
+                    padding: 4px 10px;
                 }
             }
         }
@@ -461,13 +486,19 @@
                 text-align: center;
             }
             .footer-logo{
-                img{
-                height:19vh;
-               }
+                display: flex;
+                    align-items: flex-end;
+                    padding-bottom: 30px;
+                    img{
+                        width: 150px;
+                        object-fit: contain;
+                    }
+                
             }
-
             p {
-                margin-bottom: 8px;
+                max-width: 220px;
+                padding-bottom: 20px;
+
             }
 
             a {
