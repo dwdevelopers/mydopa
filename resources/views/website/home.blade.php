@@ -182,12 +182,14 @@
 
     <!--  about mydopa start-->
     <div class="about">
-        <section class="mydopa-section">
-            <div class="text">
+        <section class="mydopa-section about-wrapper">
+            <div class="text left-sec">
                 <h2>What About <br> MYDOPA?</h2>
             </div>
-            <div class="cards">
-                <div class="card">
+            <div class="right-sec">
+            <div class="horizontal-scroll">
+            <div class="cards" id="horizontal">
+                <div class="card" > 
                     <div class="image">
                         <!-- <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="Doctor"> -->
                         <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -201,9 +203,9 @@
                         ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
                     <span class="number">01</span>
                 </div>
-                <div class="card">
+                <div class="card"  >
                     <div class="image">
-                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                     </div>
                     <h3>Who can take it</h3>
@@ -214,6 +216,35 @@
                         ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
                     <span class="number">02</span>
                 </div>
+                <div class="card" >
+                    <div class="image">
+                        <!-- <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="Doctor"> -->
+                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <h3>Why choose this?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                    <span class="number">01</span>
+                </div>
+                <div class="card" >
+                    <div class="image">
+                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+                    <h3>Who can take it</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                        elit, sed diam nonummy nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                    <span class="number">02</span>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
     </div>
@@ -278,8 +309,8 @@
 
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" 
-    style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"
+        style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -401,9 +432,9 @@
 
     <!-- ===============================Review sec start================================ -->
 
-   <!-- ===============================Review sec start================================ -->
+    <!-- ===============================Review sec start================================ -->
 
-   <div class="reviewsec">
+    <div class="reviewsec">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
 
@@ -821,7 +852,6 @@
     </div>
 
     <!-- ===============================faq sec end================================ -->
-
 
     <!-- =============================================== -->
 
