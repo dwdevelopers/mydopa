@@ -280,6 +280,105 @@ if (listSearchResults) {
     listProductResult.innerHTML = `<p>No product searched.</p>`;
   }
 }
+// Modal question
+const questionIcon = document.querySelector(".question-icon");
+const modalQuestion = document.querySelector(".modal-question-block");
+const modalQuestionMain = document.querySelector(".modal-question-main");
+
+if (questionIcon && modalQuestion && modalQuestionMain) {
+  questionIcon.addEventListener("click", () => {
+    modalQuestionMain.classList.add("open");
+  });
+
+  modalQuestion.addEventListener("click", () => {
+    modalQuestionMain.classList.remove("open");
+  });
+
+  modalQuestionMain.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+}
+
+// Redirect to question-results when enter or click form question
+const formQuestion = document.querySelectorAll(".form-question");
+
+if (formQuestion.length > 0) {
+  formQuestion.forEach((form) => {
+    const formInput = form.querySelector("input");
+    const questionIcon = form.querySelector("i.ph-magnifying-glass");
+    const questionBtn = form.querySelector("button");
+
+    if (formInput) {
+      formInput.addEventListener("keyup", (e) => {
+        if (e.key === "Enter") {
+          window.location.href = `question-result.html?query=${encodeURIComponent(formInput.value)}`;
+        }
+      });
+    }
+
+    if (questionIcon) {
+      questionIcon.addEventListener("click", () => {
+        window.location.href = `question-result.html?query=${encodeURIComponent(formInput.value)}`;
+      });
+    }
+
+    if (questionBtn) {
+      questionBtn.addEventListener("click", () => {
+        window.location.href = `question-result.html?query=${encodeURIComponent(formInput.value)}`;
+      });
+    }
+  });
+}
+
+const keywordQuestion = document.querySelectorAll(".list-keyword .item");
+
+if (keywordQuestion.length > 0) {
+  keywordQuestion.forEach((item) => {
+    item.addEventListener("click", () => {
+      const query = item.innerText.toLowerCase().replace(/\s+/g, "");
+      window.location.href = `question-result.html?query=${encodeURIComponent(query)}`;
+    });
+  });
+}
+
+// Filter product in question-results
+const listQuestionResults = document.querySelector(".question-result-block");
+
+if (listQuestionResults) {
+  const urlParams = new URLSearchParams(window.location.search);
+  const queryValue = urlParams.get("query");
+
+  const listProductResult = document.querySelector(".list-product-result");
+
+  if (queryValue && listProductResult) {
+    fetch("./assets/data/Product.json")
+      .then((response) => response.json())
+      .then((products) => {
+        const filterPrd = products.filter(
+          (product) =>
+            product.type.includes(queryValue) ||
+            product.category.includes(queryValue) ||
+            product.name.includes(queryValue)
+        );
+
+        const resultQuantity = listQuestionResults.querySelector(".result-quantity");
+        if (resultQuantity) resultQuantity.innerText = filterPrd.length;
+
+        if (filterPrd.length === 0) {
+          listProductResult.innerHTML = `<p>No product found.</p>`;
+        } else {
+          listProductResult.innerHTML = ""; // Clear previous results
+          filterPrd.forEach((product) => {
+            const productElement = createProductItem(product);
+            listProductResult.appendChild(productElement);
+          });
+        }
+      })
+      .catch((error) => console.error("Error loading products:", error));
+  } else if (listProductResult) {
+    listProductResult.innerHTML = `<p>No product questioned.</p>`;
+  }
+}
 
 // Modal login
 const loginIcon = document.querySelector(".user-icon i");

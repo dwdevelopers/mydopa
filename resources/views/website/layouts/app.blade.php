@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('website/assets/css/style.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/dist/output-scss.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/dist/output-tailwind.css')}}" />
-    <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}" />
+    <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}?v={{ time() }}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/bootstrap.min.css')}}" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="{{ asset('website/assets/css/themify-icons.css')}}" rel="stylesheet">
@@ -18,6 +18,14 @@
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="{{ asset('website/assets/css/custom-product.css')}}?v={{ time() }}" />
+    <!-- boxicons-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
 
 
 </head>
@@ -37,316 +45,101 @@
     <!-- Modal -->
 
 
-    <div class="modal-search-block">
-        <div class="modal-search-main md:p-10 p-6 rounded-[32px]">
-            <div class="form-search relative w-full">
-                <i class="ph ph-magnifying-glass absolute heading5 right-6 top-1/2 -translate-y-1/2 cursor-pointer"></i>
-                <input type="text" placeholder="Searching..." class="text-button-lg h-14 rounded-2xl border border-line w-full pl-6 pr-12" />
-            </div>
-            <div class="keyword mt-8">
-                <div class="heading5">Feature keywords Today</div>
-                <div class="list-keyword flex items-center flex-wrap gap-3 mt-4">
-                    <button class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">Dress</button>
-                    <button class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">T-shirt</button>
-                    <button class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">Underwear</button>
-                    <button class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">Top</button>
+
+
+    <div class="modal fade modal_review" id="reviewModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Write a Review</h4>
                 </div>
-            </div>
-            <div class="list-recent mt-8">
-                <div class="heading6">Recently viewed products</div>
-                <div class="list-product pb-5 hide-product-sold grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-[30px] gap-4 mt-4">
-                    <div class="product-item grid-type" data-item="14">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New</div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                </div>
-                                <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart</div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class="progress-sold bg-red absolute left-0 top-0 h-full"></div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Sold: </span>
-                                            <span class="max-sm:text-xs">12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Available: </span>
-                                            <span class="max-sm:text-xs">88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">Faux-leather trousers</div>
-                                <div class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class="color-item bg-black w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Black</div>
-                                    </div>
-                                    <div class="color-item bg-green w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Green</div>
-                                    </div>
-                                    <div class="color-item bg-red w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red</div>
-                                    </div>
-                                </div>
-
-                                <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">$40.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$50.00</del>
-                                    </div>
-                                    <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%</div>
-                                </div>
-                            </div>
+                <div class="modal-body">
+                    <div class="rating-box">
+                        <p><b> would you rate us?</b></p>
+                        <div class="stars">
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
+                            <i class='bx bx-star star'></i>
                         </div>
                     </div>
 
-                    <div class="product-item grid-type" data-item="13">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New</div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                </div>
-                                <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart</div>
-                                </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Name">Name*
+                                    <input type="text" class="form-control">
+                                </label>
                             </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class="progress-sold bg-red absolute left-0 top-0 h-full"></div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Sold: </span>
-                                            <span class="max-sm:text-xs">12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Available: </span>
-                                            <span class="max-sm:text-xs">88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">Faux-leather trousers</div>
-                                <div class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class="color-item bg-black w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Black</div>
-                                    </div>
-                                    <div class="color-item bg-green w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Green</div>
-                                    </div>
-                                    <div class="color-item bg-red w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red</div>
-                                    </div>
-                                </div>
+                            <div class="col-lg-6">
+                                <label for="email">Email*
+                                    <input type="email" placeholder="" class="form-control">
+                                </label>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="Phone">Phone*
+                                    <input type="text" placeholder="" class="form-control">
+                                </label>
+                            </div>
+                            <div class="col-lg-12">
 
-                                <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">$40.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$50.00</del>
-                                    </div>
-                                    <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%</div>
-                                </div>
+                                <label for="review" class="pt-5">Write a Review*...
+                                    <textarea name="opinion" cols="30" rows="5" placeholder="" class="form-control"></textarea>
+                                </label>
                             </div>
+
                         </div>
-                    </div>
-
-                    <div class="product-item grid-type" data-item="12">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New</div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                </div>
-                                <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart</div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class="progress-sold bg-red absolute left-0 top-0 h-full"></div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Sold: </span>
-                                            <span class="max-sm:text-xs">12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Available: </span>
-                                            <span class="max-sm:text-xs">88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">Off-the-Shoulder Blouse</div>
-                                <div class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class="color-item bg-red w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red</div>
-                                    </div>
-                                    <div class="color-item bg-yellow w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            yellow</div>
-                                    </div>
-                                    <div class="color-item bg-green w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            green</div>
-                                    </div>
-                                </div>
-
-                                <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">$40.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$50.00</del>
-                                    </div>
-                                    <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%</div>
-                                </div>
-                            </div>
+                        <div class="btn-wrapper">
+                            <button type="button" class="btn btn-primary btn-submit">Submit</button>
                         </div>
-                    </div>
-
-                    <div class="product-item grid-type" data-item="11">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New</div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                    <img class="w-full h-full object-cover duration-700" src="./assets/images/product/1000x1000.png" alt="img" />
-                                </div>
-                                <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart</div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class="progress-sold bg-red absolute left-0 top-0 h-full"></div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Sold: </span>
-                                            <span class="max-sm:text-xs">12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class="text-secondary2 max-sm:text-xs">Available: </span>
-                                            <span class="max-sm:text-xs">88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">Off-the-Shoulder Blouse</div>
-                                <div class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class="color-item bg-red w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red</div>
-                                    </div>
-                                    <div class="color-item bg-yellow w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            yellow</div>
-                                    </div>
-                                    <div class="color-item bg-green w-8 h-8 rounded-full duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            green</div>
-                                    </div>
-                                </div>
-
-                                <div class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">$40.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$50.00</del>
-                                    </div>
-                                    <div class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal_review" id="questionModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Ask a Question</h4>
+                </div>
+                <div class="modal-body">
+            
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="Name">Name*
+                                    <input type="text" class="form-control">
+                                </label>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="email">Email*
+                                    <input type="email" placeholder="" class="form-control">
+                                </label>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="Phone">Phone*
+                                    <input type="text" placeholder="" class="form-control">
+                                </label>
+                            </div>
+                            <div class="col-lg-12">
+
+                                <label for="review" class="pt-5">Write a Question*...
+                                    <textarea name="opinion" cols="30" rows="5" placeholder="" class="form-control"></textarea>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="btn-wrapper">
+                            <button type="button" class="btn btn-primary btn-submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
@@ -867,7 +660,6 @@
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script>
@@ -904,6 +696,50 @@
         // sync the thumbnails slider as a target of primary slider.
         primarySlider.sync(thumbnailSlider).mount();
     </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const mainImg = document.querySelector(".main-img");
+        const thumbnails = document.querySelectorAll(".thumbnail-gallery img");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+
+        let currentIndex = 0;
+
+        // Update main image function
+        function updateMainImage(index) {
+            if (index >= 0 && index < thumbnails.length) {
+                mainImg.src = thumbnails[index].src;
+                currentIndex = index;
+            }
+        }
+
+        // Click event for thumbnails
+        thumbnails.forEach((thumb, index) => {
+            thumb.addEventListener("click", () => {
+                updateMainImage(index);
+            });
+        });
+
+        // Previous button functionality
+        prevBtn.addEventListener("click", () => {
+            if (currentIndex > 0) {
+                updateMainImage(currentIndex - 1);
+            } else {
+                updateMainImage(thumbnails.length - 1); // Loop to last image
+            }
+        });
+
+        // Next button functionality
+        nextBtn.addEventListener("click", () => {
+            if (currentIndex < thumbnails.length - 1) {
+                updateMainImage(currentIndex + 1);
+            } else {
+                updateMainImage(0); // Loop to first image
+            }
+        });
+    });
+</script>
 
 </body>
 

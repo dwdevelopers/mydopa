@@ -1,10 +1,6 @@
 @extends('website.layouts.app')
 
-@section('title', 'Shop')
-  <style>
-        .star-rating input {
-            display: none;
-        }
+@section('title', 'Shop Page')
 
         .star-rating label {
             font-size: 30px;
@@ -38,291 +34,186 @@
     </style>
 @section('content')
 
-<div class="breadcrumb-block style-img">
-    <div class="breadcrumb-main bg-linear overflow-hidden">
-        <div class="container lg:pt-[134px] pt-24 pb-10 relative">
-            <div class="main-content w-full h-full flex flex-col items-center justify-center relative z-[1]">
-                <div class="text-content">
-                    <div class="heading2 text-center">Shop</div>
-                    <div class="link flex items-center justify-center gap-1 caption1 mt-3">
-                        <a href="index.html">Homepage</a>
-                        <i class="ph ph-caret-right text-sm text-secondary2"></i>
-                        <div class="text-secondary2 capitalize">Shop</div>
+<!-- shop-banner start -->
+<div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/shop-banner.jpg') }}');">
+    <div class="container w-full h-full flex items-center">
+        <div class="text-content sm:w-1/2 w-2/3">
+            <div class="text-display md:mt-5 mt-2">Herbal health supplement for parkinson’s disease</div>
+            <img src="{{ asset('website/assets/images/product-shop/box.png')}}" alt="mockup" class="shop-banner-inner-img">
+        </div>
+
+    </div>
+</div>
+<!-- shop-banner end -->
+
+
+
+<!-- Product-Showcase start-->
+<div class="product-showcase " style="padding-bottom: 40px;">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="{{ asset('website/assets/images/product-shop/product-1.jpg')}}" alt="Mydopa Product" class="main-img">
+            <div class="thumbnail-gallery">
+                <button class="prev"><i class='bx bx-chevron-left bx-flip-vertical'></i></button>
+                <img src="{{ asset('website/assets/images/product-shop/product-1.jpg')}}" alt="Thumbnail">
+                <img src="{{ asset('website/assets/images/product-shop/product-2.jpg')}}" alt="Thumbnail">
+                <img src="{{ asset('website/assets/images/product-shop/product-3.jpg')}}" alt="Thumbnail">
+                <img src="{{ asset('website/assets/images/product-shop/product-4.jpg')}}" alt="Thumbnail">
+                <img src="{{ asset('website/assets/images/product-shop/product-5.jpg')}}" alt="Thumbnail">
+                <button class="next"><i class='bx bx-chevron-left bx-flip-horizontal'></i></button>
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Mydopa</h1>
+            <p>VIAMS MYDOPA is an exclusive blend of precious herbs, meticulously
+                formulated based on Ayurvedic wisdom. It provides natural L-dopa while
+                stimulating dopamine production in the brain, offering a dual benefit for
+                individuals with Parkinson’s Disease. This safe and effective herbal
+                supplement supports symptom management and enhances overall
+                quality of life.</p>
+            <ul>
+                <li>✔ Controls tremors and improves motor function.</li>
+                <li>✔ For a healthy and active life with Parkinson’s.</li>
+                <li>✔ A natural alternative to artificial dopaminergic medicines.</li>
+                <li>✔ Natural Source of L-Dopa.</li>
+                <li>✔ Arrests degeneration of Brain cells</li>
+                <li>✔ Good Aphrodisiac.</li>
+                <li>✔ Supports cognitive health and gut health.</li>
+            </ul>
+            <div class="pricing-options">
+                <div class="plan best-result">
+                    <span class="discount">SAVE ₹ 1,495</span>
+                    <h3>3 Month</h3>
+                    <p>90 Sachets</p>
+                    <p class="rs">₹ 2,699 <span>₹ 4,104</span></p>
+                    <p class="pb-10">MRP (incl. of all taxes)</P>
+                    <div class="blk_tag">BEST RESULT </div>
+                </div>
+                <div class="plan most-popular">
+                    <span class="discount">SAVE ₹ 947</span>
+                    <h3>2 Month</h3>
+                    <p>60 Sachets</p>
+                    <p class="rs">₹ 1,849 <span>₹ 2,796</span></p>
+                    <p class="pb-10">MRP (incl. of all taxes)</p>
+                    <div class="blk_tag">MOST POPULAR
                     </div>
                 </div>
-                <div class="filter-type menu-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
-                    <div class="item tab-item text-button-uppercase cursor-pointer has-line-before line-2px" data-item="t-shirt">t-shirt</div>
-                    <div class="item tab-item text-button-uppercase cursor-pointer has-line-before line-2px" data-item="dress">dress</div>
-                    <div class="item tab-item text-button-uppercase cursor-pointer has-line-before line-2px" data-item="top">top</div>
-                    <div class="item tab-item text-button-uppercase cursor-pointer has-line-before line-2px" data-item="swimwear">swimwear</div>
-                    <div class="item tab-item text-button-uppercase cursor-pointer has-line-before line-2px" data-item="shirt">shirt</div>
+                <div class="plan">
+                    <span class="discount">SAVE ₹ 499</span>
+                    <h3>1 Month</h3>
+                    <p>30 Sachets</p>
+                    <p class="rs">₹ 949 <span>₹ 1,398</span></p>
+                    <p class="pb-10">MRP (incl. of all taxes)</p>
+                </div>
+            </div>
+            <button class="buy-now">Buy It Now</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- benefits starts -->
+<div class="benefit-block md:py-20 py-10" >
+        <div class="container">
+            <div class="list-benefit grid items-start md:grid-cols-3 grid-cols-1 xl:gap-[160px] lg:gap-20 gap-10 gap-y-6">
+                <div class="benefit-item flex flex-col items-center justify-center">
+                    <div class="icon-wrapper">
+                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
+                    </div>
+                    <div class="body1   text-center mt-5">Standardized herbal
+                        extracts for precise
+                        dosage</div>
+
+                </div>
+                <div class="benefit-item flex flex-col items-center justify-center">
+                    <div class="icon-wrapper">
+                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
+                    </div>
+                    <div class="body1   text-center mt-5">Free from synthetic
+                        additives and
+                        preservatives.</div>
+
+                </div>
+                <div class="benefit-item flex flex-col items-center justify-center">
+                    <div class="icon-wrapper">
+                        <img src="{{ asset('website/assets/images/avatar/icons-03.svg')}}" alt="">
+                    </div>
+                    <div class="body1  text-center mt-5">100% natural
+                        and plant-based
+                        ingredients.</div>
+
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="shop-product breadcrumb1 lg:py-20 md:py-14 py-10">
-    <div class="container">
-        <div class="flex max-md:flex-wrap max-md:flex-col-reverse gap-y-8">
-            <div class="sidebar lg:w-1/4 md:w-1/3 w-full md:pr-12">
-                <div class="filter-type-block pb-8 border-b border-line">
-                    <div class="heading6">Products Type</div>
-                    <div class="list-type filter-type menu-tab mt-4">
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="t-shirt">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">t-shirt</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="dress">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">dress</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="top">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">top</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="swimwear">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">swimwear</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="shirt">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">shirt</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="underwear">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">underwear</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="sets">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">sets</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                        <div class="item tab-item flex items-center justify-between cursor-pointer" data-item="accessories">
-                            <div class="type-name text-secondary has-line-before hover:text-black capitalize">accessories</div>
-                            <div class="text-secondary2 number">6</div>
-                        </div>
-                    </div>
+<!-- benefits end -->
+
+<!--  about mydopa start-->
+<div class="about">
+    <section class="mydopa-section">
+        <div class="text">
+            <h2>What About <br> MYDOPA?</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="image">
+                <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </div>
-                <div class="filter-size pb-8 border-b border-line mt-8">
-                    <div class="heading6">Size</div>
-                    <div class="list-size flex items-center flex-wrap gap-3 gap-y-4 mt-4">
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="XS">XS</div>
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="S">S</div>
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="M">M</div>
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="L">L</div>
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="XL">XL</div>
-                        <div class="size-item text-button w-[44px] h-[44px] flex items-center justify-center rounded-full border border-line" data-item="2XL">2XL</div>
-                        <div class="size-item text-button px-4 py-2 flex items-center justify-center rounded-full border border-line" data-item="freesize">Freesize</div>
-                    </div>
-                </div>
-                <div class="filter-price pb-8 border-b border-line mt-8">
-                    <div class="heading6">Price Range</div>
-                    <div class="tow-bar-block mt-5">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input class="range-min" type="range" min="0" max="300" value="0" />
-                        <input class="range-max" type="range" min="0" max="300" value="300" />
-                    </div>
-                    <div class="price-block flex items-center justify-between flex-wrap mt-4">
-                        <div class="min flex items-center gap-1">
-                            <div>Min price:</div>
-                            <div class="min-price">$0</div>
-                        </div>
-                        <div class="min flex items-center gap-1">
-                            <div>Max price:</div>
-                            <div class="max-price">$300</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-color pb-8 border-b border-line mt-8">
-                    <div class="heading6">colors</div>
-                    <div class="list-color flex items-center flex-wrap gap-3 gap-y-4 mt-4">
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="pink">
-                            <div class="color bg-[#F4C5BF] w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">pink</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="red">
-                            <div class="color bg-red w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">red</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="green">
-                            <div class="color bg-green w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">green</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="yellow">
-                            <div class="color bg-yellow w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">yellow</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="purple">
-                            <div class="color bg-purple w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">purple</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="black">
-                            <div class="color bg-black w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">black</div>
-                        </div>
-                        <div class="color-item px-3 py-[5px] flex items-center justify-center gap-2 rounded-full border border-line" data-item="white">
-                            <div class="color bg-[#F6EFDD] w-5 h-5 rounded-full"></div>
-                            <div class="caption1 capitalize">white</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="filter-brand pb-8 mt-8">
-                    <div class="heading6">Brands</div>
-                    <div class="list-brand mt-4">
-                        <div class="brand-item flex items-center justify-between" data-item="adidas">
-                            <div class="left flex items-center cursor-pointer">
-                                <div class="block-input">
-                                    <input type="checkbox" name="adidas" id="adidas" />
-                                    <i class="ph-fill ph-check-square icon-checkbox text-2xl"></i>
-                                </div>
-                                <label for="adidas" class="brand-name capitalize pl-2 cursor-pointer">adidas</label>
-                            </div>
-                            <div class="text-secondary2 number">12</div>
-                        </div>
-                        <div class="brand-item flex items-center justify-between" data-item="hermes">
-                            <div class="left flex items-center cursor-pointer">
-                                <div class="block-input">
-                                    <input type="checkbox" name="hermes" id="hermes" />
-                                    <i class="ph-fill ph-check-square icon-checkbox text-2xl"></i>
-                                </div>
-                                <label for="hermes" class="brand-name capitalize pl-2 cursor-pointer">hermes</label>
-                            </div>
-                            <div class="text-secondary2 number">12</div>
-                        </div>
-                        <div class="brand-item flex items-center justify-between" data-item="zara">
-                            <div class="left flex items-center cursor-pointer">
-                                <div class="block-input">
-                                    <input type="checkbox" name="zara" id="zara" />
-                                    <i class="ph-fill ph-check-square icon-checkbox text-2xl"></i>
-                                </div>
-                                <label for="zara" class="brand-name capitalize pl-2 cursor-pointer">zara</label>
-                            </div>
-                            <div class="text-secondary2 number">12</div>
-                        </div>
-                        <div class="brand-item flex items-center justify-between" data-item="nike">
-                            <div class="left flex items-center cursor-pointer">
-                                <div class="block-input">
-                                    <input type="checkbox" name="nike" id="nike" />
-                                    <i class="ph-fill ph-check-square icon-checkbox text-2xl"></i>
-                                </div>
-                                <label for="nike" class="brand-name capitalize pl-2 cursor-pointer">nike</label>
-                            </div>
-                            <div class="text-secondary2 number">12</div>
-                        </div>
-                        <div class="brand-item flex items-center justify-between" data-item="gucci">
-                            <div class="left flex items-center cursor-pointer">
-                                <div class="block-input">
-                                    <input type="checkbox" name="gucci" id="gucci" />
-                                    <i class="ph-fill ph-check-square icon-checkbox text-2xl"></i>
-                                </div>
-                                <label for="gucci" class="brand-name capitalize pl-2 cursor-pointer">gucci</label>
-                            </div>
-                            <div class="text-secondary2 number">12</div>
-                        </div>
-                    </div>
-                </div>
+                <h3>Why choose this?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi
+                    enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                <span class="number">01</span>
             </div>
-            <div class="list-product-block style-grid lg:w-3/4 md:w-2/3 w-full md:pl-3">
-                <div class="filter-heading flex items-center justify-between gap-5 flex-wrap">
-                    <div class="left flex has-line items-center flex-wrap gap-5">
-                        <div class="choose-layout menu-tab flex items-center gap-2">
-                            <div class="item tab-item three-col p-2 border border-line rounded flex items-center justify-center cursor-pointer active">
-                                <div class="flex items-center gap-0.5">
-                                    <span class="w-[3px] h-4 bg-secondary2 rounded-sm"></span>
-                                    <span class="w-[3px] h-4 bg-secondary2 rounded-sm"></span>
-                                    <span class="w-[3px] h-4 bg-secondary2 rounded-sm"></span>
-                                </div>
-                            </div>
-                            <a href="shop-sidebar-list.html" class="item row w-8 h-8 border border-line rounded flex items-center justify-center cursor-pointer">
-                                <div class="flex flex-col items-center gap-0.5">
-                                    <span class="w-4 h-[3px] bg-secondary2 rounded-sm"></span>
-                                    <span class="w-4 h-[3px] bg-secondary2 rounded-sm"></span>
-                                    <span class="w-4 h-[3px] bg-secondary2 rounded-sm"></span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="check-sale flex items-center gap-2 cursor-pointer">
-                            <input type="checkbox" name="filterSale" id="filter-sale" class="border-line" />
-                            <label for="filter-sale" class="cation1 cursor-pointer">Show only products on sale</label>
-                        </div>
-                    </div>
-                    <div class="sort-product right flex items-center gap-3">
-                        <label for="select-filter" class="caption1 capitalize">Sort by</label>
-                        <div class="select-block relative">
-                            <select id="select-filter" name="select-filter" class="caption1 py-2 pl-3 md:pr-20 pr-10 rounded-lg border border-line">
-                                <option value="Sorting">Sorting</option>
-                                <option value="soldQuantityHighToLow">Best Selling</option>
-                                <option value="discountHighToLow">Best Discount</option>
-                                <option value="priceHighToLow">Price High To Low</option>
-                                <option value="priceLowToHigh">Price Low To High</option>
-                            </select>
-                            <i class="ph ph-caret-down absolute top-1/2 -translate-y-1/2 md:right-4 right-2"></i>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="image">
+                <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
                 </div>
-
-                <div class="list-filtered flex items-center gap-3 flex-wrap">
-
-                    <div class="container">
-                        {{-- <h2>{{ $product->name }}</h2>
-                        <p>{{ $product->description }}</p>
-                        <p>Price: ${{ $product->price }}</p> --}}
-
-                        <h4>Submit a Review:</h4>
-                        <form action="" method="POST">
-                            @csrf
-                            {{-- <input type="hidden" name="product_id" value="{{ $product->id }}"> --}}
-                            <div class="form-group">
-                                <label for="rating">Rating:</label>
-                                <div class="star-rating">
-                                    <input type="radio" id="star-5" name="rating" value="5"><label for="star-5" class="star">&#9733;</label>
-                                    <input type="radio" id="star-4" name="rating" value="4"><label for="star-4" class="star">&#9733;</label>
-                                    <input type="radio" id="star-3" name="rating" value="3"><label for="star-3" class="star">&#9733;</label>
-                                    <input type="radio" id="star-2" name="rating" value="2"><label for="star-2" class="star">&#9733;</label>
-                                    <input type="radio" id="star-1" name="rating" value="1"><label for="star-1" class="star">&#9733;</label>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="review">Review:</label>
-                                <textarea name="review" id="review" class="form-control"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit Review</button>
-                        </form>
-
-                        <h4>Reviews:</h4>
-                        <div id="reviews">
-                            {{-- @foreach ($product->reviews as $review)
-                            <div class="review">
-                                <strong>{{ $review->user->name }}</strong> - {{ $review->rating }} Stars
-                            <p>{{ $review->review }}</p>
-                        </div>
-                        @endforeach --}}
-                    </div>
-                </div>
+                <h3>Who can take it</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+                    elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi
+                    enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                <span class="number">02</span>
             </div>
 
             <div class="list-product hide-product-sold grid lg:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7" data-item="9"></div>
 
             <div class="list-pagination w-full flex items-center gap-4 mt-10"></div>
         </div>
+    </section>
+</div>
+<!--  about mydopa end-->
+
+<!-- feature start -->
+<div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="list-text">
+        <ul>
+            <li>
+                <img src="{{ asset('website/assets/images/product-shop/icons-01.svg')}}" alt="icon">
+                <h2>Natural source <br> of L-dopa</h2>
+            </li>
+            <li>
+                <img src="{{ asset('website/assets/images/product-shop/icons-02.svg')}}" alt="icon">
+                <h2>Controls tremors and <br> improves motor function</h2>
+            </li>
+            <li>
+                <img src="{{ asset('website/assets/images/product-shop/icons-03.svg')}}" alt="icon">
+                <h2>Arrests degeneration <br> of brain cells</h2>
+            </li>
+            <li>
+                <img src="{{ asset('website/assets/images/product-shop/icons-04.svg')}}" alt="icon">
+                <h2>Supports cognitives <br> and gut health</h2>
+            </li>
+        </ul>
     </div>
 </div>
-</div>
+<!-- feature end -->
+
 @endsection
-@push('scripts')
-  <script>
-        $(document).ready(function () {
-            // Handle the review submission
-            $("form").submit(function (event) {
-                var rating = $("input[name='rating']:checked").val();
-                if (rating == undefined) {
-                    alert("Please select a rating before submitting!");
-                    event.preventDefault();
-                }
-            });
-        });
-    </script>
-@endpush
