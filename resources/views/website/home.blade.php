@@ -278,8 +278,7 @@
 
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"
-    style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}')">
         <div class="list-text">
             <ul>
                 <li>
@@ -574,13 +573,12 @@
                                                         <i class='bx bx-star star'></i>
                                                     </div>
                                                 </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                                <h4 class="author_name"><b>Anitha R., Caregiver, Thrissur</b></h4>
+                                                <h3 class="review_overview">MYDOPA gave my father a second chance at life.</h3>
+                                                <p class="review_description">My father was diagnosed with Parkinson’s five years ago. We tried many
+                                                    treatments, but it was only after starting MYDOPA along with
+                                                    Panchakarma that we saw real improvement. His tremors reduced, and he
+                                                    started walking with confidence again.</p>
                                             </div>
                                             <div class="single_review">
                                                 <div class="rating-box">
@@ -592,13 +590,12 @@
                                                         <i class='bx bx-star star'></i>
                                                     </div>
                                                 </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                                <h4 class="author_name"><b>Dr. Anil Kumar, Neurologist, Bengaluru</b></h4>
+                                                <h3 class="review_overview">The most effective natural supplement we’ve used so far.</h3>
+                                                <p class="review_description">As a neurologist who appreciates integrative medicine, I’ve recommended
+                                                    MYDOPA to several patients. It's one of the few formulations that
+                                                    consistently shows positive outcomes—especially when combined with
+                                                    therapies like physiotherapy and speech rehab.</p>
                                             </div>
                                             <div class="single_review">
                                                 <div class="rating-box">
@@ -610,13 +607,44 @@
                                                         <i class='bx bx-star star'></i>
                                                     </div>
                                                 </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                                <h4 class="author_name"><b>Joseph Mathew, Patient, Kottayam </b></h4>
+                                                <h3 class="review_overview">It brought back my voice, my control, and my hope.</h3>
+                                                <p class="review_description">Parkinson’s had affected my speech and movement badly. After 3 months
+                                                    of using MYDOPA with regular therapy, I regained my voice clarity and
+                                                    mobility. I feel like myself again.</p>
+                                            </div>
+                                            <div class="single_review">
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <h4 class="author_name"> <b>Meera D., Caregiver, Palakkad</b> </h4>
+                                                <h3 class="review_overview">We saw results within a month.</h3>
+                                                <p class="review_description">My husband had difficulty with stiffness and balance. After taking MYDOPA
+                                                    capsules for just a few weeks, there was a noticeable improvement. The
+                                                    best part—it’s all-natural, with no side effects.</p>
+                                            </div>
+                                            <div class="single_review">
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <h4 class="author_name"> <b>Dr. Neethu S. Jith, Medical Superintendent, VIAMS </b></h4>
+                                                <h3 class="review_overview">A genuine Ayurvedic solution for Parkinson’s.</h3>
+                                                <p class="review_description">What impressed me most was the transparency and care at VIAMS.
+                                                    MYDOPA is not just a product, it’s part of a well-thought-out treatment
+                                                    philosophy. I’ve seen it help many patients regain functionality and
+                                                    dignity.</p>
                                             </div>
 
                                         </div>
@@ -672,15 +700,13 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading accrodion-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1"
-                                            aria-expanded="true">Who should use Parkisnsons Balance?</a>
+                                            aria-expanded="true">What is MYDOPA?</a>
                                     </div>
                                     <div id="collapse-1" class="panel-collapse collapse in">
                                         <div class="panel-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-                                                minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-                                                velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
-                                                duis dolore te feugait nulla facilisi.
-                                                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+                                            <p>MYDOPA is a unique Ayurvedic formulation developed after 12 years of research to support
+                                                individuals with Parkinson’s disease and other neurodegenerative disorders. It is available in
+                                                granule sachets (1500 mg) and capsules (500 mg) for easy and flexible use.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -688,12 +714,13 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-2">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-2">How does MYDOPA work?</a>
                                     </div>
                                     <div id="collapse-2" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>You can place an order easily through our mobile app.
-                                                Just download the app, select your service, and schedule a pickup.</p>
+                                            <p>MYDOPA is designed to help balance dopamine levels naturally, improve motor
+                                                coordination, reduce tremors, and support overall brain and nerve function. It works by
+                                                combining potent Ayurvedic herbs traditionally used for neurological health. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -701,26 +728,13 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-3">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-3">Is MYDOPA a cure for Parkinson’s disease?</a>
                                     </div>
                                     <div id="collapse-3" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Flat 50% off on first order when you place it through our
-                                                app.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-4">Who should use Parkisnsons Balance?</a>
-                                    </div>
-                                    <div id="collapse-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Yes, we offer secure online payment options through our app for your
-                                                convenience.
-                                                You can pay using credit/debit cards, UPI, or other digital wallets.
+                                            <p>No. Parkinson’s disease currently has no known cure. MYDOPA is not a cure, but it can
+                                                significantly improve quality of life and reduce symptoms when used as part of a
+                                                comprehensive treatment protocol. 
                                             </p>
                                         </div>
                                     </div>
@@ -729,14 +743,19 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-5">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-4"> How should I take MYDOPA?</a>
                                     </div>
-                                    <div id="collapse-5" class="panel-collapse collapse">
+                                    <div id="collapse-4" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Turnaround times depend on the service selected.
-                                                Typically, ironing takes minimum 4 hours, wash
-                                                and fold orders are completed within 24-48 hours,
-                                                while dry cleaning may take up to 72 hours.</p>
+                                            <p>
+                                                <ul>
+                                                    <li>Granules (1500 mg sachet): Mix with warm water or milk and consume as directed by
+                                                    your physician. </li>
+                                                    <li>Capsules (500 mg): Swallow with warm water, typically taken 2-3 times daily or as
+                                                    advised.</li>
+                                                </ul>
+                                                <p>We strongly recommend using MYDOPA under medical supervision, especially as part of our integrated care model. </p>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -744,13 +763,32 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-6">Who should use Parkisnsons Balance?
+                                            href="#collapse-5">Who can benefit from MYDOPA?</a>
+                                    </div>
+                                    <div id="collapse-5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>MYDOPA is suitable for patients diagnosed with:
+                                                <ul>
+                                                    <li>Parkinson’s disease</li>
+                                                    <li>Parkinsonism </li>
+                                                    <li>Other neurodegenerative conditions with tremors, stiƯness, or motor deficits</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-6">Is MYDOPA safe? Are there side effects?
                                         </a>
                                     </div>
                                     <div id="collapse-6" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Yes, we specialize in caring for delicate fabrics
-                                                and specialty garments. Rest assured, we handle them with extra care.
+                                            <p>MYDOPA is formulated with 100% natural Ayurvedic ingredients and is generally well tolerated.
+                                                However, we advise consulting your healthcare provider before starting, especially if you're on
+                                                allopathic medication. 
                                             </p>
                                         </div>
                                     </div>
@@ -759,12 +797,13 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-7">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-7">Can I take MYDOPA along with other medications? 
+                                            </a>
                                     </div>
                                     <div id="collapse-7" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>We use premium, eco-friendly detergents and cleaning agents
-                                                that are gentle on fabrics and safe for the environment.</p>
+                                            <p>Yes, MYDOPA can be taken alongside standard Parkinson’s medications. However, it's
+                                                important to consult with your doctor or an Ayurvedic specialist to adjust dosages if necessary. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -772,12 +811,12 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-8">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-8">Where can I buy MYDOPA?</a>
                                     </div>
                                     <div id="collapse-8" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Yes, we provide contactless pickup and delivery for your safety and
-                                                convenience. </p>
+                                            <p>MYDOPA is available on <a href="www.viams.in">www.viams.in</a>&<a href="https://www.amazon.in/"> Amazon India</a> and through our authorized treatment
+                                            centers. For bulk or clinic orders, please contact us directly. </p>
                                         </div>
                                     </div>
                                 </div>
@@ -785,13 +824,23 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-9">Who should use Parkisnsons Balance?
+                                            href="#collapse-9">Can MYDOPA be used without Panchakarma or other therapies? 
+
                                         </a>
                                     </div>
                                     <div id="collapse-9" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>You earn reward points with every order.
-                                                These points can be redeemed for discounts on future services.</p>
+                                            <p>While MYDOPA alone can oƯer benefits, maximum results are seen when it is combined with
+                                            our integrated treatment protocol, which includes:
+                                            <ul>
+                                                <li>Ayurvedic Panchakarma
+                                                <li>Physiotherapy</li>
+                                                <li> Speech Therapy (ASLP)</li>
+                                                <li>Yoga</li>
+                                                <li>Psychological Counseling</li>
+                                                <li>Diet therapy </li>
+                                            </ul>
+                                        </p>
                                         </div>
                                     </div>
                                 </div>
@@ -799,14 +848,41 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-                                            href="#collapse-10">Who should use Parkisnsons Balance?</a>
+                                            href="#collapse-10">How long does it take to see results? </a>
                                     </div>
                                     <div id="collapse-10" class="panel-collapse collapse">
                                         <div class="panel-body">
-                                            <p>Your satisfaction is our priority. Please reach out to our customer
-                                                support team via the app or call us directly, and we’ll resolve the
-                                                issue promptly.</p>
+                                            <p>Improvements vary by individual. Some users report noticeable changes within 2–4 weeks,
+                                                while others may take 2–3 months for optimal results. Consistency and adherence to the full
+                                                treatment plan are key.
                                             </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-11">Is MYDOPA suitable for international users? 
+                                        </a>
+                                    </div>
+                                    <div id="collapse-11" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Yes, we can ship internationally. Please contact us for shipping charges and delivery timeframes outside India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                            href="#collapse-12">Can I speak to a specialist before purchasing? 
+                                        </a>
+                                    </div>
+                                    <div id="collapse-12" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <p>Absolutely. You can schedule a consultation with our expert team of Ayurvedic doctors and
+                                            therapists. Visit the Contact Us page or call our helpline.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -822,9 +898,7 @@
 
     <!-- ===============================faq sec end================================ -->
 
-
-    <!-- =============================================== -->
-
+   
 </div>
 
 <script>

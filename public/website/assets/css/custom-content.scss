@@ -1,0 +1,383 @@
+//=================Home page=================
+.faqSec{
+    ul{
+        li{
+            list-style:disc;
+            color: #ffff;
+            margin-left:14px;
+        }
+    }
+    p{
+        color: #ffff;
+    }
+}
+
+//=================Product page=================
+//================= tab section=================
+.tabs {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1340px;
+  margin: 30px auto;
+  border-top: 2px solid #ccc;
+
+  .tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+    overflow-x: auto;
+
+    .tab {
+      background: none;
+      border: none;
+      padding: 10px 35px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #555;
+      border-bottom: 3px solid transparent;
+      border-right: 1px solid #ccc;
+      white-space: nowrap;
+      font-size: 15px;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &.active {
+        color: #795ba6;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+    padding: 20px 40px;
+    border-top: none;
+
+    &.active {
+      display: block;
+    }
+    p {
+      font-weight: 400;
+      color: #5f5d5d;
+      font-size: 15px;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      th, td {
+        padding: 10px;
+        text-align: left;
+        color: #555;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      th {
+        font-weight: 700;
+        color: #555;
+      }
+    }
+  }
+
+  .tb-2{
+    ul{
+        li{
+            list-style: disc;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 2;
+            color: #555;
+        }
+    }
+  }
+
+  .tb-3{
+    .accordion {
+        max-width: 1320px;
+      }
+      .accordion-item {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        background: #fff;
+      }
+      .accordion-header {
+        width: 100%;
+        padding: 18px 25px;
+        font-size: 15px;
+        font-weight: 600;
+        background: #fff;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 700;
+        color: #555;
+        border-radius: 12px;
+        transition:  0.3s;
+      } 
+      .accordion-header:hover {
+        background: #f5f5f5;
+      }
+      .accordion-header .arrow {
+        transition: transform 0.3s ease;
+      }
+      .accordion-content {
+        padding: 0 20px 20px;
+        display: none;
+        animation: fadeIn 0.3s ease-in-out;
+        ul{
+            li{
+                list-style:decimal ;
+                font-size: 15px;
+            }
+        }
+      }
+      .accordion-content ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .accordion-content li {
+        margin-bottom: 10px;
+        color: #555;
+        font-weight: 400;
+      }  
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }      
+  }
+
+  .tb-4{
+    ul{
+        li{
+            list-style: decimal;
+        }
+    }
+  }
+
+  .tb-5{
+    font-size: 15px;
+  }
+
+
+  // Responsive styles
+  @media (max-width: 1252px) {
+    .tab-buttons{
+        .tab{
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+    }
+    .tab-content{
+        p{
+            font-size: 14px;
+        }
+        table{
+            th, td{
+                font-size: 14px;
+            }
+        }
+    }
+
+ }
+
+  @media (max-width: 1041px){
+    .tab-buttons {
+      justify-content: flex-start;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+  
+      .tab {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .tab-buttons {
+      flex-direction: column;
+      align-items: stretch;
+      border-bottom: none;
+
+      .tab {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 15px;
+        border-bottom: 1px solid #ddd;
+        border-right: none;
+        background-color: #f9f9f9;
+
+        &.active {
+          background-color: #eae6f5;
+          color: #795ba6;
+        }
+      }
+    }
+
+    .tab-content {
+      display: none;
+      border: 1px solid #eee;
+      background: #fff;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+
+      &.active {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+      }
+
+      table {
+        width: 100%;
+        font-size: 14px;
+        overflow-x: auto;
+        // display: block;
+
+        th, td {
+          white-space: nowrap;
+          border: 1px solid #ccc;
+        }
+      }
+    }
+
+    .tb-2{
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+      }
+
+    .tb-5{
+    font-size: 14px;
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+//================= tab section end ================
+//================= Product page end ===============
+
+ 
+//================= About page=====================
+
+  .about {
+    background: #f9f9f9;
+    padding: 3rem 0;
+  
+    .container {
+        background:#fff;
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 40px;
+    }
+  
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+  
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+  
+        &.full {
+          flex-direction: row;
+        }
+  
+        &.reverse {
+          flex-direction: row-reverse;
+        }
+  
+        @media (max-width: 768px) {
+          flex-direction: column !important;
+          .image {
+            height: 220px;
+          }
+        }
+
+        .about-head{
+            .heading-1{
+                color: #4b2e83;
+                text-align: justify;
+                font-weight: 600;
+                justify-content: center;
+            }
+            .head-text-1{
+                font-size: 16px;
+                padding-top: 20px;
+                text-align: justify;
+            }
+        }
+  
+          h2, h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #474748;
+            margin-bottom: 1rem;
+          }
+  
+          p {
+            font-size: 16px;
+            padding-top: 10px;
+            text-align: justify;
+          }
+
+          .heading-2{
+            font-size: 30px;
+          }
+  
+          ul {
+            list-style: none;
+            padding-left: 0;
+      
+            li {
+              position: relative;
+              padding-left: 25px;
+              margin-top: 20px;
+              font-size: 16px;
+              font-weight: 500;
+              color: #5f5d5d;
+      
+              &::before {
+                content: '✔';
+                position: absolute;
+                left: 0;
+                color: #4b2e83;
+              }
+            }
+          }
+        }
+  
+        .image {
+          flex: 1;
+          height: 300px;
+          border-radius: 1rem;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+         
+        }
+      }
+    }
+  
+.about{
+    .text {
+        @media (max-width: 768px) {
+          width: 100%;
+          }
+        }
+}
+//================= About page end=====================
