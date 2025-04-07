@@ -24,7 +24,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
+    <style>
+.card-bg {
+    background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* or whatever height you need */
+}
 
+@media (max-width: 768px) {
+    .card-bg {
+        background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');
+    }
+}
+</style>
 
 </head>
 

@@ -12,7 +12,7 @@
                     <div class="swiper-slide">
                         <div class="slider-item h-full w-full relative overflow-hidden">
                             <div class="container-fluid w-full h-full flex ">
-                                <div class="text-content w-2/3">
+                                <div class="text-content  w-2/3">
 
                                     <div class="text-display md:mt-5 mt-2 mt-70">Herbal health
                                         supplement for
@@ -21,8 +21,8 @@
 
                                 </div>
                                 <div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
-                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-desk" />
-                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1-mob.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-mob" />
+                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover  only-sm-desk" />
+                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1-mob.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-sm-mob" />
                                 </div>
                             </div>
                         </div>
@@ -67,6 +67,7 @@ Now</a>
             </div>
         </div>
     </div>
+
 
 
     <!-- ====================== wellbeing sec starts =============================== -->
@@ -236,7 +237,8 @@ Now</a>
     </div>
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-desk" style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-desk"
+        style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -258,7 +260,8 @@ Now</a>
             </ul>
         </div>
     </div>
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob" style="background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob"
+        style="background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -281,6 +284,7 @@ Now</a>
         </div>
     </div>
     <!-- feature end -->
+
 
 
 
