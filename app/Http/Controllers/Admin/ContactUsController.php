@@ -30,13 +30,13 @@ class ContactUsController extends Controller
             ];
             $teams = $this->contactUsService->getAllContactuses();
             if ($request->ajax()) {
-              
-                
+
+
                 return DataTables::of($teams)
-                    ->addIndexColumn() 
-                  
+                    ->addIndexColumn()
+
                     ->addColumn('action', function ($row) {
-                       
+
                         return '
                                 <form action="'.route('contactuses.destroy', $row->id).'" method="POST" style="display:inline;">
                                     '.csrf_field().'
@@ -63,20 +63,7 @@ class ContactUsController extends Controller
      */
     public function store(ContactUsRequest $request)
     {
-        DB::beginTransaction();
-        try {
-            $data = $request->validated();
 
-            $this->contactUsService->createContact($data);
-
-            DB::commit();
-            return redirect()->back()->with('success', 'Your message has been sent successfully!');
-
-        } catch (\Exception $e) {
-            DB::rollBack();
-            dd($e->getMessage());
-            return redirect()->back()->withErrors('Error creating Message sending. Please try again.');
-        }
     }
 
     /**
@@ -111,7 +98,7 @@ class ContactUsController extends Controller
         DB::beginTransaction();
         try {
             $contactUs = ContactUs::findOrFail($id);
-            
+
             $this->contactUsService->deleteContact($contactUs->id);
             DB::commit();
             return redirect()->route('contactuses.index')->with('success', 'Contact Us deleted successfully!');

@@ -1,41 +1,11 @@
 @extends('website.layouts.app')
 
-@section('title', 'Shop Page')
+@section('title', 'Product')
 
-        .star-rating label {
-            font-size: 30px;
-            color: #ddd;
-            cursor: pointer;
-        }
-
-        .star-rating input:checked ~ label {
-            color: gold;
-        }
-
-        .star-rating label:hover,
-        .star-rating label:hover ~ label {
-            color: gold;
-        }
-
-        .review {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        .review strong {
-            font-size: 16px;
-        }
-
-        .star {
-            font-size: 20px;
-            color: gold;
-        }
-    </style>
 @section('content')
 
 <!-- shop-banner start -->
-<div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/shop-banner.jpg') }}');">
+<div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" style="background-image: url('{{ asset('website/assets/images/product-shop/shop-banner.jpg') }}');">
     <div class="container w-full h-full flex items-center">
         <div class="text-content sm:w-1/2 w-2/3">
             <div class="text-display md:mt-5 mt-2">Herbal health supplement for parkinson’s disease</div>
@@ -114,39 +84,39 @@
 
 
 <!-- benefits starts -->
-<div class="benefit-block md:py-20 py-10" >
-        <div class="container">
-            <div class="list-benefit grid items-start md:grid-cols-3 grid-cols-1 xl:gap-[160px] lg:gap-20 gap-10 gap-y-6">
-                <div class="benefit-item flex flex-col items-center justify-center">
-                    <div class="icon-wrapper">
-                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
-                    </div>
-                    <div class="body1   text-center mt-5">Standardized herbal
-                        extracts for precise
-                        dosage</div>
-
+<div class="benefit-block md:py-20 py-10">
+    <div class="container">
+        <div class="list-benefit grid items-start md:grid-cols-3 grid-cols-1 xl:gap-[160px] lg:gap-20 gap-10 gap-y-6">
+            <div class="benefit-item flex flex-col items-center justify-center">
+                <div class="icon-wrapper">
+                    <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
                 </div>
-                <div class="benefit-item flex flex-col items-center justify-center">
-                    <div class="icon-wrapper">
-                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
-                    </div>
-                    <div class="body1   text-center mt-5">Free from synthetic
-                        additives and
-                        preservatives.</div>
+                <div class="body1   text-center mt-5">Standardized herbal
+                    extracts for precise
+                    dosage</div>
 
+            </div>
+            <div class="benefit-item flex flex-col items-center justify-center">
+                <div class="icon-wrapper">
+                    <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
                 </div>
-                <div class="benefit-item flex flex-col items-center justify-center">
-                    <div class="icon-wrapper">
-                        <img src="{{ asset('website/assets/images/avatar/icons-03.svg')}}" alt="">
-                    </div>
-                    <div class="body1  text-center mt-5">100% natural
-                        and plant-based
-                        ingredients.</div>
+                <div class="body1   text-center mt-5">Free from synthetic
+                    additives and
+                    preservatives.</div>
 
+            </div>
+            <div class="benefit-item flex flex-col items-center justify-center">
+                <div class="icon-wrapper">
+                    <img src="{{ asset('website/assets/images/avatar/icons-03.svg')}}" alt="">
                 </div>
+                <div class="body1  text-center mt-5">100% natural
+                    and plant-based
+                    ingredients.</div>
+
             </div>
         </div>
     </div>
+</div>
 <!-- benefits end -->
 
 <!--  about mydopa start-->
@@ -158,7 +128,7 @@
         <div class="cards">
             <div class="card">
                 <div class="image">
-                <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </div>
                 <h3>Why choose this?</h3>
@@ -171,7 +141,7 @@
             </div>
             <div class="card">
                 <div class="image">
-                <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </div>
                 <h3>Who can take it</h3>
@@ -192,7 +162,7 @@
 <!--  about mydopa end-->
 
 <!-- feature start -->
-<div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]"  style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+<div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
     <div class="list-text">
         <ul>
             <li>

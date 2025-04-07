@@ -25,7 +25,6 @@
                                     <th>#</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Title</th>
                                     <th>Message</th>
                                     <th>Action</th>
                                 </tr>

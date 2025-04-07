@@ -28,7 +28,7 @@
 
                                          </li>
                                          <li class="h-full">
-                                             <a href="{{route('website.shop')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
+                                             <a href="{{route('website.product')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
                                                  Product </a>
 
                                          </li>

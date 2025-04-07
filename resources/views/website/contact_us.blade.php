@@ -25,29 +25,48 @@
             <div class="left lg:w-2/3 lg:pr-4">
                 <div class="heading3">Drop Us A Line</div>
                 <div class="body1 text-secondary2 mt-3">Use the form below to get in touch with the sales team</div>
-                <form class="md:mt-6 mt-4">
+                {{-- Success message --}}
+                @if(session('success'))
+                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                    {{ session('success') }}
+                </div>
+                @endif
+
+                {{-- Validation errors --}}
+                @if ($errors->any())
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+                    <ul class="list-disc pl-5">
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+                <form action="{{ route('website.contact.store') }}" method="POST" class="md:mt-6 mt-4">
+                    @csrf
                     <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 gap-y-5">
                         <div class="name">
-                            <input class="border-line px-4 py-3 w-full rounded-lg" id="username" type="text" placeholder="Your Name *" required />
+                            <input name="name" class="border-line px-4 py-3 w-full rounded-lg" type="text" placeholder="Your Name *" required />
                         </div>
                         <div class="email">
-                            <input class="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="email" type="email" placeholder="Your Email *" required />
+                            <input name="email" class="border-line px-4 pt-3 pb-3 w-full rounded-lg" type="email" placeholder="Your Email *" required />
                         </div>
                         <div class="message sm:col-span-2">
-                            <textarea class="border-line px-4 pt-3 pb-3 w-full rounded-lg" id="message" rows="3" placeholder="Your Message *" required></textarea>
+                            <textarea name="message" class="border-line px-4 pt-3 pb-3 w-full rounded-lg" rows="3" placeholder="Your Message *" required></textarea>
                         </div>
                     </div>
                     <div class="block-button md:mt-6 mt-4">
-                        <button class="button-main">Send message</button>
+                        <button type="submit" class="button-main">Send message</button>
                     </div>
                 </form>
+
             </div>
             <div class="right lg:w-1/4 lg:pl-4">
                 <div class="item">
                     <div class="heading4">Our Store</div>
                     <p class="mt-3">Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
-                   <p> <a href="tel:+91 703499 2442" class="mt-3" style="color: #000;">Phone: <span class="whitespace-nowrap">+91 703499 2442</span></a></p>
-                   <p><a href="mailto:info@mydopa.com" class="mt-1"  style="color: #000;">Email: <span class="whitespace-nowrap">info@mydopa.com</span></a></p>
+                    <p> <a href="tel:+91 703499 2442" class="mt-3" style="color: #000;">Phone: <span class="whitespace-nowrap">+91 703499 2442</span></a></p>
+                    <p><a href="mailto:info@mydopa.com" class="mt-1" style="color: #000;">Email: <span class="whitespace-nowrap">info@mydopa.com</span></a></p>
                 </div>
                 <div class="item mt-10">
                     <div class="heading4">Open Hours</div>
