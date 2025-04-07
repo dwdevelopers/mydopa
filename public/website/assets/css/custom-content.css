@@ -260,7 +260,6 @@
 }
 .about .about-section .block .about-head .heading-1 {
   color: #4b2e83;
-  text-align: justify;
   font-weight: 600;
   justify-content: center;
 }
@@ -270,7 +269,8 @@
   text-align: justify;
 }
 .about .about-section .block h2, .about .about-section .block h3 {
-  font-size: 1.8rem;
+  font-size: 30px;
+  line-height: 40px;
   font-weight: 600;
   color: #474748;
   margin-bottom: 1rem;

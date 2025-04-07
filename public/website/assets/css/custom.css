@@ -866,4 +866,17 @@ p {
 }
 .modalVideo .modal-content {
   background-color: #000000;
+}
+
+@media (max-width: 991px) {
+  .res-mt-0 {
+    margin-top: 0 !important;
+  }
+}
+.abt-text {
+  flex: 1.5;
+  font-size: 24px;
+  color: #666;
+  font-weight: bold;
+  position: relative;
 }/*# sourceMappingURL=custom.css.map */
