@@ -87,7 +87,7 @@
                                  </a>
                              </li>
                              <li>
-                                 <a href="{{route('website.shop')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
+                                 <a href="{{route('website.product')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
                              </li>
                              <li>
                                  <a href="{{route('website.contact')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
@@ -103,7 +103,7 @@
      </div>
 
      <!-- Menu bar -->
-   
+
 
      <!-- Marquee -->
      <!-- <div class="banner-top bg-green py-3">
