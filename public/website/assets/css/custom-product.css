@@ -343,9 +343,15 @@
     height: calc(-9.5rem + 100vh);
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1500px) and (max-width: 1920px) {
   .about .card {
-    height: calc(-9.5rem + 80vh);
+    height: calc(-9.5rem + 100vh);
+    padding: 4rem 1.4375rem 5rem 4.625rem;
+  }
+}
+@media (min-width: 1921x) {
+  .about .card {
+    height: calc(-9.5rem + 90vh);
     padding: 10rem 1.4375rem 10rem 4.625rem;
   }
 }
