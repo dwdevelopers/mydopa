@@ -20,7 +20,7 @@
     </div>
 </div>
 </div>
-<div class="about md:pt-20 pt-10">
+<div class="about md:pt-20 pt-10 about-content">
     <div class="about-us-block">
         <div class="container">
             <div class="text flex items-center justify-center">
@@ -62,7 +62,7 @@
                 </div>
                 <div class="benefit-item flex flex-col items-center justify-center">
                     <div class="icon-wrapper">
-                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
+                        <img src="{{ asset('website/assets/images/avatar/icons-02.svg')}}" alt="">
                     </div>
                     <div class="body1   text-center mt-5">Free from synthetic
                         additives and

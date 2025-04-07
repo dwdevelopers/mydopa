@@ -12,7 +12,7 @@
                     <div class="swiper-slide">
                         <div class="slider-item h-full w-full relative overflow-hidden">
                             <div class="container-fluid w-full h-full flex ">
-                                <div class="text-content sm:w-1/2 w-2/3">
+                                <div class="text-content  w-2/3">
 
                                     <div class="text-display md:mt-5 mt-2 mt-70">Herbal health
                                         supplement for
@@ -21,7 +21,8 @@
 
                                 </div>
                                 <div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
-                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover" />
+                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover  only-sm-desk" />
+                                    <img src="{{ asset('website/assets/images/slider/bg-cos1-1-mob.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-sm-mob" />
                                 </div>
                             </div>
                         </div>
@@ -66,48 +67,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="collection-block cosmetic md:pt-20 pt-10">
-    <div class="container">
-        <div class="grid sm:grid-cols-2 md:gap-[30px] gap-[16px]">
-            <div class="left">
-                <a href="shop-breadcrumb1.html" class="collection-item block h-full relative md:rounded-[20px] rounded-xl overflow-hidden cursor-pointer">
-                    <div class="bg-img h-full w-full aspect-square">
-                        <img src="{{ asset('website/assets/images/collection/body.png')}}" alt="body" class="h-full object-cover" />
-                    </div>
-                    <div class="collection-name heading5 text-center sm:bottom-[30px] bottom-4 lg:w-[200px] md:w-auto max-lg:px-5 lg:py-3 py-1.5 bg-white rounded-xl duration-500">
-                        Body</div>
-                </a>
-            </div>
-            <div class="right grid grid-rows-2 md:gap-[30px] gap-[16px]">
-                <div class="top grid grid-cols-2 md:gap-[30px] gap-[16px]">
-                    <a href="shop-breadcrumb1.html" class="collection-item block relative md:rounded-[20px] rounded-xl overflow-hidden cursor-pointer">
-                        <div class="bg-img h-full">
-                            <img src="{{ asset('website/assets/images/collection/skin.png')}}" alt="skin" class="h-full object-cover" />
-                        </div>
-                        <div class="collection-name heading5 text-center sm:bottom-[30px] bottom-4 lg:w-[200px] md:w-auto max-lg:px-5 lg:py-3 py-1.5 bg-white rounded-xl duration-500">
-                            Skin</div>
-                    </a>
-                    <a href="shop-breadcrumb1.html" class="collection-item block relative md:rounded-[20px] rounded-xl overflow-hidden cursor-pointer">
-                        <div class="bg-img h-full">
-                            <img src="{{ asset('website/assets/images/collection/hair.png')}}" alt="hair" class="h-full object-cover" />
-                        </div>
-                        <div class="collection-name heading5 text-center sm:bottom-[30px] bottom-4 lg:w-[200px] md:w-auto max-lg:px-5 lg:py-3 py-1.5 bg-white rounded-xl duration-500">
-                            Hair</div>
-                    </a>
-                </div>
-                <div class="bottom">
-                    <a href="shop-breadcrumb1.html" class="collection-item block relative md:rounded-[20px] rounded-xl overflow-hidden cursor-pointer">
-                        <div class="bg-img h-full">
-                            <img src="{{ asset('website/assets/images/collection/accessories-cos.png')}}" alt="accessories-cos" class="h-full object-cover" />
-                        </div>
-                        <div class="collection-name heading5 text-center sm:bottom-[30px] bottom-4 lg:w-[200px] md:w-auto max-lg:px-5 lg:py-3 py-1.5 bg-white rounded-xl duration-500">
-                            Accessories</div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
+   
 
 
     <!-- ====================== wellbeing sec starts  =============================== -->
@@ -158,7 +118,7 @@
                 </div>
                 <div class="benefit-item flex flex-col items-center justify-center">
                     <div class="icon-wrapper">
-                        <img src="{{ asset('website/assets/images/avatar/icons-01.svg')}}" alt="">
+                        <img src="{{ asset('website/assets/images/avatar/icons-02.svg')}}" alt="">
                     </div>
                     <div class="body1   text-center mt-5">Free from synthetic
                         additives and
@@ -187,7 +147,7 @@
                 <h2>What About <br> MYDOPA?</h2>
             </div>
             <div class="cards">
-                <div class="card">
+                <div class="card" style="background-image: url('{{ asset('website/assets/images/product-shop/flower.svg') }}');">
                     <div class="image">
                         <!-- <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="Doctor"> -->
                         <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -201,9 +161,9 @@
                         ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
                     <span class="number">01</span>
                 </div>
-                <div class="card">
+                <div class="card" style="background-image: url('{{ asset('website/assets/images/product-shop/flower.svg') }}');">
                     <div class="image">
-                    <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                     </div>
                     <h3>Who can take it</h3>
@@ -278,8 +238,31 @@
 
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px]" 
-    style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-desk"
+        style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+        <div class="list-text">
+            <ul>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-01.svg')}}" alt="icon">
+                    <h2>Natural source <br> of L-dopa</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-02.svg')}}" alt="icon">
+                    <h2>Controls tremors and <br> improves motor function</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-03.svg')}}" alt="icon">
+                    <h2>Arrests degeneration <br> of brain cells</h2>
+                </li>
+                <li>
+                    <img src="{{ asset('website/assets/images/product-shop/icons-04.svg')}}" alt="icon">
+                    <h2>Supports cognitives <br> and gut health</h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob"
+        style="background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -303,107 +286,12 @@
     </div>
     <!-- feature end -->
 
-    <!-- ====================== thumbnail sec starts  =============================== -->
-
-    <!-- <div class="why_mydopa thumbnailSec">
-        <div class="container">
-            <div class="inner_block ">
-                <div class="right_sec w-50">
-                    <div class="thumbnail_slider">
-                        <div id="primary_slider">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/1539225/pexels-photo-1539225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/13295150/pexels-photo-13295150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/4275890/pexels-photo-4275890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/3511104/pexels-photo-3511104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/276484/pexels-photo-276484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/2026452/pexels-photo-2026452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="thumbnail_slider">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/1539225/pexels-photo-1539225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/13295150/pexels-photo-13295150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/4275890/pexels-photo-4275890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/3511104/pexels-photo-3511104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/276484/pexels-photo-276484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="https://images.pexels.com/photos/2026452/pexels-photo-2026452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1=1260">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="left_sec w-50">
-                    <div class="left-content-wrapper">
-                        <h1 class="purple_title">Mydopa</h1>
-                        <ul>
-                            <li>Controls tremors and improves motor function.</li>
-                            <li>For a healthy and active life with Parkinson’s.</li>
-                            <li>A natural alternative to artificial dopaminergic medicines</li>
-                            <li>Natural Source of L-Dopa.</li>
-                            <li>Arrests degeneration of Brain cells.</li>
-                            <li>Good Aphrodisiac</li>
-                            <li>Supports cognitive health and gut health</li>
-                        </ul>
-
-                        <a href="" class="btn btn-primary">Read More</a>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div> -->
-
-    <!-- ========================thumbnail sec end============================= -->
+    
 
 
     <!-- ===============================Review sec start================================ -->
 
-   <!-- ===============================Review sec start================================ -->
-
-   <div class="reviewsec">
+    <div class="reviewsec">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
 
@@ -652,9 +540,6 @@
         </div>
     </div>
 
-
-    <!-- ===============================Review sec end================================ -->
-
     <!-- ===============================Review sec end================================ -->
 
 
@@ -665,8 +550,7 @@
             <h2 class="mainTitle">FAQ's</h2>
 
             <div class="faq-inner_block ">
-                <div class="row">
-                    <div class="col-12">
+             
                         <div class="faq-one__right fadein">
                             <div class="panel-group faq-accordion theme-accordion-s1 faq-one-accrodion" id="accordion">
                                 <div class="panel panel-default">
@@ -813,8 +697,7 @@
 
                             </div>
                         </div>
-                    </div>
-                </div>
+                  
 
             </div>
         </div>
