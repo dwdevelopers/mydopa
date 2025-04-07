@@ -79,18 +79,18 @@
                      <div class="list-nav mt-6">
                          <ul>
                              <li>
-                                 <a href="index.html" class="text-xl font-semibold flex items-center justify-between">Home </a>
+                                 <a href="{{route('website.home')}}" class="text-xl font-semibold flex items-center justify-between">Home </a>
                              </li>
 
                              <li>
-                                 <a href="about.html" class="text-xl font-semibold flex items-center justify-between mt-5">About Us
+                                 <a href="{{route('website.about')}}" class="text-xl font-semibold flex items-center justify-between mt-5">About Us
                                  </a>
                              </li>
                              <li>
-                                 <a href="product.html" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
+                                 <a href="{{route('website.shop')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
                              </li>
                              <li>
-                                 <a href="contact.html" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
+                                 <a href="{{route('website.contact')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
                                  </a>
                              </li>
 
@@ -103,29 +103,7 @@
      </div>
 
      <!-- Menu bar -->
-     <div class="menu_bar fixed bg-white bottom-0 left-0 w-full h-[70px] sm:hidden z-[101]">
-         <div class="menu_bar-inner grid grid-cols-4 items-center h-full">
-             <a href="index.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-house text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Home</span>
-             </a>
-             <a href="shop-filter-canvas.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-list text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Category</span>
-             </a>
-             <a href="search-result.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <span class="ph-bold ph-magnifying-glass text-2xl block"></span>
-                 <span class="menu_bar-title caption2 font-semibold">Search</span>
-             </a>
-             <a href="cart.html" class="menu_bar-link flex flex-col items-center gap-1">
-                 <div class="cart-icon relative">
-                     <span class="ph-bold ph-handbag text-2xl block"></span>
-                     <span class="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full"></span>
-                 </div>
-                 <span class="menu_bar-title caption2 font-semibold">Cart</span>
-             </a>
-         </div>
-     </div>
+   
 
      <!-- Marquee -->
      <!-- <div class="banner-top bg-green py-3">
