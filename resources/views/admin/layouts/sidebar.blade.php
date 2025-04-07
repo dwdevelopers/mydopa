@@ -90,7 +90,7 @@
                     </ul>
                 </div>
             </li>
-              <li class="side-nav-item">
+            <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span class="badge bg-warning float-end">New</span>
@@ -108,7 +108,22 @@
                     </ul>
                 </div>
             </li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#questionsLayout" aria-expanded="false" aria-controls="questionsLayout" class="side-nav-link">
+                    <i class="ri-layout-line"></i>
+                    <span class="badge bg-warning float-end">New</span>
+                    <span> Questions </span>
+                </a>
+                <div class="collapse" id="questionsLayout">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('questions.index')}}">List</a>
+                        </li>
 
+
+                    </ul>
+                </div>
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

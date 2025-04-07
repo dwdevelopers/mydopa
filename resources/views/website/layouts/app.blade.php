@@ -15,16 +15,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="{{ asset('website/assets/css/themify-icons.css')}}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css" rel="stylesheet">
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom-product.css')}}?v={{ time() }}" />
     <!-- boxicons-icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
 
 
@@ -47,7 +45,7 @@
 
 
 
-    <div class="modal fade modal_review" id="reviewModal" tabindex="-1" role="dialog">
+    {{-- <div class="modal fade modal_review" id="reviewModal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,14 +99,14 @@
         </div>
     </div>
     <div class="modal fade modal_review" id="questionModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Ask a Question</h4>
                 </div>
                 <div class="modal-body">
-            
+
                     <form action="">
                         <div class="row">
                             <div class="col-lg-6">
@@ -654,7 +652,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     @stack('scripts')
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
@@ -664,82 +662,85 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script>
         AOS.init();
+
     </script>
     <script>
         // Primary slider.
         var primarySlider = new Splide('#primary_slider', {
-            type: 'fade',
-            heightRatio: 0.5,
+            type: 'fade' ,
+            heightRatio: 0.5 ,
             pagination: false,
             arrows: false,
-            cover: true,
-        });
+            cover: true ,
+            });
 
         // Thumbnails slider.
         var thumbnailSlider = new Splide('#thumbnail_slider', {
             rewind: true,
-            fixedWidth: 100,
-            fixedHeight: 64,
-            isNavigation: true,
-            gap: 10,
+             fixedWidth: 100,
+             fixedHeight: 64,
+             isNavigation: true,
+             gap: 10,
             focus: 'center',
             pagination: false,
-            cover: true,
-            breakpoints: {
+             cover: true,
+             breakpoints: {
                 '600': {
                     fixedWidth: 66,
-                    fixedHeight: 40,
-                }
+                     fixedHeight: 40,
+                      }
             }
         }).mount();
 
         // sync the thumbnails slider as a target of primary slider.
         primarySlider.sync(thumbnailSlider).mount();
+
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const mainImg = document.querySelector(".main-img");
-        const thumbnails = document.querySelectorAll(".thumbnail-gallery img");
-        const prevBtn = document.querySelector(".prev");
-        const nextBtn = document.querySelector(".next");
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const mainImg = document.querySelector(".main-img");
+            const thumbnails = document.querySelectorAll(".thumbnail-gallery img");
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
 
-        let currentIndex = 0;
+            let currentIndex = 0;
 
-        // Update main image function
-        function updateMainImage(index) {
-            if (index >= 0 && index < thumbnails.length) {
-                mainImg.src = thumbnails[index].src;
-                currentIndex = index;
+            // Update main image function
+            function updateMainImage(index) {
+                if (index >= 0 && index < thumbnails.length) {
+                    mainImg.src = thumbnails[index].src;
+                    currentIndex = index;
+                }
             }
-        }
 
-        // Click event for thumbnails
-        thumbnails.forEach((thumb, index) => {
-            thumb.addEventListener("click", () => {
-                updateMainImage(index);
+            // Click event for thumbnails
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => {
+                    updateMainImage(index);
+                });
+            });
+
+            // Previous button functionality
+            prevBtn.addEventListener("click", () => {
+                if (currentIndex > 0) {
+                    updateMainImage(currentIndex - 1);
+                } else {
+                    updateMainImage(thumbnails.length - 1); // Loop to last image
+                }
+            });
+
+            // Next button functionality
+            nextBtn.addEventListener("click", () => {
+                if (currentIndex < thumbnails.length - 1) {
+                    updateMainImage(currentIndex + 1);
+                } else {
+                    updateMainImage(0); // Loop to first image
+                }
             });
         });
 
-        // Previous button functionality
-        prevBtn.addEventListener("click", () => {
-            if (currentIndex > 0) {
-                updateMainImage(currentIndex - 1);
-            } else {
-                updateMainImage(thumbnails.length - 1); // Loop to last image
-            }
-        });
-
-        // Next button functionality
-        nextBtn.addEventListener("click", () => {
-            if (currentIndex < thumbnails.length - 1) {
-                updateMainImage(currentIndex + 1);
-            } else {
-                updateMainImage(0); // Loop to first image
-            }
-        });
-    });
-</script>
+    </script>
 
 </body>
 

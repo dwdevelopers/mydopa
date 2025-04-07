@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Services\FAQService;
-
+use App\Services\QuestionService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,11 +12,12 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct(FAQService $faqService)
+
+    public function __construct(FAQService $faqService,QuestionService $questionService)
     {
         // $this->middleware('auth');
         $this->faqService = $faqService;
-
+        $this->questionService = $questionService;
     }
 
     /**
@@ -27,7 +28,8 @@ class HomeController extends Controller
     public function index()
     {
         $faqs = $this->faqService->getAllFaqs();
-        return view('website.home',compact('faqs'));
+        $questions = $this->questionService->getAllQuestions();
+        return view('website.home',compact('faqs','questions'));
     }
     public function about(Request $request)
     {

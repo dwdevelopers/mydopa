@@ -5,11 +5,16 @@ use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\ContactUsController;
-use App\Http\Controllers\ContactUsController as WebsiteContactus;
-
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\QuestionController as AdminQuestion;
+
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContactUsController as WebsiteContactus;
+use App\Http\Controllers\RatingController;
+use App\Http\Controllers\QuestionController;
+
+
 use App\Http\Controllers\Auth\LoginController;
 use App\Models\Category;
 // Route::get('/', function () {
@@ -34,6 +39,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('products', ProductController::class)->parameter('products', 'product');
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('faqs', FAQController::class);
+        Route::resource('questions', AdminQuestion::class);
     });
 
 
@@ -44,7 +50,9 @@ Route::name('website.')->group(function(){
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::post('contact', [WebsiteContactus::class, 'store'])->name('contact.store');
 
-    // Route::get('/service/{slug}', [HomeController::class, 'services'])->name('service');
+    Route::post('/review-rating', [RatingController::class, 'store'])->name('review');
+    Route::post('/ask-question', [QuestionController::class, 'store'])->name('question.store');
+
 });
 Auth::routes();
 
