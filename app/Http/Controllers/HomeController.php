@@ -20,9 +20,9 @@ class HomeController extends Controller
 
     private function getCommonData()
     {
-        $faqs = $this->faqService->getAllFaqs();
+        $faqs = $this->faqService->getAllFaqs()->where('is_active', 1);
         $questions = $this->questionService->getAllQuestions();
-        $ratings = $this->ratingService->getAllRatings();
+        $ratings = $this->ratingService->getAllRatings()->where('status', 1);
 
         $rating_count = $ratings->count();
         $question_count = $questions->count();
