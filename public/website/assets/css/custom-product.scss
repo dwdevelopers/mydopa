@@ -310,12 +310,10 @@
 //     background: #f8f8f8;
 // }
 .about {
-    .mydopa-section {
-        display: flex;
-        align-items: center;
-        padding: 50px;
-        // max-width: 1450px;
-        gap: 40px;
+    padding: 60px 0px;
+
+    @media(max-width:575px) {
+        margin-top: -110px;
     }
 
     .text {
@@ -324,6 +322,8 @@
         color: #666;
         font-weight: bold;
         width: 30%;
+        position: relative;
+        left: 5%;
 
         h2 {
             font-weight: 500;
@@ -332,14 +332,33 @@
     }
 
     .cards {
-        width: 70%;
+        // width: 70%;
         display: flex;
         gap: 20px;
+        width: 150vw;
+        overflow: visible;
+        height: 100vh; // Makes it take full screen height
+        overflow: hidden;
+
+
+        align-items: center;
+        display: flex;
+        scrollbar-color: var(--color-black-100) var(--color-black-100);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+
+    }
+
+    .about-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .card {
         background: #e9e1ef;
-        // background-image: url('/website/assets/images/product-shop/flower.svg');
+        position: relative;
         background-repeat: no-repeat;
         background-position: top-left;
         background-size: 40%;
@@ -349,27 +368,130 @@
         position: relative;
         // max-width: 450px;
         padding-bottom: 50px;
+        flex: 0 0 60vw; // 👈 width per card, can tweak to 100% or fixed px
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        height: calc(-9.5rem + 100vh);
+        justify-content: space-between;
+        margin-top: 7.5rem;
+        position: relative;
+        width: 67.375rem;
+        border-radius: 3rem;
+        padding: 5rem 1.4375rem 5.0625rem 4.625rem;
+
+        .vector-sec {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            img {
+                width: 250px;
+                @media(max-width:991px) {
+                    width: 190px;
+                }
+            }
+        }
+
+        @media(max-width:575px) {
+            flex: 0 0 80vw;
+            height: calc(-9.5rem + 90vh);
+        }
+
+        @media(max-width:480px) {
+            flex: 0 0 100vw;
+            height: calc(-9.5rem + 100vh);
+        }
+
+        @media(min-width:1500px) {
+            height: calc(-9.5rem + 80vh);
+            padding: 10rem 1.4375rem 10rem 4.625rem;
+        }
+
+        &:nth-child(1) {
+            background-color: #fff;
+
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+
+                h2 {
+
+                    font-size: 55px !important;
+                    @media(max-width:767px) {
+                        font-size: 45px !important;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background: #F2EDF3;
+        }
+
+        &:nth-child(3) {
+            background: #EADFEF;
+        }
+
+        &:nth-child(4) {
+            background: #CFC3E2;
+        }
+
+        &:nth-child(5) {
+            background: #C1B8D3;
+        }
+
+        &:nth-child(6) {
+            background: #B8B1C9;
+        }
 
         .image {
             border-radius: 100px;
             overflow: hidden;
-            width: 60%;
+            // width: 60%;
             margin-left: auto;
-
+            height: 210px;
+            position: relative;
+            z-index: 1;
+            @media(max-width:767px) {
+                height: 300px;
+                margin-top:-50px;
+            }
             img {
-                width: 250px;
-                height: 120px;
+                width: 450px;
+                height: 220px;
                 border-radius: 120px;
                 object-fit: cover;
+                @media(min-width:992px) and (max-width:1199px) {
+                    width: 100%;
+                    height: auto;
+                    border-radius:50px;
+                }
+                @media(max-width:991px) {
+                    width: 300px;
+                    height: 160px;
+                }
+                @media(max-width:767px) {
+                    width: 310px;
+                    height: 140px;
+                }
             }
         }
 
         h3 {
-            font-size: 35px;
+            font-size: 55px;
+
             font-weight: 500;
             margin-top: 15px;
             color: #666;
             padding-top: 30px;
+
+                     @media(max-width:991px) {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
         }
 
         p {
@@ -377,6 +499,11 @@
             width: 68%;
             color: #373636;
             font-weight: 500;
+            @media(max-width:991px) {
+                width: 100%;
+                max-width: 100%;
+                font-size: 14px !important;
+            }
         }
 
         .number {
@@ -390,14 +517,31 @@
     }
 
     @media (max-width: 913px) {
-        .mydopa-section {
-            flex-direction: column;
-            text-align: center;
+        // .mydopa-section {
+        //     flex-direction: column;
+        //     text-align: center;
+        // }
+
+        // .cards {
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
+    }
+
+    .about-wrapper {
+        display: flex;
+        align-items: center;
+
+        .left-sec {
+            position: sticky;
+            top: 100px; // or wherever you want it to stick
+            width: 30%;
+            z-index: 2;
         }
 
-        .cards {
-            flex-direction: column;
-            align-items: center;
+        .right-sec {
+            overflow: hidden;
+            position: relative;
         }
     }
 }
@@ -565,6 +709,7 @@
                 img {
                     width: 150px;
                     object-fit: contain;
+
                     @media(max-width:768px) {
                         margin-top: 20px;
                         margin-bottom: -30px;

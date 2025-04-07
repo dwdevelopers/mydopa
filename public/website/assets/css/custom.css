@@ -342,6 +342,11 @@ p {
 .home-page .product-showcase {
   padding-bottom: 60px;
 }
+@media (max-width: 575px) {
+  .home-page .product-showcase {
+    margin-top: -40px;
+  }
+}
 .home-page .feature {
   margin-bottom: 0;
 }
@@ -736,7 +741,7 @@ p {
 }
 
 .about .card p {
-  font-size: 13px !important;
+  font-size: 16px !important;
   max-width: 80%;
 }
 
@@ -832,4 +837,33 @@ p {
 .about-content {
   padding-bottom: 50px;
   padding-top: 60px;
+}
+
+.modalVideo {
+  padding-right: 0px !important;
+}
+@media (min-width: 768px) {
+  .modalVideo .modal-dialog {
+    width: 950px;
+    margin: 30px auto;
+  }
+}
+.modalVideo .modal-body {
+  padding: 0;
+}
+.modalVideo .close {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  font-size: 30px;
+  color: #000;
+  opacity: 1;
+  z-index: 99;
+  cursor: pointer;
+}
+.modalVideo .close:hover {
+  opacity: 0.6;
+}
+.modalVideo .modal-content {
+  background-color: #000000;
 }/*# sourceMappingURL=custom.css.map */

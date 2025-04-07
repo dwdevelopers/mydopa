@@ -422,6 +422,9 @@ p {
 
     .product-showcase {
         padding-bottom: 60px;
+        @media(max-width:575px){
+            margin-top: -40px;
+        }
     }
 
     .feature {
@@ -936,7 +939,7 @@ p {
 }
 
 .about .card p {
-    font-size: 13px !important;
+    font-size: 16px !important;
     max-width: 80%;
 }
 
@@ -1039,4 +1042,35 @@ p {
 .about-content{
     padding-bottom: 50px;
     padding-top: 60px;
+}
+
+
+.modalVideo{
+    padding-right: 0px !important;
+    @media (min-width: 768px) {
+        .modal-dialog {
+            width: 950px;
+            margin: 30px auto;
+        }
+    }
+    .modal-body {
+        padding: 0;
+        
+    }
+    .close {
+        position: absolute;
+        right: 10px;
+        top: 4px;
+        font-size: 30px;
+        color: #000;
+        opacity: 1;
+        z-index: 99;
+              cursor: pointer;
+              &:hover{
+                opacity: .6;
+              }
+    }
+    .modal-content {
+    background-color: #000000;
+    }
 }
