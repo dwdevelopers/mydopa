@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    var tableElement = $('#datatables-categories');
+    var tableElement = $('#datatables-faq');
     if (tableElement.length) {
-        var categoriesDataUrl = tableElement.data('url');
+        var faqsDataUrl = tableElement.data('url');
         var table = tableElement.DataTable({
             pageLength: 6,
             lengthChange: false,
@@ -9,27 +9,22 @@ $(document).ready(function() {
             autoWidth: false,
             processing: true,
             serverSide: true,
-            ajax: categoriesDataUrl,
+            ajax: faqsDataUrl,
             columns: [
                 { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable: false, searchable: false },
-                { data: 'image', name: 'image' },
-                { data: 'name', name: 'name'},
-                { data: 'details', name: 'details'},
+                { data: 'question', name: 'question'},
+                { data: 'answer', name: 'answer'},
+                { data: 'category', name: 'category'},
                 { data: 'status', name: 'status'},
                 { data: 'action', name: 'action'},
             ],
             initComplete: function() {
                 setTimeout(function() {
-                    $('#datatables-categories tbody tr:first').trigger('click');
+                    $('#datatables-faq tbody tr:first').trigger('click');
                 }, 500);
             }
         });
-
-        // Handle row click event
-
-
     } else {
-        console.error("Table with ID 'datatables-stocks' not found.");
+        console.error("Table with ID 'datatables-faq' not found.");
     }
-
 });

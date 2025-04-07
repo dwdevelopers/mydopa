@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\HomeController as AdminHome;
 use App\Http\Controllers\Admin\TestimonialController;
+use App\Http\Controllers\Admin\FAQController;
 use App\Http\Controllers\Admin\ContactUsController;
 
 use App\Http\Controllers\Admin\CategoryController;
@@ -13,23 +14,24 @@ use App\Models\Category;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('login', [\App\Http\Controllers\Auth\LoginController::class, 'showUserLoginForm'])
+Route::get('login', [LoginController::class, 'showUserLoginForm'])
     ->name('login');
-Route::post('login', [\App\Http\Controllers\Auth\LoginController::class, 'userLogin'])->name('login');
+Route::post('login', [LoginController::class, 'userLogin'])->name('login');
 
 // Admin login
-Route::get('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'showAdminLoginForm'])
+Route::get('admin/login', [LoginController::class, 'showAdminLoginForm'])
     ->name('admin.login');
-Route::post('admin/login', [\App\Http\Controllers\Auth\LoginController::class, 'adminLogin'])->name('admin.login');
+Route::post('admin/login', [LoginController::class, 'adminLogin'])->name('admin.login');
 
 
 Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
     ->group(function () {
-        Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');   
+        Route::get('/admin-home', [AdminHome::class, 'index'])->name('admin.home');
         Route::resource('contactuses', ContactUsController::class);
         Route::resource('categories', CategoryController::class)->parameter('categories', 'category');
         Route::resource('products', ProductController::class)->parameter('products', 'product');
         Route::resource('testimonials', TestimonialController::class);
+        Route::resource('faqs', FAQController::class);
     });
 
 

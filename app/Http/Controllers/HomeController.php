@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Services\FAQService;
 
 use Illuminate\Http\Request;
 
@@ -11,9 +12,11 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(FAQService $faqService)
     {
         // $this->middleware('auth');
+        $this->faqService = $faqService;
+
     }
 
     /**
@@ -23,11 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('website.home');
+        $faqs = $this->faqService->getAllFaqs();
+        return view('website.home',compact('faqs'));
     }
     public function about(Request $request)
     {
-       
+
         return view('website.about_us');
     }
     public function shop(Request $request)
