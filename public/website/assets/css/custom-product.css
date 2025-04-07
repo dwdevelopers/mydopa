@@ -252,11 +252,13 @@
   font-size: 20px;
 }
 
-.about .mydopa-section {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  gap: 40px;
+.about {
+  padding: 60px 0px;
+}
+@media (max-width: 575px) {
+  .about {
+    margin-top: -110px;
+  }
 }
 .about .text {
   flex: 1.5;
@@ -264,18 +266,34 @@
   color: #666;
   font-weight: bold;
   width: 30%;
+  position: relative;
+  left: 5%;
 }
 .about .text h2 {
   font-weight: 500;
   font-size: 2.5rem;
 }
 .about .cards {
-  width: 70%;
   display: flex;
   gap: 20px;
+  width: 150vw;
+  overflow: visible;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  scrollbar-color: var(--color-black-100) var(--color-black-100);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about .about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .about .card {
   background: #e9e1ef;
+  position: relative;
   background-repeat: no-repeat;
   background-position: top-left;
   background-size: 40%;
@@ -284,32 +302,146 @@
   text-align: left;
   position: relative;
   padding-bottom: 50px;
+  flex: 0 0 60vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: calc(-9.5rem + 100vh);
+  justify-content: space-between;
+  margin-top: 7.5rem;
+  position: relative;
+  width: 67.375rem;
+  border-radius: 3rem;
+  padding: 5rem 1.4375rem 5.0625rem 4.625rem;
+}
+.about .card .vector-sec {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.about .card .vector-sec img {
+  width: 250px;
+}
+@media (max-width: 991px) {
+  .about .card .vector-sec img {
+    width: 190px;
+  }
+}
+@media (max-width: 575px) {
+  .about .card {
+    flex: 0 0 80vw;
+    height: calc(-9.5rem + 90vh);
+  }
+}
+@media (max-width: 480px) {
+  .about .card {
+    flex: 0 0 100vw;
+    height: calc(-9.5rem + 100vh);
+  }
+}
+@media (min-width: 1500px) {
+  .about .card {
+    height: calc(-9.5rem + 80vh);
+    padding: 10rem 1.4375rem 10rem 4.625rem;
+  }
+}
+.about .card:nth-child(1) {
+  background-color: #fff;
+}
+.about .card:nth-child(1) .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.about .card:nth-child(1) .text h2 {
+  font-size: 55px !important;
+}
+@media (max-width: 767px) {
+  .about .card:nth-child(1) .text h2 {
+    font-size: 45px !important;
+  }
+}
+.about .card:nth-child(2) {
+  background: #F2EDF3;
+}
+.about .card:nth-child(3) {
+  background: #EADFEF;
+}
+.about .card:nth-child(4) {
+  background: #CFC3E2;
+}
+.about .card:nth-child(5) {
+  background: #C1B8D3;
+}
+.about .card:nth-child(6) {
+  background: #B8B1C9;
 }
 .about .card .image {
   border-radius: 100px;
   overflow: hidden;
-  width: 60%;
   margin-left: auto;
+  height: 210px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .about .card .image {
+    height: 300px;
+    margin-top: -50px;
+  }
 }
 .about .card .image img {
-  width: 250px;
-  height: 120px;
+  width: 450px;
+  height: 220px;
   border-radius: 120px;
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about .card .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .about .card .image img {
+    width: 300px;
+    height: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .about .card .image img {
+    width: 310px;
+    height: 140px;
+  }
+}
 .about .card h3 {
-  font-size: 35px;
+  font-size: 55px;
   font-weight: 500;
   margin-top: 15px;
   color: #666;
   padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .about .card h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
 }
 .about .card p {
   font-size: 9px;
   width: 68%;
   color: #373636;
   font-weight: 500;
+}
+@media (max-width: 991px) {
+  .about .card p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px !important;
+  }
 }
 .about .card .number {
   position: absolute;
@@ -319,15 +451,19 @@
   color: #fffbfb;
   font-weight: lighter;
 }
-@media (max-width: 913px) {
-  .about .mydopa-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  .about .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+.about .about-wrapper {
+  display: flex;
+  align-items: center;
+}
+.about .about-wrapper .left-sec {
+  position: sticky;
+  top: 100px;
+  width: 30%;
+  z-index: 2;
+}
+.about .about-wrapper .right-sec {
+  overflow: hidden;
+  position: relative;
 }
 
 .feature {

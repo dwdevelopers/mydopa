@@ -140,44 +140,87 @@ Now</a>
 
     <!-- ========================benefit sec end============================= -->
 
-    <!-- about mydopa start-->
+
+    <!--  about mydopa start-->
     <div class="about">
-        <section class="mydopa-section">
-            <div class="text">
-                <h2>What About <br> MYDOPA?</h2>
-            </div>
-            <div class="cards">
-                <div class="card" style="background-image: url('{{ asset('website/assets/images/product-shop/flower.svg') }}');">
-                    <div class="image">
-                        <!-- <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="Doctor"> -->
-                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/huOVTcPUc_4?si=yRH0DqbR02dAoqyW&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="mydopa-section about-wrapper">
 
+            <div class="right-sec">
+                <div class="horizontal-scroll">
+                    <div class="cards" id="horizontal">
+                        <div class="card">
+                            <div class="text ">
+                                <h2>What About <br> MYDOPA?</h2>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="vector-sec">
+                                <img src="{{ asset('website/assets/images/product-shop/flower.svg')}}" alt="vector img">
+                            </div>
+                            <button class="image" data-toggle="modal" data-target="#video1Modal">
+                                <img src="{{ asset('website/assets/images/videos/video2.gif')}}" alt="Doctor">
+                            </button>
+                            <h3>Why choose this?</h3>
+                            <p>MYDOPA is a unique Ayurvedic formulation developed after 12 years of research to support
+                                individuals with Parkinson’s disease and other neurodegenerative disorders. It is available in
+                                granule sachets (1500 mg) and capsules (500 mg) for easy and flexible use. </p>
+                            <span class="number">01</span>
+                        </div>
+                        <div class="card">
+                            <div class="vector-sec">
+                                <img src="{{ asset('website/assets/images/product-shop/flower.svg')}}" alt="vector img">
+                            </div>
+                            <button class="image" data-toggle="modal" data-target="#video2Modal">
+                                <img src="{{ asset('website/assets/images/videos/video1.gif')}}" alt="Doctor">
+                            </button>
+                            <h3>Who can take it</h3>
+                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism, 
+                                or other neurodegenerative conditions that involve tremors, stiffness, or motor deficits. </p>
+                            <span class="number">02</span>
+                        </div>
+                        <div class="card">
+                            <div class="vector-sec">
+                                <img src="{{ asset('website/assets/images/product-shop/flower.svg')}}" alt="vector img">
+                            </div>
+                            <button class="image" data-toggle="modal" data-target="#video3Modal">
+                                <img src="{{ asset('website/assets/images/videos/video3.gif')}}" alt="Doctor">
+                            </button>
+                            <h3>How to use?</h3>
+                            <p>MYDOPA is available as 1500 mg granules (mix with warm water or milk) and 500 mg capsules (taken with warm water 2–3 times daily). Use under medical supervision, ideally within our integrated care model.</p>
+                            <span class="number">03</span>
+                        </div>
+                        <div class="card">
+                            <div class="vector-sec">
+                                <img src="{{ asset('website/assets/images/product-shop/flower.svg')}}" alt="vector img">
+                            </div>
+                            <button class="image" data-toggle="modal" data-target="#video4Modal">
+                                <img src="{{ asset('website/assets/images/videos/video4.gif')}}" alt="Doctor">
+                            </button>
+                            <h3>How it works?</h3>
+                            <p>MYDOPA is designed to help balance dopamine levels naturally, improve motor
+                                coordination, reduce tremors, and support overall brain and nerve function. It works by
+                                combining potent Ayurvedic herbs traditionally used for neurological health. </p>
+                            <span class="number">04</span>
+                        </div>
+                        <div class="card">
+                            <div class="vector-sec">
+                                <img src="{{ asset('website/assets/images/product-shop/flower.svg')}}" alt="vector img">
+                            </div>
+                            <button class="image" data-toggle="modal" data-target="#video5Modal">
+                                <img src="{{ asset('website/assets/images/videos/video05.gif')}}" alt="Doctor">
+                            </button>
+                            <h3>Who should consult?</h3>
+                            <p>Anyone considering taking MYDOPA, especially those already on standard Parkinson’s
+                                 medications should consult their doctor or an Ayurvedic specialist. This ensures 
+                                 proper dosage adjustments and safe integration with existing treatments. </p>
+                            <span class="number">05</span>
+                        </div>
                     </div>
-                    <h3>Why choose this?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
-                    <span class="number">01</span>
-                </div>
-                <div class="card" style="background-image: url('{{ asset('website/assets/images/product-shop/flower.svg') }}');">
-                    <div class="image">
-                        <iframe class="h-full w-full" src="https://www.youtube.com/embed/XFWoLiOKBt0?si=QdURubTrYAmvDLc0&controls=0&autoplay=1&mute=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    </div>
-                    <h3>Who can take it</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                        elit, sed diam nonummy nibh euismod tincidunt ut
-                        laoreet dolore magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis nostrud exerci tation
-                        ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
-                    <span class="number">02</span>
                 </div>
             </div>
         </section>
     </div>
-    <!-- about mydopa end-->
+    <!--  about mydopa end-->
 
     <div class="product-showcase " style="padding-bottom: 40px;">
         <div class="product-container">
@@ -600,7 +643,6 @@ Now</a>
             updateCount(); // Start animation
         });
     });
-
 </script>
 
 <script>
@@ -612,7 +654,6 @@ Now</a>
     $(document).on('hidden.bs.modal', function() {
         $('body').css('padding-right', '');
     });
-
 </script>
 <script>
     document.querySelectorAll('.tab-item').forEach(tab => {
@@ -626,6 +667,8 @@ Now</a>
             });
         });
     });
-
 </script>
+
+
+
 @endpush

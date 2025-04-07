@@ -24,20 +24,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
-    <style>
-.card-bg {
-    background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* or whatever height you need */
-}
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
-@media (max-width: 768px) {
-    .card-bg {
-        background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');
-    }
-}
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <style>
+        .card-bg {
+            background-image: url('{{ asset(' website/assets/images/product-shop/feature.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            /* or whatever height you need */
+        }
+
+        @media (max-width: 768px) {
+            .card-bg {
+                background-image: url('{{ asset(' website/assets/images/product-shop/feature-mob.jpg') }}');
+            }
+        }
+    </style>
 
 </head>
 
@@ -154,6 +158,7 @@
             </div>
         </div>
     </div>
+
 
     <div class="modal-wishlist-block">
         <div class="modal-wishlist-main py-6">
@@ -666,6 +671,101 @@
             </div>
         </div>
     </div> --}}
+
+
+
+
+
+<!-- =================== model for videos starts================= -->
+
+<div class="modal fade modalVideo" id="video1Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+         <div class="modal-body p-0">
+         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video id="video1" width="100%" controls>
+          <source src="{{ asset('website/assets/images/videos/video1.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade modalVideo" id="video2Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+         <div class="modal-body p-0">
+         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video id="video1" width="100%" controls>
+          <source src="{{ asset('website/assets/images/videos/video2.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade modalVideo" id="video3Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+         <div class="modal-body p-0">
+         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video id="video1" width="100%" controls>
+          <source src="{{ asset('website/assets/images/videos/video03.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade modalVideo" id="video4Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+         <div class="modal-body p-0">
+         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video id="video1" width="100%" controls>
+          <source src="{{ asset('website/assets/images/videos/video4.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade modalVideo" id="video5Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+         <div class="modal-body p-0">
+         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <video id="video1" width="100%" controls>
+          <source src="{{ asset('website/assets/images/videos/video5.mp4') }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- =================== model for videos end================= -->
+
     @stack('scripts')
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
@@ -675,39 +775,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script>
         AOS.init();
-
     </script>
     <script>
         // Primary slider.
         var primarySlider = new Splide('#primary_slider', {
-            type: 'fade' ,
-            heightRatio: 0.5 ,
+            type: 'fade',
+            heightRatio: 0.5,
             pagination: false,
             arrows: false,
-            cover: true ,
-            });
+            cover: true,
+        });
 
         // Thumbnails slider.
         var thumbnailSlider = new Splide('#thumbnail_slider', {
             rewind: true,
-             fixedWidth: 100,
-             fixedHeight: 64,
-             isNavigation: true,
-             gap: 10,
+            fixedWidth: 100,
+            fixedHeight: 64,
+            isNavigation: true,
+            gap: 10,
             focus: 'center',
             pagination: false,
-             cover: true,
-             breakpoints: {
+            cover: true,
+            breakpoints: {
                 '600': {
                     fixedWidth: 66,
-                     fixedHeight: 40,
-                      }
+                    fixedHeight: 40,
+                }
             }
         }).mount();
 
         // sync the thumbnails slider as a target of primary slider.
         primarySlider.sync(thumbnailSlider).mount();
-
     </script>
 
     <script>
@@ -752,8 +850,44 @@
                 }
             });
         });
-
     </script>
+
+
+<script>
+  // Loop through all modal IDs
+  ['video1Modal', 'video2Modal', 'video3Modal', 'video4Modal', 'video5Modal'].forEach(function(modalId) {
+    $('#' + modalId).on('hidden.bs.modal', function () {
+      var video = this.querySelector('video');
+      if (video) {
+        video.pause();
+        video.currentTime = 0; // Optional: reset to beginning
+      }
+    });
+  });
+</script>
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const cards = gsap.utils.toArray("#horizontal .card");
+    const container = document.querySelector("#horizontal");
+
+    // Set xPercent based on screen width
+    const isMobile = window.innerWidth <= 576;
+    const xPercentValue = isMobile ? -100 * (cards.length - 1) : -90 * (cards.length - 1);
+
+    gsap.to(cards, {
+        xPercent: xPercentValue,
+        ease: "none",
+        scrollTrigger: {
+            trigger: container,
+            pin: true,
+            scrub: 1,
+            anticipatePin: 1,
+            end: () => "+=" + container.offsetWidth
+        }
+    });
+</script>
 
 </body>
 
