@@ -29,6 +29,7 @@
   text-transform: none;
   width: 60%;
   color: #7F58A4;
+  padding-top: 30px;
 }
 @media (max-width: 1205px) {
   .shop-banner .text-display {
