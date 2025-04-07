@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
 
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom-product.css')}}?v={{ time() }}" />
+    <link rel="stylesheet" href="{{ asset('website/assets/css/custom-content.css')}}?v={{ time() }}" />
     <!-- boxicons-icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
