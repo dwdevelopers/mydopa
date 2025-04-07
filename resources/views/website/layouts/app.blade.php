@@ -25,19 +25,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="{{ asset('website/assets/js/jquery.min.js')}}"></script>
     <style>
-.card-bg {
-    background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* or whatever height you need */
-}
+        .card-bg {
+            background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            /* or whatever height you need */
+        }
 
-@media (max-width: 768px) {
-    .card-bg {
-        background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');
-    }
-}
-</style>
+        @media (max-width: 768px) {
+            .card-bg {
+                background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');
+            }
+        }
+
+    </style>
 
 </head>
 
@@ -110,8 +112,8 @@
 
             </div>
         </div>
-    </div>
-    <div class="modal fade modal_review" id="questionModal" tabindex="-1" role="dialog">
+    </div> --}}
+    {{-- <div class="modal fade modal_review" id="questionModal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -153,7 +155,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="modal-wishlist-block">
         <div class="modal-wishlist-main py-6">
@@ -665,7 +667,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     @stack('scripts')
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
@@ -680,28 +682,28 @@
     <script>
         // Primary slider.
         var primarySlider = new Splide('#primary_slider', {
-            type: 'fade' ,
-            heightRatio: 0.5 ,
-            pagination: false,
-            arrows: false,
-            cover: true ,
-            });
+            type: 'fade'
+            , heightRatio: 0.5
+            , pagination: false
+            , arrows: false
+            , cover: true
+        , });
 
         // Thumbnails slider.
         var thumbnailSlider = new Splide('#thumbnail_slider', {
-            rewind: true,
-             fixedWidth: 100,
-             fixedHeight: 64,
-             isNavigation: true,
-             gap: 10,
-            focus: 'center',
-            pagination: false,
-             cover: true,
-             breakpoints: {
+            rewind: true
+            , fixedWidth: 100
+            , fixedHeight: 64
+            , isNavigation: true
+            , gap: 10
+            , focus: 'center'
+            , pagination: false
+            , cover: true
+            , breakpoints: {
                 '600': {
-                    fixedWidth: 66,
-                     fixedHeight: 40,
-                      }
+                    fixedWidth: 66
+                    , fixedHeight: 40
+                , }
             }
         }).mount();
 

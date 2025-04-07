@@ -6,18 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class RatingAndReview extends Model
 {
+    protected $table='ratings_and_reviews';
     protected $fillable = [
-        'user_id',
-        'product_id',
-        'rating',
-        'review',
+        'name', 'email', 'phone', 'product_id', 'rating', 'title', 'review', 'status'
     ];
-
-    // Relationship with User
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 
     // Relationship with Product
     public function product()

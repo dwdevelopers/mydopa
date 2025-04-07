@@ -25,6 +25,7 @@
     <!-- App css -->
     {{-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" /> --}}
     <link href="{{asset('theme/dist/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- Icons css -->
     {{-- <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /> --}}

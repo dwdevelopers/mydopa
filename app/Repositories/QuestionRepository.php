@@ -19,7 +19,12 @@ class QuestionRepository implements QuestionRepositoryInterface
 
     public function create(array $data)
     {
+
+        try{
         return Question::create($data);
+    } catch (\Exception $e) {
+        dd($e->getMessage());
+    }
     }
 
     public function update($id, array $data)

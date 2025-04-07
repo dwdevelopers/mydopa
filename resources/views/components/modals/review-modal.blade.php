@@ -39,12 +39,22 @@
                                 </label>
                             </div>
                             <div class="col-lg-12">
+                                <label>Title*
+                                    <input name="title" type="text" class="form-control" required>
+                                </label>
+                            </div>
+                            <div class="col-lg-12">
                                 <label>Write a Review*...
                                     <textarea name="review" rows="5" class="form-control" required></textarea>
                                 </label>
                             </div>
                         </div>
-
+                        <div class="col-lg-12">
+                            {{-- <label>Product --}}
+{{-- changes required here because now we have only one product if its multiple chnage --}}
+                                 <input name="product_id" type="hidden" value="1" class="form-control" >
+                            {{-- </label> --}}
+                        </div>
                         <div class="btn-wrapper mt-3">
                             <button type="submit" class="btn btn-primary btn-submit">Submit</button>
                         </div>

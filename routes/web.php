@@ -8,10 +8,11 @@ use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\QuestionController as AdminQuestion;
+use App\Http\Controllers\Admin\RatingAndReviewController as AdminReview;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactUsController as WebsiteContactus;
-use App\Http\Controllers\RatingController;
+use App\Http\Controllers\ReviewAndRatingController;
 use App\Http\Controllers\QuestionController;
 
 
@@ -40,6 +41,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('testimonials', TestimonialController::class);
         Route::resource('faqs', FAQController::class);
         Route::resource('questions', AdminQuestion::class);
+        Route::resource('reviews', AdminReview::class);
     });
 
 
@@ -50,7 +52,7 @@ Route::name('website.')->group(function(){
     Route::get('/contact-us', [HomeController::class, 'contactUS'])->name('contact');
     Route::post('contact', [WebsiteContactus::class, 'store'])->name('contact.store');
 
-    Route::post('/review-rating', [RatingController::class, 'store'])->name('review');
+    Route::post('/review-rating', [ReviewAndRatingController::class, 'store'])->name('review');
     Route::post('/ask-question', [QuestionController::class, 'store'])->name('question.store');
 
 });

@@ -15,6 +15,9 @@ use App\Repositories\FAQRepository;
 use App\Repositories\FAQRepositoryInterface;
 use App\Repositories\QuestionRepository;
 use App\Repositories\QuestionRepositoryInterface;
+use App\Repositories\RatingRepositoryInterface;
+use App\Repositories\RatingRepository;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,6 +32,8 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(ContactUsRepositoryInterface::class, ContactUsRepository::class);
         $this->app->bind(FAQRepositoryInterface::class, FAQRepository::class);
         $this->app->bind(QuestionRepositoryInterface::class, QuestionRepository::class); // ✅ Added binding
+        $this->app->bind(RatingRepositoryInterface::class, RatingRepository::class);
+
 
     }
 

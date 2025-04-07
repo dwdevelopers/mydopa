@@ -247,10 +247,10 @@
     </div>
     <!-- feature end -->
 
-    
-    <!-- ===============================Review sec start================================ -->
 
-    <div class="reviewsec">
+    <!-- ===============================Review sec start================================ -->
+ @include('website.review-rating')
+    {{-- <div class="reviewsec">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
 
@@ -497,7 +497,7 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
 
     <!-- ===============================Review sec end================================ -->
 
@@ -509,7 +509,7 @@
             <h2 class="mainTitle">FAQ's</h2>
 
             <div class="faq-inner_block ">
-             
+
                         <div class="faq-one__right fadein">
                             <div class="panel-group faq-accordion theme-accordion-s1 faq-one-accrodion" id="accordion">
                                 <div class="panel panel-default">
@@ -656,7 +656,7 @@
 
                             </div>
                         </div>
-                  
+
 
             </div>
         </div>
@@ -665,3 +665,53 @@
     <!-- ===============================faq sec end================================ -->
 
 @endsection
+@push('scripts')
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.question-item .heading').forEach(heading => {
+            heading.addEventListener('click', function() {
+                const questionItem = this.closest('.question-item');
+                const content = questionItem.querySelector('.content');
+                const icon = questionItem.querySelector('i');
+
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+
+                // Toggle icon rotation
+                icon.classList.toggle('rotate-90');
+            });
+        });
+    });
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('rating');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const value = parseInt(this.getAttribute('data-value'));
+
+                // Set rating input
+                ratingInput.value = value;
+
+                // Update star styles
+                stars.forEach(s => {
+                    const starValue = parseInt(s.getAttribute('data-value'));
+                    if (starValue <= value) {
+                        s.classList.remove('bx-star');
+                        s.classList.add('bxs-star'); // solid filled star
+                        s.style.color = '#FFC107'; // yellow/gold
+                    } else {
+                        s.classList.remove('bxs-star');
+                        s.classList.add('bx-star'); // outlined star
+                        s.style.color = ''; // reset color
+                    }
+                });
+            });
+        });
+    });
+
+</script>
+@endpush

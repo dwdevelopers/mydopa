@@ -124,6 +124,22 @@
                     </ul>
                 </div>
             </li>
+              <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#reviewsLayout" aria-expanded="false" aria-controls="reviewsLayout" class="side-nav-link">
+                    <i class="ri-layout-line"></i>
+                    <span class="badge bg-warning float-end">New</span>
+                    <span> Rating & Review </span>
+                </a>
+                <div class="collapse" id="reviewsLayout">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{route('reviews.index')}}">List</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

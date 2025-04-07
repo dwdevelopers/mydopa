@@ -237,8 +237,7 @@ Now</a>
     </div>
 
     <!-- feature start -->
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-desk"
-        style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-desk" style="background-image: url('{{ asset('website/assets/images/product-shop/feature.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -260,8 +259,7 @@ Now</a>
             </ul>
         </div>
     </div>
-    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob"
-        style="background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');">
+    <div class="shop-banner feature lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob" style="background-image: url('{{ asset('website/assets/images/product-shop/feature-mob.jpg') }}');">
         <div class="list-text">
             <ul>
                 <li>
@@ -290,252 +288,7 @@ Now</a>
 
     <!-- ===============================Review sec start================================ -->
 
-    <div class="reviewsec">
-        <div class="container">
-            <h2 class="mainTitle">Customer Reviews</h2>
-
-            <div class="review-inner_block ">
-                <div class=" review_grid all_review">
-                    <div class="rating-box">
-                        <div class="stars">
-                            <i class='bx bx-star star'></i>
-                            <i class='bx bx-star star'></i>
-                            <i class='bx bx-star star'></i>
-                            <i class='bx bx-star star'></i>
-                            <i class='bx bx-star star'></i>
-                        </div>
-                    </div>
-                    <div class="review_text">
-                        <p>4.73 out of 5</p>
-                        <p>Based on 22 reviews</p>
-                    </div>
-                </div>
-                <div class="review_grid rating_sec">
-                    <div class="five_star_rating single_star_sec">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <div class="rating_progrss">
-                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
-                                <div class="progress-bar">
-                                    <span style="width: 80%">20%</span>
-                                </div>
-                            </progress>
-                        </div>
-                        <div class="rating_count">
-                            <span>17</span>
-                        </div>
-                    </div>
-                    <div class="five_star_rating single_star_sec">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <div class="rating_progrss">
-                            <progress max="100" value="20" class="html5" style="border-radius: 0;">
-                                <div class="progress-bar">
-                                    <span style="width: 20%">20%</span>
-                                </div>
-                            </progress>
-                        </div>
-                        <div class="rating_count">
-                            <span>4</span>
-                        </div>
-                    </div>
-                    <div class="five_star_rating single_star_sec">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <div class="rating_progrss">
-                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
-                                <div class="progress-bar">
-                                    <span style="width: 80%">80%</span>
-                                </div>
-                            </progress>
-                        </div>
-                        <div class="rating_count">
-                            <span>17</span>
-                        </div>
-                    </div>
-                    <div class="five_star_rating single_star_sec">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <div class="rating_progrss">
-                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
-                                <div class="progress-bar">
-                                    <span style="width: 80%">80%</span>
-                                </div>
-                            </progress>
-                        </div>
-                        <div class="rating_count">
-                            <span>17</span>
-                        </div>
-                    </div>
-                    <div class="five_star_rating single_star_sec">
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <div class="rating_progrss">
-                            <progress max="100" value="80" class="html5" style="border-radius: 0;">
-                                <div class="progress-bar">
-                                    <span style="width: 80%">80%</span>
-                                </div>
-                            </progress>
-                        </div>
-                        <div class="rating_count">
-                            <span>17</span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="review_grid add_rating">
-                    <button type="button" class="btn btn-primary btn-review" data-toggle="modal" data-target="#reviewModal">
-                        Write a Review
-                    </button>
-                    @include('components.modals.review-modal')
-                    <button type="button" class="btn btn-primary btn-question" data-toggle="modal" data-target="#questionModal">
-                        Ask a Question
-                    </button>
-                    @include('components.modals.question-modal')
-                </div>
-
-            </div>
-        </div>
-        <hr class="hrline">
-
-        <div class="review_tabs_sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-
-                        <div class="faqs-block tab-content ">
-                            <div class="container">
-                                <div class="flex max-md:flex-wrap justify-between gap-y-8 flex-col">
-                                    <div class="left ">
-                                        <div class="menu-tab flex gap-5">
-                                            <div class=" tab-item inline-block w-fit heading6 text-secondary2 hover:text-black duration-300 active" data-item="how to buy">Reviews (12)</div>
-                                            <div class="tab-item inline-block w-fit heading6 text-secondary2 hover:text-black duration-300" data-item="payment methods">Questions (24)</div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="right list-question ">
-                                        <div class="tab-question flex flex-col " data-item="how to buy">
-
-                                            <div class="single_review">
-                                                <div class="rating-box">
-                                                    <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                    </div>
-                                                </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                            </div>
-                                            <div class="single_review">
-                                                <div class="rating-box">
-                                                    <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                    </div>
-                                                </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                            </div>
-                                            <div class="single_review">
-                                                <div class="rating-box">
-                                                    <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                    </div>
-                                                </div>
-                                                <h4 class="author_name">Avisweta Dash </h4>
-                                                <h3 class="review_overview">Good product , Great Benefits</h3>
-                                                <p class="review_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-                                                    eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                                                    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                            </div>
-
-                                        </div>
-                                        <div class="tab-question flex flex-col gap-5 pt-30" data-item="payment methods">
-                                            @foreach($questions as $key => $question)
-                                            <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer ">
-                                                <div class="heading flex items-center justify-between gap-6">
-                                                    <div class="heading6">{{$question->question}}</div>
-                                                    <i class="ph ph-caret-right text-2xl"></i>
-                                                </div>
-                                                <div class="content body1 text-secondary">
-                                                    The courier companies have adapted their procedures to guarantee the safety of our employees and our community. We thank you for your patience, as there may be some delays to deliveries. We remind you that you can still find us at Mango.com and on all our online channels. Our customer services are still there for you, to answer any questions you may have, although due to the current situation, we are operating with longer waiting times.
-                                                </div>
-                                            </div>
-                                            @endforeach
-
-
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+ @include('website.review-rating')
 
     <!-- ===============================Review sec end================================ -->
 
@@ -553,7 +306,7 @@ Now</a>
 
                         <div class="panel panel-default">
                             <div class="panel-heading accrodion-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true">{{$faq->quention}}</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="true">{{$faq->question}}</a>
                             </div>
                             <div id="collapse-1" class="panel-collapse collapse in">
                                 <div class="panel-body">
@@ -577,6 +330,37 @@ Now</a>
 </div>
 @endsection
 @push('scripts')
+{{-- rating script --}}
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const stars = document.querySelectorAll('.star');
+        const ratingInput = document.getElementById('rating');
+
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                const value = parseInt(this.getAttribute('data-value'));
+
+                // Set rating input
+                ratingInput.value = value;
+
+                // Update star styles
+                stars.forEach(s => {
+                    const starValue = parseInt(s.getAttribute('data-value'));
+                    if (starValue <= value) {
+                        s.classList.remove('bx-star');
+                        s.classList.add('bxs-star'); // solid filled star
+                        s.style.color = '#FFC107'; // yellow/gold
+                    } else {
+                        s.classList.remove('bxs-star');
+                        s.classList.add('bx-star'); // outlined star
+                        s.style.color = ''; // reset color
+                    }
+                });
+            });
+        });
+    });
+
+</script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -623,6 +407,24 @@ Now</a>
             const target = tab.getAttribute('data-item');
             document.querySelectorAll('.tab-question').forEach(content => {
                 content.style.display = content.getAttribute('data-item') === target ? 'block' : 'none';
+            });
+        });
+    });
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.question-item .heading').forEach(heading => {
+            heading.addEventListener('click', function() {
+                const questionItem = this.closest('.question-item');
+                const content = questionItem.querySelector('.content');
+                const icon = questionItem.querySelector('i');
+
+                // Toggle content visibility
+                content.classList.toggle('hidden');
+
+                // Toggle icon rotation
+                icon.classList.toggle('rotate-90');
             });
         });
     });

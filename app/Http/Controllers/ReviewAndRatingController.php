@@ -3,12 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\RatingAndReview;
+use App\Services\RatingService;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\RatingRequest;
 
-class RatingController extends Controller
+class ReviewAndRatingController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    protected $ratingService;
+
+    public function __construct(RatingService $ratingService)
+    {
+        $this->ratingService = $ratingService;
+    }
     public function index()
     {
         //
@@ -25,9 +32,22 @@ class RatingController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(RatingRequest $request)
     {
-       dd($request->all());
+
+        $data = $request->validated();
+        ;
+        DB::beginTransaction();
+        try {
+
+           $x= $this->ratingService->createRating($data);
+
+            DB::commit();
+            return redirect()->back()->with('success', 'Thank you for your review!');
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return redirect()->back()->withErrors('Error submitting review. Please try again.');
+        }
     }
 
     /**
