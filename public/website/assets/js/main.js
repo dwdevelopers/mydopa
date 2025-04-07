@@ -1073,23 +1073,23 @@ if (document.querySelector(".swiper-collection-eight")) {
       delay: 3500,
       disableOnInteraction: false,
     },
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 16,
     breakpoints: {
       640: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 16,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       1280: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 30,
       },
     },

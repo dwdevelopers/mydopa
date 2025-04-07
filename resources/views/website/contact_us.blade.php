@@ -21,7 +21,7 @@
 </div>
 <div class="contact-us md:py-20 py-10">
     <div class="container">
-        <div class="flex justify-between max-lg:flex-col gap-y-10">
+        <div class="flex justify-between max-lg:flex-col gap-y-10 ptb-50">
             <div class="left lg:w-2/3 lg:pr-4">
                 <div class="heading3">Drop Us A Line</div>
                 <div class="body1 text-secondary2 mt-3">Use the form below to get in touch with the sales team</div>
@@ -44,7 +44,7 @@
                 @endif
                 <form action="{{ route('website.contact.store') }}" method="POST" class="md:mt-6 mt-4">
                     @csrf
-                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 gap-y-5">
+                    <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 gap-y-5 contact-forn-sec">
                         <div class="name">
                             <input name="name" class="border-line px-4 py-3 w-full rounded-lg" type="text" placeholder="Your Name *" required />
                         </div>
@@ -61,7 +61,7 @@
                 </form>
 
             </div>
-            <div class="right lg:w-1/4 lg:pl-4">
+            <div class="right lg:w-1/4 lg:pl-4 address-sec">
                 <div class="item">
                     <div class="heading4">Our Store</div>
                     <p class="mt-3">Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
