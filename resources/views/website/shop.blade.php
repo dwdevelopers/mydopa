@@ -504,7 +504,8 @@
 
     <!-- ===============================faq sec start================================ -->
 
-    <div class="why_mydopa faqSec">
+ @include('website.faq')
+    {{-- <div class="why_mydopa faqSec">
         <div class="container">
             <h2 class="mainTitle">FAQ's</h2>
 
@@ -660,7 +661,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- ===============================faq sec end================================ -->
 
