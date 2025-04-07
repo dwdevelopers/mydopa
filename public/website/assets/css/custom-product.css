@@ -219,6 +219,10 @@
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 @media (max-width: 991px) {
   .product-container .product-details {

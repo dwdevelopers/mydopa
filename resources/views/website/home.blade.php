@@ -92,7 +92,7 @@ Now</a>
                             overall quality of life.
                         </p>
 
-                        <a href="" class="btn btn-primary">Read More</a>
+                        <a href="{{route('website.about')}}" class="btn btn-primary">Read More</a>
                     </div>
 
                 </div>
@@ -274,7 +274,7 @@ Now</a>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                     </div>
                 </div>
-                <button class="buy-now">Buy It Now</button>
+                <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now" >Buy It Now</a>
             </div>
         </div>
     </div>
