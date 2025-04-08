@@ -415,6 +415,14 @@
             height: calc(-9.5rem + 90vh);
             padding: 10rem 1.4375rem 10rem 4.625rem;
         }
+        @media(min-height:800px){
+            height: calc(-9.5rem + 80vh);
+            padding: 8rem 1.4375rem 8rem 4.625rem;
+        }
+        @media(min-height:1000px){
+            height: calc(-9.5rem + 70vh);
+            margin-top: -100px;
+        }
 
         &:nth-child(1) {
             background-color: #fff;
