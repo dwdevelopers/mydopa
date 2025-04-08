@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-<title>@yield('title') | {{ config('app.name') }}</title>
+    <title>@yield('title') | {{ config('app.name') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
     <meta content="Techzaa" name="author" />
@@ -25,7 +25,7 @@
     <!-- App css -->
     {{-- <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" /> --}}
     <link href="{{asset('theme/dist/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
     <!-- Icons css -->
     {{-- <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /> --}}
@@ -39,7 +39,21 @@
     <link href="{{asset('theme/dist/assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('theme/dist/assets/vendor/datatables.net-select-bs5/css/select.bootstrap5.min.css')}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs5.min.css" />
+    <style>
+        table th,
+        table td {
+            display: table-cell !important;
+            white-space: normal !important;
+            /* Allow text wrapping */
+            word-wrap: break-word;
+            /* Ensures long words break */
+            overflow-wrap: break-word;
+            /* Ensures text wraps in all cases */
+            max-width: 200px;
+            /* Adjust as needed to prevent excessive width */
+        }
 
+    </style>
 </head>
 
 <body>

@@ -1,5 +1,18 @@
 @extends('admin.layouts.app')
 @section('title', 'Category')
+<style>
+    td {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    table.dataTable td {
+        max-width: 200px; /* adjust as needed */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
 @section('content')
 <div class="content">
 
