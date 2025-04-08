@@ -17,7 +17,7 @@
 
 
 
-            <li class="dropdown notification-list">
+            {{-- <li class="dropdown notification-list">
                 <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <i class="ri-mail-line fs-22"></i>
                     <span class="noti-icon-badge badge text-bg-purple">4</span>
@@ -221,14 +221,14 @@
                     </a>
 
                 </div>
-            </li>
+            </li> --}}
 
 
 
             <li class="dropdown">
                 <a class="nav-link dropdown-toggle arrow-none nav-user" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                     <span class="account-user-avatar">
-                        <img src="assets/images/users/avatar-1.jpg" alt="user-image" width="32" class="rounded-circle">
+                        <img src="{{ asset('website/assets/images/logo.png')}}" alt="user-image" width="32" class="rounded-circle">
                     </span>
                     <span class="d-lg-block d-none">
                         <h5 class="my-0 fw-normal">{{ auth()->user()->name }}
@@ -242,10 +242,10 @@
                     </div>
 
                     <!-- item-->
-                    <a href="pages-profile.html" class="dropdown-item">
+                    {{-- <a href="pages-profile.html" class="dropdown-item">
                         <i class="ri-account-circle-line fs-18 align-middle me-1"></i>
                         <span>My Account</span>
-                    </a>
+                    </a> --}}
 
 
 

@@ -29,7 +29,6 @@
             <li class="side-nav-item">
                 <a href="{{route('admin.home')}}" class="side-nav-link">
                     <i class="ri-dashboard-3-line"></i>
-                    <span class="badge bg-success float-end">9+</span>
                     <span> Dashboard </span>
                 </a>
             </li>
@@ -75,7 +74,6 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
-                    <span class="badge bg-warning float-end">New</span>
                     <span> Testimonials </span>
                 </a>
                 <div class="collapse" id="sidebarLayouts">
@@ -93,7 +91,6 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
-                    <span class="badge bg-warning float-end">New</span>
                     <span> FAQ's </span>
                 </a>
                 <div class="collapse" id="sidebarLayouts">
@@ -111,7 +108,6 @@
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#questionsLayout" aria-expanded="false" aria-controls="questionsLayout" class="side-nav-link">
                     <i class="ri-layout-line"></i>
-                    <span class="badge bg-warning float-end">New</span>
                     <span> Questions </span>
                 </a>
                 <div class="collapse" id="questionsLayout">
@@ -127,7 +123,6 @@
               <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#reviewsLayout" aria-expanded="false" aria-controls="reviewsLayout" class="side-nav-link">
                     <i class="ri-layout-line"></i>
-                    <span class="badge bg-warning float-end">New</span>
                     <span> Rating & Review </span>
                 </a>
                 <div class="collapse" id="reviewsLayout">
