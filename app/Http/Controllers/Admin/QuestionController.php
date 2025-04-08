@@ -32,7 +32,11 @@ class QuestionController extends Controller
 
             return DataTables::of($questions)
                 ->addIndexColumn()
-
+                ->addColumn('status', function ($row) {
+                    return $row->status
+                        ? '<span class="badge bg-success">Active</span>'
+                        : '<span class="badge bg-danger">Inactive</span>';
+                })
                 ->addColumn('action', function ($row) {
                     return '<a href="'.route('questions.edit', $row->id).'" class="btn btn-primary btn-sm">Edit</a>
                             <form action="'.route('questions.destroy', $row->id).'" method="POST" style="display:inline;">
@@ -41,7 +45,7 @@ class QuestionController extends Controller
                                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                             </form>';
                 })
-                ->rawColumns(['action'])
+                ->rawColumns(['action','status'])
                 ->make(true);
         }
 
@@ -62,6 +66,7 @@ class QuestionController extends Controller
 
 public function update(StoreQuestionRequest $request, Question $question)
 {
+
     DB::beginTransaction();
     try {
         $data = $request->validated();

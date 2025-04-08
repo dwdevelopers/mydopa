@@ -16,7 +16,7 @@
 
                     <div class="card-body">
                         @if(session('success'))
-                            <div class="alert alert-success">{{ session('success') }}</div>
+                        <div class="alert alert-success">{{ session('success') }}</div>
                         @endif
 
                         <form action="{{ route('reviews.update', $review->id) }}" method="POST">
@@ -55,9 +55,8 @@
                             <div class="mb-3">
                                 <label>Rating</label>
                                 <div class="star-rating">
-                                    @for($i = 1; $i <= 5; $i++)
-                                        <i class="bx {{ $i <= $review->rating ? 'bxs-star text-warning' : 'bx-star text-muted' }}"></i>
-                                    @endfor
+                                    @for($i = 1; $i <= 5; $i++) <i class="bx {{ $i <= $review->rating ? 'bxs-star text-warning' : 'bx-star text-muted' }}"></i>
+                                        @endfor
                                 </div>
                             </div>
 
@@ -69,7 +68,7 @@
                                     <option value="0" {{ !$review->status ? 'selected' : '' }}>Inactive</option>
                                 </select>
                             </div>
-                                 <input name="product_id" type="hidden" value="1" class="form-control" >
+                            <input name="product_id" type="hidden" value="1" class="form-control">
 
                             <button type="submit" class="btn btn-primary">Update Status</button>
                             <a href="{{ route('reviews.index') }}" class="btn btn-secondary">Back</a>
@@ -87,5 +86,6 @@
     .star-rating .bx {
         font-size: 1.5rem;
     }
+
 </style>
 @endsection

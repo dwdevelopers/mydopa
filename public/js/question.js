@@ -17,6 +17,7 @@ $(document).ready(function() {
                 { data: 'phone', name: 'phone' },
                 { data: 'question', name: 'question' },
                 { data: 'answer', name: 'answer' },
+                { data: 'status', name: 'status' },
 
                 { data: 'action', name: 'action', orderable: false, searchable: false }
             ],

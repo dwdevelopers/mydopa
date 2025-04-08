@@ -72,11 +72,11 @@
                 </div>
             </li>
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
+                <a data-bs-toggle="collapse" href="#testimonialsLayouts" aria-expanded="false" aria-controls="testimonialsLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span> Testimonials </span>
                 </a>
-                <div class="collapse" id="sidebarLayouts">
+                <div class="collapse" id="testimonialsLayouts">
                     <ul class="side-nav-second-level">
                         <li>
                             <a href="{{route('testimonials.index')}}">List</a>

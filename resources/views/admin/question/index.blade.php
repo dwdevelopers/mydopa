@@ -27,6 +27,7 @@
                                     <th>Phone</th>
                                     <th>Question</th>
                                     <th>Answer</th>
+                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>

@@ -12,6 +12,7 @@ class Question extends Model
         'email',
         'phone',
         'answer',
+        'status',
 
     ];
 }

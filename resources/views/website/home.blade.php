@@ -174,7 +174,7 @@ Now</a>
                                 <img src="{{ asset('website/assets/images/videos/video1.gif')}}" alt="Doctor">
                             </button>
                             <h3>Who can take it</h3>
-                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism, 
+                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism,
                                 or other neurodegenerative conditions that involve tremors, stiffness, or motor deficits. </p>
                             <span class="number">02</span>
                         </div>
@@ -211,7 +211,7 @@ Now</a>
                             </button>
                             <h3>Who should consult?</h3>
                             <p>Anyone considering taking MYDOPA, especially those already on standard Parkinson’s
-                                 medications should consult their doctor or an Ayurvedic specialist. This ensures 
+                                 medications should consult their doctor or an Ayurvedic specialist. This ensures
                                  proper dosage adjustments and safe integration with existing treatments. </p>
                             <span class="number">05</span>
                         </div>
@@ -412,7 +412,7 @@ Now</a>
         $('body').css('padding-right', '');
     });
 </script>
-<script>
+{{-- <script>
     document.querySelectorAll('.tab-item').forEach(tab => {
         tab.addEventListener('click', () => {
             document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
@@ -424,7 +424,7 @@ Now</a>
             });
         });
     });
-</script>
+</script> --}}
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll('.question-item .heading').forEach(heading => {

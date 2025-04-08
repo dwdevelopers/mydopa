@@ -24,10 +24,11 @@ class StoreQuestionRequest extends FormRequest
 
         return [
             'name' => 'required|string|max:255',
-        'email' => 'required|email',
-        'phone' => 'required|string|max:20',
-        'question' => 'required|string',
-        'answer'=>'string',
+            'email' => 'required|email',
+            'phone' => 'required|string|max:20',
+            'question' => 'required|string',
+            'answer'=>'nullable|string',
+            'status'     => 'sometimes|boolean',
         ];
     }
 }

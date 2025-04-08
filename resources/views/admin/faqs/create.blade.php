@@ -37,7 +37,7 @@
 
                                     <div class="mb-3">
                                         <label for="category" class="form-label">Category</label>
-                                        <input type="text" id="category" name="category" class="form-control" required>
+                                        <input type="text" id="category" name="category" class="form-control" >
                                     </div>
 
                                     <div class="mb-3 error-placeholder">
