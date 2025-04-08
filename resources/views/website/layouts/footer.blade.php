@@ -5,8 +5,11 @@
                 <h2>Get gut friendly advice & <br> tips straight into your inbox!</h2>
                 <p>We only share no nonsense, expert-recommended & science-backed info that'll help you transform your health. Sign up now.</p>
                 <div class="subscribe-form">
-                    <input type="email" placeholder="Mail">
-                    <button type="submit">→</button>
+                    <form action="{{ route('website.newsletter.store') }}" method="POST">
+                        @csrf
+                        <input type="email" name="email" placeholder="Mail" required>
+                        <button type="submit">→</button>
+                    </form>
                 </div>
             </div>
             <div class="contact-info">

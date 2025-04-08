@@ -9,11 +9,13 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\QuestionController as AdminQuestion;
 use App\Http\Controllers\Admin\RatingAndReviewController as AdminReview;
+use App\Http\Controllers\Admin\NewsLetterController as AdminNews;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactUsController as WebsiteContactus;
 use App\Http\Controllers\ReviewAndRatingController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\NewsLetterController;
 
 
 use App\Http\Controllers\Auth\LoginController;
@@ -42,6 +44,7 @@ Route::middleware(['auth', 'user-access:Admin', 'prevent-back-history'])
         Route::resource('faqs', FAQController::class);
         Route::resource('questions', AdminQuestion::class);
         Route::resource('reviews', AdminReview::class);
+        Route::resource('newsletter', AdminNews::class);
     });
 
 
@@ -54,6 +57,7 @@ Route::name('website.')->group(function(){
 
     Route::post('/review-rating', [ReviewAndRatingController::class, 'store'])->name('review');
     Route::post('/ask-question', [QuestionController::class, 'store'])->name('question.store');
+    Route::post('/news-letter', [NewsLetterController::class, 'store'])->name('newsletter.store');
 
 });
 Auth::routes();
