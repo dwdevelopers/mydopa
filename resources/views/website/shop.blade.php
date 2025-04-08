@@ -165,7 +165,7 @@
                     <div class="cards" id="horizontal">
                         <div class="card">
                             <div class="text ">
-                                <h2>What About <br> MYDOPA?</h2>
+                            <h2>MYDOPA  <br>The Freedom to Move</h2>
                             </div>
                         </div>
                         <div class="card">
@@ -175,7 +175,7 @@
                             <button class="image" data-toggle="modal" data-target="#video1Modal">
                                 <img src="{{ asset('website/assets/images/videos/video2.gif')}}" alt="Doctor">
                             </button>
-                            <h3>Why choose this?</h3>
+                            <h3>Why choose Mydopa?</h3>
                             <p>MYDOPA is a unique Ayurvedic formulation developed after 12 years of research to support
                                 individuals with Parkinson’s disease and other neurodegenerative disorders. It is available in
                                 granule sachets (1500 mg) and capsules (500 mg) for easy and flexible use. </p>
@@ -188,7 +188,7 @@
                             <button class="image" data-toggle="modal" data-target="#video2Modal">
                                 <img src="{{ asset('website/assets/images/videos/video1.gif')}}" alt="Doctor">
                             </button>
-                            <h3>Who can take it</h3>
+                            <h3>Who can take it?</h3>
                             <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism, 
                                 or other neurodegenerative conditions that involve tremors, stiffness, or motor deficits. </p>
                             <span class="number">02</span>

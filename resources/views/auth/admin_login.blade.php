@@ -50,11 +50,16 @@ display: flex !important;
     align-items: center;
     justify-content: space-evenly;
 }
-.authentication-bg .card .leftSec h3{
-
-}
-.authentication-bg .card .leftSec h3{
-
+@media(max-width:767px){
+    .vectorSec{
+        display: none;
+    }
+    .authentication-bg .card .rightSec {
+        padding: 20px;
+    }
+    .footer {
+        display: none;
+    }
 }
 
 

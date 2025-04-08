@@ -46,25 +46,25 @@
           </div>
 
           <div class="missionsec">
-       
-              <div class="left-block">
-                <img src="{{ asset('website/assets/images/avatar/mission.svg')}}" alt="mission icon" class="missionIcon">
-                <h3 class="heading-2">Our Mission</h3>
-                <p>
-                  To bring the healing power of Ayurveda to individuals living with Parkinson’s and other neurodegenerative disorders—through evidence-based, ethical, and accessible care.
-                </p>
-              </div>
-              <div class="right-block">
-                <img src="{{ asset('website/assets/images/avatar/legacy.svg')}}" alt="legacy icon" class="missionIcon">
-                <h3 class="heading-2">Our Legacy, Your Healing</h3>
-                <p>
-                  From the hands of great-grandfathers and grandfathers who practiced Ayurveda by tradition, to a new era shaped by scientific rigor, our journey has been one of compassion, learning, and innovation.
-                </p>
-                <p>
-                  <strong>MYDOPA</strong> stands as a symbol of this journey—a bridge between ancient wisdom and modern neurological care.
-                </p>
-              </div>
-           
+
+            <div class="left-block">
+              <img src="{{ asset('website/assets/images/avatar/mission.svg')}}" alt="mission icon" class="missionIcon">
+              <h3 class="heading-2">Our Mission</h3>
+              <p>
+                To bring the healing power of Ayurveda to individuals living with Parkinson’s and other neurodegenerative disorders—through evidence-based, ethical, and accessible care.
+              </p>
+            </div>
+            <div class="right-block">
+              <img src="{{ asset('website/assets/images/avatar/legacy.svg')}}" alt="legacy icon" class="missionIcon">
+              <h3 class="heading-2">Our Legacy, Your Healing</h3>
+              <p>
+                From the hands of great-grandfathers and grandfathers who practiced Ayurveda by tradition, to a new era shaped by scientific rigor, our journey has been one of compassion, learning, and innovation.
+              </p>
+              <p>
+                <strong>MYDOPA</strong> stands as a symbol of this journey—a bridge between ancient wisdom and modern neurological care.
+              </p>
+            </div>
+
           </div>
 
           <!-- Section 2: Birth of MYDOPA (With Image) -->
@@ -82,26 +82,27 @@
           </div>
 
           <!-- Section 3: Highlights -->
-          <div class="block reverse pt-40">
-            <div class="abt-text">
-              <h3 class="heading-2">What Sets MYDOPA Apart</h3>
-              <ul>
-                <li>Backed by 12+ years of dedicated research</li>
-                <li>Free from steroids and preservatives</li>
-                <li>Crafted using time-tested Ayurvedic herbs</li>
-                <li>Integrated holistic protocol including Panchakarma, Physiotherapy, ASLP, Yoga, Dietetics, and Psychological Counseling</li>
-              </ul>
+          <div class="row whatset pt-40">
+            <div class="col-lg-6">
+              <img src="{{ asset('website/assets/images/product-shop/doctor1.jpg')}}" alt="mission icon" class="missionIcon">
             </div>
-            <div class="image" style="background-image: url('website/assets/images/product-shop/doctor1.jpg');"></div>
+            <div class="col-lg-6 block">
+              <div class="abt-text">
+                <h3 class="heading-2">What Sets MYDOPA Apart</h3>
+                <ul>
+                  <li>Backed by 12+ years of dedicated research</li>
+                  <li>Free from steroids and preservatives</li>
+                  <li>Crafted using time-tested Ayurvedic herbs</li>
+                  <li>Integrated holistic protocol including Panchakarma, Physiotherapy, ASLP, Yoga, Dietetics, and Psychological Counseling</li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-      
-
-
         </div>
       </div>
     </div>
   </div>
+</div>
 
 </div>
 

@@ -2,17 +2,17 @@
     <!-- Brand Logo Light -->
     <a href="index.html" class="logo logo-light">
         <span class="logo-lg">
-            <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo">
+            <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" style="height:40px">
         </span>
         <span class="logo-sm">
-            <img src="{{ asset('website/assets/images/logo.png')}}" alt="small logo">
+            <img src="{{ asset('website/assets/images/logo.png')}}" alt="small logo" height="40px">
         </span>
     </a>
 
     <!-- Brand Logo Dark -->
     <a href="{{route('admin.home')}}" class="logo logo-dark">
         <span class="logo-lg">
-            <img src="{{ asset('website/assets/images/logo.png')}}" alt="dark logo">
+            <img src="{{ asset('website/assets/images/logo.png')}}" alt="dark logo" >
         </span>
         <span class="logo-sm">
             <img src="{{ asset('website/assets/images/logo.png')}}" alt="small logo">
@@ -72,10 +72,10 @@
                 </div>
             </li>
             <li class="side-nav-item">
-                <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
+                <!-- <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span> Testimonials </span>
-                </a>
+                </a> -->
                 <div class="collapse" id="sidebarLayouts">
                     <ul class="side-nav-second-level">
                         <li>

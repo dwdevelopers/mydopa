@@ -3,12 +3,18 @@
 
 @section('content')
 <div class="content">
-
+<style>
+    .page-title-box .page-title {
+        font-size: 30px !important;
+    padding: 20px 0px;
+    color: #000;
+    }
+</style>
     <!-- Start Content-->
     <div class="container-fluid">
 
         <!-- start page title -->
-         @include('admin.layouts.partials.top', ['pageTitle' => 'Welcome Mydopa !!!!!!'])
+         @include('admin.layouts.partials.top', ['pageTitle' => 'Welcome To Mydopa !!!!!!'])
         <!-- end page title -->
 
         <div class="row">
