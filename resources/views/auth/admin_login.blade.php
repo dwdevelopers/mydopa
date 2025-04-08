@@ -17,21 +17,68 @@
 
     <!-- Icons css -->
     <link href="{{asset('theme/dist/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+
+
+    <style>
+
+body.authentication-bg {
+    background-image: linear-gradient(84deg, #a691c6, #ededed) !important;
+}
+.authentication-bg .logo{
+    object-fit: contain;
+}
+.authentication-bg h4, .authentication-bg p, .authentication-bg label, .authentication-bg .text-muted,.authentication-bg  small{
+    color: #000 !important;
+}
+
+.authentication-bg .btn-soft-primary{
+    background: #8252c9;
+    color: #fff;
+}
+.authentication-bg .card{
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+}
+.authentication-bg .card .rightSec{
+    padding: 40px;
+    background: #f2eef7;
+}
+.authentication-bg .card .leftSec {
+display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.authentication-bg .card .leftSec h3{
+
+}
+.authentication-bg .card .leftSec h3{
+
+}
+
+
+    </style>
 </head>
 
 <body class="authentication-bg position-relative">
-    <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5 position-relative">
+    <div class="account-pages pt-2  position-relative">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-8 col-lg-10">
                     <div class="card overflow-hidden">
                         <div class="row g-0">
-                            <div class="col-lg-6 d-none d-lg-block p-2">
-                                <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" height="300" width="300">
-
+                            <div class="col-lg-5 d-none d-lg-block p-2 leftSec">
+                           
+                                <div class="logoSec">
+                                <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo"  width="240" class="logo">
+                                </div>
+                                <div class="vectorSec">
+                                <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo"  class="VectorImg" height="250px">
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex flex-column h-100">
+                            <div class="col-lg-7">
+                                <div class="d-flex flex-column h-100 rightSec">
                                     {{-- <div class="auth-brand p-2">
 
                                         <a href="index.html" class="logo-dark">
