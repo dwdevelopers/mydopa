@@ -20,43 +20,48 @@
 
 
     <style>
+        body.authentication-bg {
+            background-image: linear-gradient(84deg, #a691c6, #ededed) !important;
+        }
 
-body.authentication-bg {
-    background-image: linear-gradient(84deg, #a691c6, #ededed) !important;
-}
-.authentication-bg .logo{
-    object-fit: contain;
-}
-.authentication-bg h4, .authentication-bg p, .authentication-bg label, .authentication-bg .text-muted,.authentication-bg  small{
-    color: #000 !important;
-}
+        .authentication-bg .logo {
+            object-fit: contain;
+        }
 
-.authentication-bg .btn-soft-primary{
-    background: #8252c9;
-    color: #fff;
-}
-.authentication-bg .card{
-    /* height: 70vh; */
-    display: flex;
-    justify-content: center;
-}
-.authentication-bg .card .rightSec{
-    padding: 40px;
-    background: #f2eef7;
-}
-.authentication-bg .card .leftSec {
-display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.authentication-bg .card .leftSec h3{
+        .authentication-bg h4,
+        .authentication-bg p,
+        .authentication-bg label,
+        .authentication-bg .text-muted,
+        .authentication-bg small {
+            color: #000 !important;
+        }
 
-}
-.authentication-bg .card .leftSec h3{
+        .authentication-bg .btn-soft-primary {
+            background: #8252c9;
+            color: #fff;
+        }
 
-}
+        .authentication-bg .card {
+            /* height: 70vh; */
+            display: flex;
+            justify-content: center;
+        }
 
+        .authentication-bg .card .rightSec {
+            padding: 40px;
+            background: #f2eef7;
+        }
+
+        .authentication-bg .card .leftSec {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .authentication-bg .card .leftSec h3 {}
+
+        .authentication-bg .card .leftSec h3 {}
 
     </style>
 </head>
@@ -69,12 +74,12 @@ display: flex !important;
                     <div class="card overflow-hidden">
                         <div class="row g-0">
                             <div class="col-lg-5 d-none d-lg-block p-2 leftSec">
-                           
+
                                 <div class="logoSec">
-                                <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo"  width="240" class="logo">
+                                    <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" width="240" class="logo">
                                 </div>
                                 <div class="vectorSec">
-                                <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo"  class="VectorImg" height="250px">
+                                    <img src="{{ asset('website/assets/images/login_img.png')}}" alt="logo" class="VectorImg" height="250px">
                                 </div>
                             </div>
                             <div class="col-lg-7">
@@ -104,13 +109,18 @@ display: flex !important;
                                             @enderror
                                         </div>
                                         <div class="mb-3">
-                                            @if (Route::has('password.request'))
+                                            {{-- @if (Route::has('password.request'))
                                             <a href="{{ route('password.request') }}" class="text-muted float-end"><small>Forgot
-                                                    your
-                                                    password?</small></a>
-                                            @endif
-                                            <label for="password" class="form-label">Password</label>
-                                            <input class="form-control @error('password') is-invalid @enderror" name="password" type="password" required="" id="password" autocomplete="current-password">
+                                                your
+                                                password?</small></a>
+                                            @endif --}}
+                                            <div class="input-group">
+                                                <input class="form-control @error('password') is-invalid @enderror" name="password" type="password" required id="password" autocomplete="current-password">
+                                                <span class="input-group-text">
+                                                    <i class="bi bi-eye" id="togglePassword" style="cursor: pointer;"></i>
+                                                </span>
+                                            </div>
+
                                             @error('password')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -119,7 +129,7 @@ display: flex !important;
                                         </div>
                                         <div class="mb-3">
                                             <div class="form-check">
-                                                <input type="checkbox" class="form-check-input" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                                 <label class="form-check-label" for="checkbox-signin">Remember
                                                     me</label>
                                             </div>
@@ -152,7 +162,23 @@ display: flex !important;
 
     <!-- App js -->
     <script src="{{ asset('theme/dist/assets/js/app.min.js')}}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.querySelector('#togglePassword');
+            const passwordInput = document.querySelector('#password');
 
+            togglePassword.addEventListener('click', function() {
+                // Toggle the type attribute
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+
+                // Toggle the eye icon
+                this.classList.toggle('bi-eye');
+                this.classList.toggle('bi-eye-slash');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
