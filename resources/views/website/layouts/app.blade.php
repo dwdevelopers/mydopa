@@ -58,18 +58,23 @@
 
     <a class="to-top" ><i class="ph-bold ph-caret-up"></i></a>
 
-    <script>$(document).ready(function() {
-  
-  // variables 
-  var toTop = $('.to-top');
-  // logic
-  toTop.on('click', function() {
-    $('html, body').animate({
-      scrollTop: $('html, body').offset().top,
+    <script>
+  $(document).ready(function () {
+    var toTop = $('.to-top');
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 600) {
+        toTop.addClass('active');
+      } else {
+        toTop.removeClass('active');
+      }
+    });
+
+    toTop.on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 600);
     });
   });
-
-});</script>
+</script>
 
     <!-- Modal -->
 
