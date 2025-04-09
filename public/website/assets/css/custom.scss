@@ -431,8 +431,12 @@ p {
     .product-showcase {
         padding-bottom: 60px;
 
+
         @media(max-width:575px) {
             margin-top: -40px;
+        }
+        @media(min-height:1000px){
+            margin-top: -200px;
         }
     }
 
@@ -1146,18 +1150,19 @@ p {
         font-size: 36px;
         padding-bottom: 20px;
         padding-top: 20px;
-        color: #000;
+        color: #45217d;
     }
 
     .missionIcon {
         width: 100px;
+        object-fit: contain;
     }
 
     p {
         max-width: 500px;
         font-size: 16px;
         line-height: 26px;
-        color: #000;
+        color: #200945;
     }
 }
 
@@ -1188,5 +1193,44 @@ p {
 
     .heading4 {
         padding-bottom: 10px;
+    }
+}
+
+.tabs .tab-content p {
+ 
+    padding-bottom: 10px;
+}
+
+.tabs .tab-buttons {
+margin-bottom: 10px;
+}
+.tabs .tb-3 .accordion-content {
+    padding-top: 10px;
+}
+.tabs .tb-4 ul li {
+    padding-bottom: 5px;
+}
+@media(min-width:1500px){
+    .tabs .tab-buttons .tab {
+        padding: 10px 15px !important;
+    }
+}
+@media (min-width: 1501px) {
+    .tabs .tab-buttons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+}
+
+.whatset{
+    display: flex;
+    align-items: center;
+    img{
+        height: 400px;
+        object-fit: cover;
+        @media(min-width:992px){
+        width: 90%;
+        }
     }
 }

@@ -18,25 +18,35 @@
                                      </div>
                                      <ul class="flex items-center justify-center gap-8 h-full">
                                          <li class="h-full relative">
-                                             <a href="{{route('website.home')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 active">
-                                                 Home </a>
+                                             <a href="{{ route('website.home') }}"
+                                                 class="text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 
+   {{ request()->routeIs('website.home') ? 'active' : '' }}">
+                                                 Home
+                                             </a>
 
                                          </li>
                                          <li class="h-full relative">
-                                             <a href="{{route('website.about')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 About Us </a>
-
+                                             <a href="{{ route('website.about') }}"
+                                                 class="text-button-uppercase duration-300 h-full flex items-center justify-center 
+   {{ request()->routeIs('website.about') ? 'active' : '' }}">
+                                                 About Us
+                                             </a>
                                          </li>
                                          <li class="h-full">
-                                             <a href="{{route('website.product')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 Product </a>
+                                             <a href="{{ route('website.product') }}"
+                                                 class="text-button-uppercase duration-300 h-full flex items-center justify-center 
+   {{ request()->routeIs('website.product') ? 'active' : '' }}">
+                                                 Product
+                                             </a>
 
                                          </li>
 
                                          <li class="h-full relative">
-                                             <a href="{{route('website.contact')}}" class="text-button-uppercase duration-300 h-full flex items-center justify-center">
-                                                 Contact Us </a>
-
+                                             <a href="{{ route('website.contact') }}"
+                                                 class="text-button-uppercase duration-300 h-full flex items-center justify-center 
+   {{ request()->routeIs('website.contact') ? 'active' : '' }}">
+                                                 Contact Us
+                                             </a>
                                          </li>
 
                                      </ul>
@@ -79,24 +89,39 @@
                      <div class="list-nav mt-6">
                          <ul>
                              <li>
-                                 <a href="{{route('website.home')}}" class="text-xl font-semibold flex items-center justify-between">Home </a>
-                             </li>
-
-                             <li>
-                                 <a href="{{route('website.about')}}" class="text-xl font-semibold flex items-center justify-between mt-5">About Us
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="{{route('website.product')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Product </a>
-                             </li>
-                             <li>
-                                 <a href="{{route('website.contact')}}" class="text-xl font-semibold flex items-center justify-between mt-5">Contact Us
+                                 <a href="{{ route('website.home') }}"
+                                     class="text-xl font-semibold flex items-center justify-between 
+               {{ request()->routeIs('website.home') ? 'active' : '' }}">
+                                     Home
                                  </a>
                              </li>
 
+                             <li>
+                                 <a href="{{ route('website.about') }}"
+                                     class="text-xl font-semibold flex items-center justify-between mt-5 
+               {{ request()->routeIs('website.about') ? 'active' : '' }}">
+                                     About Us
+                                 </a>
+                             </li>
 
+                             <li>
+                                 <a href="{{ route('website.product') }}"
+                                     class="text-xl font-semibold flex items-center justify-between mt-5 
+               {{ request()->routeIs('website.product') ? 'active' : '' }}">
+                                     Product
+                                 </a>
+                             </li>
+
+                             <li>
+                                 <a href="{{ route('website.contact') }}"
+                                     class="text-xl font-semibold flex items-center justify-between mt-5 
+               {{ request()->routeIs('website.contact') ? 'active' : '' }}">
+                                     Contact Us
+                                 </a>
+                             </li>
                          </ul>
                      </div>
+
                  </div>
              </div>
          </div>
