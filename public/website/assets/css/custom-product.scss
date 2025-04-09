@@ -669,10 +669,7 @@
             }
 
             .subscribe-form {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                justify-content: space-between;
+                position: relative;
                 border-radius: 30px;
                 border: 1px solid #ddd;
                 color: white;
@@ -683,6 +680,9 @@
                     outline: none;
                     background: transparent;
                     padding-left: 20px;
+                    &:focus{
+                        border-color: transparent!important;
+                    }
                 }
 
                 button {
@@ -695,6 +695,9 @@
                     font-size: 1.2rem;
                     margin-right: 5px;
                     padding: 4px 10px;
+                    position: absolute;
+                    right: 0px;
+                    top: 3px;
                 }
             }
         }
