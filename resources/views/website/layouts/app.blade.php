@@ -56,7 +56,20 @@
     {{-- Footer --}}
     @include('website.layouts.footer')
 
-    <a class="scroll-to-top-btn" href="#top-nav"><i class="ph-bold ph-caret-up"></i></a>
+    <a class="to-top" ><i class="ph-bold ph-caret-up"></i></a>
+
+    <script>$(document).ready(function() {
+  
+  // variables 
+  var toTop = $('.to-top');
+  // logic
+  toTop.on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('html, body').offset().top,
+    });
+  });
+
+});</script>
 
     <!-- Modal -->
 
@@ -875,7 +888,7 @@
 
     // Set xPercent based on screen width
     const isMobile = window.innerWidth <= 576;
-    const xPercentValue = isMobile ? -100 * (cards.length - 1) : -90 * (cards.length - 1);
+    const xPercentValue = isMobile ? -106 * (cards.length - 1) : -90 * (cards.length - 1);
 
     gsap.to(cards, {
         xPercent: xPercentValue,

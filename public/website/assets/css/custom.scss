@@ -766,6 +766,9 @@ p {
                 width: 100%;
                 display: inline-block;
                 position: relative;
+                @media(max-width:768px) {
+                    padding-right: 30px;
+                }
             }
 
             a:before {
@@ -848,7 +851,7 @@ p {
         border-radius: 50px;
 
         @media(max-width:768px) {
-            right: 10px;
+            right: 0px;
         }
     }
 
@@ -1121,6 +1124,7 @@ p {
     color: #666;
     font-weight: bold;
     position: relative;
+
 }
 
 .bg-block {
@@ -1235,5 +1239,37 @@ margin-bottom: 10px;
         @media(min-width:992px){
         width: 90%;
         }
+        @media(max-width:767px){
+            margin-bottom: 30px;
+    
+        }
+    }
+    @media(max-width:767px){
+        flex-direction: column;
+    }
+}
+
+.to-top{
+    background-color: var(--black);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    transition: all ease 0.3s;
+    box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.2);
+    cursor: pointer;
+    z-index: 100;
+    .ph-bold.ph-caret-up:before{
+        color: #fff;
+    }
+&:hover {
+        color: #1f1f1f;
+        text-decoration: underline;
     }
 }

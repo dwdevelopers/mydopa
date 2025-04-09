@@ -316,9 +316,9 @@
 .about {
     padding: 60px 0px;
 
-    @media(max-width:575px) {
-        margin-top: -110px;
-    }
+    // @media(max-width:575px) {
+    //     margin-top: -110px;
+    // }
 
     .text {
         flex: 1.5;
