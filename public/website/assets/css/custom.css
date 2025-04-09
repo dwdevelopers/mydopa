@@ -630,6 +630,8 @@ p {
 .faqSec .theme-accordion-s1 .panel-body p {
   color: #ffffff;
   font-size: 15px;
+  line-height: 26px;
+  padding-bottom: 10px;
 }
 .faqSec .panel-group .panel + .panel {
   margin-top: 0px !important;
