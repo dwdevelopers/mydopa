@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Log;
 
 class FAQController extends Controller
 {
-    protected $faqService;
+    // protected $faqService;
 
-    public function __construct(FAQService $faqService)
+    public function __construct(protected FAQService $faqService)
     {
         $this->middleware('auth');
         $this->faqService = $faqService;

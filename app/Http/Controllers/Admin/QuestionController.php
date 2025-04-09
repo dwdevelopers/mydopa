@@ -12,9 +12,9 @@ use App\Http\Requests\StoreQuestionRequest;
 
 class QuestionController extends Controller
 {
-    protected $questionService;
+    // protected $questionService;
 
-    public function __construct(QuestionService $questionService)
+    public function __construct(protected QuestionService $questionService)
     {
         $this->questionService = $questionService;
     }

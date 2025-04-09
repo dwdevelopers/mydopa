@@ -71,7 +71,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="side-nav-item">
+            {{-- <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#testimonialsLayouts" aria-expanded="false" aria-controls="testimonialsLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
                     <span> Testimonials </span>
@@ -87,7 +87,7 @@
 
                     </ul>
                 </div>
-            </li>
+            </li> --}}
             <li class="side-nav-item">
                 <a data-bs-toggle="collapse" href="#sidebarLayouts" aria-expanded="false" aria-controls="sidebarLayouts" class="side-nav-link">
                     <i class="ri-layout-line"></i>
