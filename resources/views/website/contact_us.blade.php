@@ -66,13 +66,12 @@
                     <div class="heading4">Our Store</div>
                     <p class="mt-3">Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
                     <p> <a href="tel:+91 703499 2442" class="mt-3" style="color: #000;">Phone: <span class="whitespace-nowrap">+91 703499 2442</span></a></p>
+                    <p> <a href="tel:++91 703488 2442" class="mt-3" style="color: #000;"><span style="display: inline-block;width:54px;"></span><span class="whitespace-nowrap">+91 703488 2442</span></a></p>
                     <p><a href="mailto:info@mydopa.com" class="mt-1" style="color: #000;">Email: <span class="whitespace-nowrap">info@mydopa.com</span></a></p>
                 </div>
                 <div class="item mt-10">
                     <div class="heading4">Open Hours</div>
-                    <p class="mt-3">Mon - Fri: <span class="whitespace-nowrap">7:30am - 8:00pm PST</span></p>
-                    <p class="mt-3">Saturday: <span class="whitespace-nowrap">8:00am - 6:00pm PST</span></p>
-                    <p class="mt-3">Sunday: <span class="whitespace-nowrap">9:00am - 5:00pm PST</span></p>
+                    <p class="mt-3">Mon - Sat: <span class="whitespace-nowrap">9:00am - 7:00pm</span></p>
                 </div>
             </div>
         </div>

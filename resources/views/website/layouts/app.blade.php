@@ -907,6 +907,12 @@
         }
     });
 </script>
+<script>
+  function redirectToReview() {
+    const baseUrl = window.location.origin;
+    window.location.href = baseUrl + "/#rating_and_review";
+  }
+</script>
 
 </body>
 

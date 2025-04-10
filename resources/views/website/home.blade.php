@@ -250,28 +250,29 @@ Now</a>
                 </ul>
                 <div class="pricing-options">
                     <div class="plan best-result">
-                        <span class="discount">SAVE ₹ 1,495</span>
-                        <h3>3 Month</h3>
-                        <p>90 Sachets</p>
-                        <p class="rs">₹ 2,699 <span>₹ 4,104</span></p>
+                        <!-- <span class="discount">SAVE ₹ 1,495</span> -->
+                        <h3 style="padding-top: 20px;">1 Box</h3>
+                        <p>30 Sachets</p>
+                        <p class="rs"><span>₹ 450</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</P>
                         <div class="blk_tag">BEST RESULT</div>
                     </div>
                     <div class="plan most-popular">
-                        <span class="discount">SAVE ₹ 947</span>
-                        <h3>2 Month</h3>
+                        <span class="discount">SAVE ₹ 170</span>
+                        <h3>2 Box</h3>
                         <p>60 Sachets</p>
-                        <p class="rs">₹ 1,849 <span>₹ 2,796</span></p>
+                        <p class="rs"><strike>₹ 980</strike> <span style="margin-left: 3px;">₹ 810</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                         <div class="blk_tag">MOST POPULAR
                         </div>
                     </div>
                     <div class="plan">
-                        <span class="discount">SAVE ₹ 499</span>
-                        <h3>1 Month</h3>
-                        <p>30 Sachets</p>
-                        <p class="rs">₹ 949 <span>₹ 1,398</span></p>
+                        <span class="discount">SAVE ₹ 200</span>
+                        <h3>3 Box</h3>
+                        <p>90 Sachets</p>
+                        <p class="rs"><strike>₹ 1,350 </strike> <span style="margin-left: 3px;">₹ 1,150</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
+                        <p class="pb-10">( free shipping across India)</p>
                     </div>
                 </div>
                 <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now" >Buy It Now</a>
