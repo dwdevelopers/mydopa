@@ -259,11 +259,6 @@
 .about {
   padding: 60px 0px;
 }
-@media (max-width: 575px) {
-  .about {
-    margin-top: -110px;
-  }
-}
 .about .text {
   flex: 1.5;
   font-size: 24px;
@@ -584,10 +579,7 @@
   padding: 25px 0px;
 }
 .footer .footer-content .newsletter .subscribe-form {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: space-between;
+  position: relative;
   border-radius: 30px;
   border: 1px solid #ddd;
   color: white;
@@ -599,6 +591,9 @@
   background: transparent;
   padding-left: 20px;
 }
+.footer .footer-content .newsletter .subscribe-form input:focus {
+  border-color: transparent !important;
+}
 .footer .footer-content .newsletter .subscribe-form button {
   background: #d1a8ff;
   border: none;
@@ -609,6 +604,9 @@
   font-size: 1.2rem;
   margin-right: 5px;
   padding: 4px 10px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
 }
 .footer .footer-content .footer-logo img {
   max-width: 100px;

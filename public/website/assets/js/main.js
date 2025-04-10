@@ -3138,15 +3138,7 @@ if (playIcons && modalVideo) {
 }
 
 // Scroll to top
-const scrollTopBtn = document.querySelector(".scroll-to-top-btn");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 600) {
-    scrollTopBtn.classList.add("active");
-  } else {
-    scrollTopBtn.classList.remove("active");
-  }
-});
 
 // Handle layout cols in list product wishlist page, shop
 const layoutProductList = document.querySelector(

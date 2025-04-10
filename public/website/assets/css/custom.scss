@@ -766,6 +766,9 @@ p {
                 width: 100%;
                 display: inline-block;
                 position: relative;
+                @media(max-width:768px) {
+                    padding-right: 30px;
+                }
             }
 
             a:before {
@@ -792,6 +795,9 @@ p {
 
             p {
                 color: #ffffff;
+                font-size: 15px;
+                line-height: 26px;
+                padding-bottom: 10px;
             }
         }
     }
@@ -845,7 +851,7 @@ p {
         border-radius: 50px;
 
         @media(max-width:768px) {
-            right: 10px;
+            right: 0px;
         }
     }
 
@@ -1118,6 +1124,7 @@ p {
     color: #666;
     font-weight: bold;
     position: relative;
+
 }
 
 .bg-block {
@@ -1232,5 +1239,51 @@ margin-bottom: 10px;
         @media(min-width:992px){
         width: 90%;
         }
+        @media(max-width:767px){
+            margin-bottom: 30px;
+    
+        }
+    }
+    @media(max-width:767px){
+        flex-direction: column;
     }
 }
+
+.to-top{
+    background-color: var(--black);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.2);
+    cursor: pointer;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    
+&:hover {
+        color: #1f1f1f;
+        text-decoration: underline;
+    }
+}
+.to-top.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .to-top i {
+    color: #fff;
+  }
+
+  .contactNumber{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }

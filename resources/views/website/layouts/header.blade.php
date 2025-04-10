@@ -4,7 +4,7 @@
                  <div class="menu-mobile-icon lg:hidden flex items-center">
                      <i class="icon-category text-2xl"></i>
                  </div>
-                 <a href="index.html" class="flex items-center lg:hidden">
+                 <a href="{{route('website.home')}}" class="flex items-center lg:hidden">
                      <div class="heading4"><img src="{{ asset('website/assets/images/logo.png')}}" alt="" style="height: 30px;"></div>
                  </a>
 
@@ -83,7 +83,7 @@
                          <div class="close-menu-mobile-btn absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface flex items-center justify-center">
                              <i class="ph ph-x text-sm"></i>
                          </div>
-                         <a href="index.html" class="logo text-3xl font-semibold text-center"><img src="{{ asset('website/assets/images/logo.png')}}" alt="" style="height: 50px;"></a>
+                         <a href="{{route('website.home')}}" class="logo text-3xl font-semibold text-center"><img src="{{ asset('website/assets/images/logo.png')}}" alt="" style="height: 50px;"></a>
                      </div>
 
                      <div class="list-nav mt-6">

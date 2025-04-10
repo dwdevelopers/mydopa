@@ -1,4 +1,4 @@
- <div class="reviewsec">
+ <div class="reviewsec" id="rating_and_review">
         <div class="container">
             <h2 class="mainTitle">Customer Reviews</h2>
 

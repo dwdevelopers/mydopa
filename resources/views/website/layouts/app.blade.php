@@ -56,7 +56,25 @@
     {{-- Footer --}}
     @include('website.layouts.footer')
 
-    <a class="scroll-to-top-btn" href="#top-nav"><i class="ph-bold ph-caret-up"></i></a>
+    <a class="to-top" ><i class="ph-bold ph-caret-up"></i></a>
+
+    <script>
+  $(document).ready(function () {
+    var toTop = $('.to-top');
+
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 600) {
+        toTop.addClass('active');
+      } else {
+        toTop.removeClass('active');
+      }
+    });
+
+    toTop.on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 600);
+    });
+  });
+</script>
 
     <!-- Modal -->
 
@@ -875,7 +893,7 @@
 
     // Set xPercent based on screen width
     const isMobile = window.innerWidth <= 576;
-    const xPercentValue = isMobile ? -100 * (cards.length - 1) : -90 * (cards.length - 1);
+    const xPercentValue = isMobile ? -106 * (cards.length - 1) : -90 * (cards.length - 1);
 
     gsap.to(cards, {
         xPercent: xPercentValue,
@@ -888,6 +906,12 @@
             end: () => "+=" + container.offsetWidth
         }
     });
+</script>
+<script>
+  function redirectToReview() {
+    const baseUrl = window.location.origin;
+    window.location.href = baseUrl + "/#rating_and_review";
+  }
 </script>
 
 </body>

@@ -608,6 +608,11 @@ p {
   display: inline-block;
   position: relative;
 }
+@media (max-width: 768px) {
+  .faqSec .theme-accordion-s1 .panel-heading a {
+    padding-right: 30px;
+  }
+}
 .faqSec .theme-accordion-s1 .panel-heading a:before {
   color: #7f58a4;
 }
@@ -629,6 +634,9 @@ p {
 }
 .faqSec .theme-accordion-s1 .panel-body p {
   color: #ffffff;
+  font-size: 15px;
+  line-height: 26px;
+  padding-bottom: 10px;
 }
 .faqSec .panel-group .panel + .panel {
   margin-top: 0px !important;
@@ -669,7 +677,7 @@ p {
 }
 @media (max-width: 768px) {
   .faqSec .theme-accordion-s1 .panel-heading a:before {
-    right: 10px;
+    right: 0px;
   }
 }
 .faqSec .theme-accordion-s1 .panel-heading .collapsed:before {
@@ -995,4 +1003,52 @@ p {
   .whatset img {
     width: 90%;
   }
+}
+@media (max-width: 767px) {
+  .whatset img {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .whatset {
+    flex-direction: column;
+  }
+}
+
+.to-top {
+  background-color: var(--black);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.2);
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+.to-top:hover {
+  color: #1f1f1f;
+  text-decoration: underline;
+}
+
+.to-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.to-top i {
+  color: #fff;
+}
+
+.contactNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }/*# sourceMappingURL=custom.css.map */

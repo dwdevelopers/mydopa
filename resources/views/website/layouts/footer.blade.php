@@ -19,9 +19,10 @@
                 <div class="address">
                     <p>Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
                     <p>Email us: <br><a href="mailto:info@mydopa.com">info@mydopa.com</a></p>
-                    <p>Call us:<br> <a href="tel:+917034992442">+91 703499 2442</a></p>
+                    <p>Call us:<br> <div class="contactNumber" style="margin-top: -20px;"> <a href="tel:+917034992442">+91 703499 2442</a><a href="tel:+917034882442">+91 703488 2442</a></div></p>
+           
 
-                        <p>Rate Us on Google <br><a href="#">Click Here to Submit Your Review</a></p>
+                        <p>Rate Us on Google <br><a style="cursor:pointer" onclick="redirectToReview()">Click Here to Submit Your Review</a></p>
 
                 </div>
             </div>

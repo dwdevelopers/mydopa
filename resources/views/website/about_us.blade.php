@@ -75,7 +75,7 @@
                 In 2013, after completing his formal education in Ayurveda, Dr. Vijith K.V. redefined the vision of VIAMS by launching a focused research program on Parkinson’s disease—a condition often underserved by natural therapies.
               </p>
               <p>
-                Over a decade of clinical research, patient trials, and continuous refinement led to the creation of <strong>MYDOPA</strong>—a natural, steroid-free, and preservative-free Ayurvedic formulation developed to support brain health and enhance the quality of life for individuals affected by neurodegenerative conditions.
+                Over a decade of clinical research, patient trials, and continuous refinement led to the creation of <strong>MYDOPA</strong>—a natural, steroid-free, and preservative-free herbal formulation developed to support brain health and enhance the quality of life for individuals affected by neurodegenerative conditions.
               </p>
             </div>
             <div class="image" style="background-image: url('website/assets/images/product-shop/box.png');"></div>
