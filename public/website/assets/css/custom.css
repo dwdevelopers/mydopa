@@ -638,6 +638,9 @@ p {
   line-height: 26px;
   padding-bottom: 10px;
 }
+.faqSec .theme-accordion-s1 .panel-body p a {
+  color: #f6ffeb;
+}
 .faqSec .panel-group .panel + .panel {
   margin-top: 0px !important;
 }
