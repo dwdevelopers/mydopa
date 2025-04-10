@@ -37,6 +37,9 @@ class FAQController extends Controller
 
             return DataTables::of($faqs)
                 ->addIndexColumn() // Adds an index column if needed
+                ->addColumn('answer', function ($row) {
+                    return html_entity_decode($row->answer);;
+                })
                 ->addColumn('status', function ($row) {
                     return $row->is_active
                         ? '<span class="badge bg-success">Active</span>'
@@ -50,7 +53,7 @@ class FAQController extends Controller
                                 <button type="submit" class="btn btn-danger btn-sm">Delete</button>
                             </form>';
                 })
-                ->rawColumns(['action', 'status']) // Allows HTML rendering in the action column
+                ->rawColumns(['action', 'status','answer']) // Allows HTML rendering in the action column
                 ->make(true);
         }
 

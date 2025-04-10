@@ -12,7 +12,10 @@ class RatingRepository implements RatingRepositoryInterface
     {
         return RatingAndReview::get();
     }
-
+    public function paginate($perPage =10)
+    {
+        return RatingAndReview::where('status', 1)->paginate($perPage);
+    }
     public function find($id)
     {
         return RatingAndReview::findOrFail($id);

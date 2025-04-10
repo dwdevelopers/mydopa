@@ -31,6 +31,8 @@
     {{-- <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /> --}}
     <link href="{{asset('theme/dist/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+
     <!-- Datatables css -->
     <link href="{{asset('theme/dist/assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('theme/dist/assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css')}}" rel="stylesheet" type="text/css" />

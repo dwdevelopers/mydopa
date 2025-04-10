@@ -8,9 +8,12 @@ class FAQRepository implements FAQRepositoryInterface
 {
     public function all()
     {
-        return FAQ::all();
+        return FAQ::orderByDesc('id')->get();
     }
-
+    public function paginate($perPage = 10)
+    {
+        return FAQ::where('is_active', 1)->paginate($perPage);
+    }
     public function find($id)
     {
         return FAQ::findOrFail($id);

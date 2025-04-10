@@ -9,9 +9,12 @@ class QuestionRepository implements QuestionRepositoryInterface
 {
     public function all()
     {
-        return Question::all();
+        return Question::get();
     }
-
+    public function paginate($perPage = 10)
+    {
+        return Question::where('status', 1)->paginate($perPage);
+    }
     public function find($id)
     {
         return Question::findOrFail($id);

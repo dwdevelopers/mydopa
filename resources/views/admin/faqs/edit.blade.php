@@ -64,3 +64,11 @@
     </div>
 </div>
 @endsection
+@push('scripts')
+  <script>
+            ClassicEditor.create( document.querySelector( '#answer' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+@endpush

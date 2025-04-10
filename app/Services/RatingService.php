@@ -17,7 +17,10 @@ class RatingService
     {
         return $this->ratingRepository->all();
     }
-
+    public function paginateRatings($perPage = 10)
+    {
+        return $this->ratingRepository->paginate($perPage);
+    }
     public function getRatingById($id)
     {
         return $this->ratingRepository->find($id);

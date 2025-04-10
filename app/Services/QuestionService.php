@@ -17,7 +17,10 @@ class QuestionService
     {
         return $this->questionRepository->all();
     }
-
+    public function paginateQuestions($perPage = 10)
+    {
+        return $this->questionRepository->paginate($perPage);
+    }
     public function getQuestionById($id)
     {
         return $this->questionRepository->find($id);

@@ -32,7 +32,7 @@
 
                                     <div class="mb-3">
                                         <label for="answer" class="form-label">Answer</label>
-                                        <textarea id="answer" name="answer" class="form-control" rows="3" required></textarea>
+                                        <textarea id="answer" name="answer" class="form-control" rows="3" ></textarea>
                                     </div>
 
                                     <div class="mb-3">
@@ -63,3 +63,35 @@
     </div>
 </div>
 @endsection
+@push('scripts')
+@push('scripts')
+<script>
+    let editorInstance;
+
+    ClassicEditor
+        .create(document.querySelector('#answer'))
+        .then(editor => {
+            editorInstance = editor;
+
+            // Optional: sync on submit
+            document.querySelector('form').addEventListener('submit', function (e) {
+                const editorData = editor.getData().trim();
+
+                if (!editorData) {
+                    alert('Answer is required.');
+                    e.preventDefault();
+                    return;
+                }
+
+                // Update the hidden textarea with editor content
+                document.querySelector('#answer').value = editorData;
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+@endpush
+
+@endpush
+

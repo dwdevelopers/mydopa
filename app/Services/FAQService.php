@@ -11,7 +11,10 @@ class FAQService
     {
         $this->faqRepository = $faqRepository;
     }
-
+    public function paginateFaqs($perPage = 10)
+    {
+        return $this->faqRepository->paginate($perPage);
+    }
     public function getAllFaqs()
     {
         return $this->faqRepository->all();

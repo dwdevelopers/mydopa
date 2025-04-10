@@ -18,7 +18,8 @@
                             <div id="collapse-{{ $index }}"
                                  class="panel-collapse collapse @if($index == 0) in @endif">
                                 <div class="panel-body">
-                                    <p>{{ $faq->answer }}</p>
+                                  <p>{!! $faq->answer !!}</p>
+
                                 </div>
                             </div>
                         </div>
