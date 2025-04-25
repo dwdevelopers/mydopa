@@ -17,7 +17,7 @@
 <div class="shop-banner lg:h-full md:h-[580px] sm:h-[40px] h-[40px] only-mob" style="background-image: url('{{ asset('website/assets/images/product-shop/shop-banner-mob.jpg') }}');">
     <div class="container w-full h-full flex ">
         <div class="text-content ">
-            <div class="text-display md:mt-5 mt-2">Herbal health supplement for parkinson’s disease</div>
+            <div class="text-display md:mt-5 mt-2">Herbal Health Supplement For Parkinson’s Disease</div>
         </div>
 
     </div>
@@ -95,8 +95,10 @@
                         <p class="rs"><span>₹ 450</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</P>
                         <div class="blk_tag">BEST RESULT</div>
+                        <p class="pb-10" style="padding-top: 30px;">( free shipping across India)</p>
+
                     </div>
-                    <div class="plan most-popular">
+                    <!-- <div class="plan most-popular">
                         <span class="discount">SAVE ₹ 170</span>
                         <h3>2 Box</h3>
                         <p>60 Sachets</p>
@@ -104,15 +106,15 @@
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                         <div class="blk_tag">MOST POPULAR
                         </div>
-                    </div>
-                    <div class="plan">
+                    </div> -->
+                    <!-- <div class="plan">
                         <span class="discount">SAVE ₹ 200</span>
                         <h3>3 Box</h3>
                         <p>90 Sachets</p>
                         <p class="rs"><strike>₹ 1,350 </strike> <span style="margin-left: 3px;">₹ 1,150</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                         <p class="pb-10">( free shipping across India)</p>
-                    </div>
+                    </div> -->
                 </div>
             <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now">Buy It Now</a>
         </div>

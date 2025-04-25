@@ -256,8 +256,9 @@ Now</a>
                         <p class="rs"><span>₹ 450</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</P>
                         <div class="blk_tag">BEST RESULT</div>
+                        <p class="pb-10" style="padding-top: 30px;">( free shipping across India)</p>
                     </div>
-                    <div class="plan most-popular">
+                    <!-- <div class="plan most-popular">
                         <span class="discount">SAVE ₹ 170</span>
                         <h3>2 Box</h3>
                         <p>60 Sachets</p>
@@ -265,15 +266,15 @@ Now</a>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                         <div class="blk_tag">MOST POPULAR
                         </div>
-                    </div>
-                    <div class="plan">
+                    </div> -->
+                    <!-- <div class="plan">
                         <span class="discount">SAVE ₹ 200</span>
                         <h3>3 Box</h3>
                         <p>90 Sachets</p>
                         <p class="rs"><strike>₹ 1,350 </strike> <span style="margin-left: 3px;">₹ 1,150</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</p>
                         <p class="pb-10">( free shipping across India)</p>
-                    </div>
+                    </div> -->
                 </div>
                 <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now" >Buy It Now</a>
             </div>
