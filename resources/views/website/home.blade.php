@@ -20,68 +20,68 @@
                                         disease</div>
 
                                 </div>
-                                   <!-- ====================== banner Review starts =============================== -->
-        <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
-            <!-- Indicators -->
-                 <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="banner-carousal-container">
-                        <div class="title-sec">
-                            <h2>MYDOPA gave my father a second chance at life.</h2>
-                            <p class="autor">Anitha R </p>
-                        </div>
+                                <!-- ====================== banner Review starts =============================== -->
+                                <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
+                                    <!-- Indicators -->
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <div class="banner-carousal-container">
+                                                <div class="title-sec">
+                                                    <h2>MYDOPA gave my father a second chance at life.</h2>
+                                                    <p class="autor">Anitha R </p>
+                                                </div>
 
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
-                            We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
-                            that we saw real improvement. His tremors reduced, and he started walking with confidence
-                            again.</p>
-                    </div>
-                </div>
-                <div class="item">
-                        <div class="banner-carousal-container">
-                        <div class="title-sec">
-                            <h2>MYDOPA gave my father a second chance at life. 222</h2>
-                            <p class="autor">Anitha R </p>
-                        </div>
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
+                                                    We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
+                                                    that we saw real improvement. His tremors reduced, and he started walking with confidence
+                                                    again.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="banner-carousal-container">
+                                                <div class="title-sec">
+                                                    <h2>MYDOPA gave my father a second chance at life. 222</h2>
+                                                    <p class="autor">Anitha R </p>
+                                                </div>
 
-                        <div class="rating-box">
-                            <div class="stars">
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                                <i class='bx bx-star star'></i>
-                            </div>
-                        </div>
-                        <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
-                            We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
-                            that we saw real improvement. His tremors reduced, and he started walking with confidence
-                            again.</p>
-                    </div>
-                </div>
-             
-            </div>
+                                                <div class="rating-box">
+                                                    <div class="stars">
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star'></i>
+                                                    </div>
+                                                </div>
+                                                <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
+                                                    We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
+                                                    that we saw real improvement. His tremors reduced, and he started walking with confidence
+                                                    again.</p>
+                                            </div>
+                                        </div>
 
-            <!-- Controls -->
-           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-  <span style="font-size: 14px;">&#10094;</span>
-</a>
-<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-  <span style="font-size: 14px;">&#10095;</span>
-</a>
-        </div>
+                                    </div>
 
-        <!-- ====================== Banner Review end =============================== -->
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                        <span style="font-size: 14px;">&#10094;</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                        <span style="font-size: 14px;">&#10095;</span>
+                                    </a>
+                                </div>
+
+                                <!-- ====================== Banner Review end =============================== -->
                                 <div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                     <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover  only-sm-desk" />
                                     <img src="{{ asset('website/assets/images/slider/bg-cos1-1-mob.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-sm-mob" />
@@ -89,12 +89,12 @@
                             </div>
                         </div>
                     </div>
-                 
+
                 </div>
                 <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
-     
+
 
 
     </div>
