@@ -11,15 +11,77 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="slider-item h-full w-full relative overflow-hidden">
-                            <div class="container-fluid w-full h-full flex ">
+                            <div class="container-fluid w-full h-full flex container-flex">
                                 <div class="text-content  w-2/3">
 
-                                    <div class="text-display md:mt-5 mt-2 mt-70">Herbal health
+                                    <div class="text-display md:mt-5 mt-2 mt-10">Herbal health
                                         supplement for
                                         parkinson’s
                                         disease</div>
 
                                 </div>
+                                   <!-- ====================== banner Review starts =============================== -->
+        <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
+            <!-- Indicators -->
+                 <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="banner-carousal-container">
+                        <div class="title-sec">
+                            <h2>MYDOPA gave my father a second chance at life.</h2>
+                            <p class="autor">Anitha R </p>
+                        </div>
+
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
+                            We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
+                            that we saw real improvement. His tremors reduced, and he started walking with confidence
+                            again.</p>
+                    </div>
+                </div>
+                <div class="item">
+                        <div class="banner-carousal-container">
+                        <div class="title-sec">
+                            <h2>MYDOPA gave my father a second chance at life. 222</h2>
+                            <p class="autor">Anitha R </p>
+                        </div>
+
+                        <div class="rating-box">
+                            <div class="stars">
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                                <i class='bx bx-star star'></i>
+                            </div>
+                        </div>
+                        <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
+                            We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
+                            that we saw real improvement. His tremors reduced, and he started walking with confidence
+                            again.</p>
+                    </div>
+                </div>
+             
+            </div>
+
+            <!-- Controls -->
+           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+  <span style="font-size: 14px;">&#10094;</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+  <span style="font-size: 14px;">&#10095;</span>
+</a>
+        </div>
+
+        <!-- ====================== Banner Review end =============================== -->
                                 <div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                     <img src="{{ asset('website/assets/images/slider/bg-cos1-1.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover  only-sm-desk" />
                                     <img src="{{ asset('website/assets/images/slider/bg-cos1-1-mob.jpg')}}" alt="bg-cos1-1" class="w-full h-full object-cover only-sm-mob" />
@@ -27,50 +89,22 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="swiper-slide">
-<div class="slider-item h-full w-full relative overflow-hidden">
-<div class="container w-full h-full flex items-center">
-<div class="text-content sm:w-1/2 w-2/3">
-<div class="text-sub-display">Sale! Up To 50% Off!</div>
-<div class="text-display md:mt-5 mt-2">Elevate Your Beauty with Our Cosmetics
-</div>
-<div class="body1 mt-4">Check out our latest collection of chic and trendy
-outfits that will keep you looking stylish all year round.</div>
-<a href="shop-breadcrumb-img.html" class="button-main md:mt-8 mt-3"> Shop
-Now</a>
-</div>
-<div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
-<img src="{{ asset('website/assets/images/slider/bg-cos1-2.png')}}" alt="bg-cos1-2" class="w-full h-full object-cover" />
-</div>
-</div>
-</div>
-</div>
-<div class="swiper-slide">
-<div class="slider-item h-full w-full relative overflow-hidden">
-<div class="container w-full h-full flex items-center">
-<div class="text-content sm:w-1/2 w-2/3">
-<div class="text-sub-display">Sale! Up To 50% Off!</div>
-<div class="text-display md:mt-5 mt-2">Unleash Your Inner Glamour</div>
-<div class="body1 mt-4">Check out our latest collection of chic and trendy
-outfits that will keep you looking stylish all year round.</div>
-<a href="shop-breadcrumb-img.html" class="button-main md:mt-8 mt-3"> Shop
-Now</a>
-</div>
-<div class="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
-<img src="{{ asset('website/assets/images/slider/bg-cos1-3.png')}}" alt="bg-cos1-3" class="w-full h-full object-cover" />
-</div>
-</div>
-</div>
-</div> -->
+                 
                 </div>
                 <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
+     
+
+
     </div>
 
 
 
     <!-- ====================== wellbeing sec starts =============================== -->
+
+
+
 
     <div class="why_mydopa wellbeing">
         <div class="container">
@@ -150,7 +184,7 @@ Now</a>
                     <div class="cards" id="horizontal">
                         <div class="card">
                             <div class="text ">
-                                <h2>MYDOPA  <br> The Freedom to Move</h2>
+                                <h2>MYDOPA <br> The Freedom to Move</h2>
                             </div>
                         </div>
                         <div class="card">
@@ -174,7 +208,7 @@ Now</a>
                                 <img src="{{ asset('website/assets/images/videos/video1.gif')}}" alt="Doctor">
                             </button>
                             <h3>Who can take it?</h3>
-                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism, 
+                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism,
                                 or other neurodegenerative conditions that involve tremors, stiffness, or motor deficits. </p>
                             <span class="number">02</span>
                         </div>
@@ -211,8 +245,8 @@ Now</a>
                             </button>
                             <h3>Who should consult?</h3>
                             <p>Anyone considering taking MYDOPA, especially those already on standard Parkinson’s
-                                 medications should consult their doctor or an Ayurvedic specialist. This ensures
-                                 proper dosage adjustments and safe integration with existing treatments. </p>
+                                medications should consult their doctor or an Ayurvedic specialist. This ensures
+                                proper dosage adjustments and safe integration with existing treatments. </p>
                             <span class="number">05</span>
                         </div>
                     </div>
@@ -276,7 +310,7 @@ Now</a>
                         <p class="pb-10">( free shipping across India)</p>
                     </div> -->
                 </div>
-                <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now" >Buy It Now</a>
+                <a href="https://viams.in/product/mydopa-herbal-health-supplement-for-parkinsons-disease/" class="buy-now">Buy It Now</a>
             </div>
         </div>
     </div>
@@ -333,13 +367,13 @@ Now</a>
 
     <!-- ===============================Review sec start================================ -->
 
- @include('website.review-rating')
+    @include('website.review-rating')
 
     <!-- ===============================Review sec end================================ -->
 
     <!-- ===============================faq sec start================================ -->
 
- @include('website.faq')
+    @include('website.faq')
 
     <!-- ===============================faq sec end================================ -->
 
@@ -377,7 +411,6 @@ Now</a>
             });
         });
     });
-
 </script>
 
 <script>
@@ -443,6 +476,5 @@ Now</a>
             });
         });
     });
-
 </script>
 @endpush

@@ -342,6 +342,7 @@ p {
 .home-page {
     .slider-block {
         height: calc(100vh - 73px);
+        position: relative;
     }
 
     .home-banner {
@@ -371,7 +372,11 @@ p {
         .object-cover {
             height: calc(100vh - 73px);
         }
-
+  @media(max-width:767px){
+        .swiper, .slider-item{
+overflow: visible !important;
+        }
+    }
     }
 
     // wellbeng sec starts
@@ -380,6 +385,9 @@ p {
         background-color: #f7f8f9;
         padding: 50px 0px;
         padding-bottom: 70px;
+        @media(max-width:767px){
+                padding-top: 240px;
+        }
     }
 
     // wellbeng sec end
@@ -435,7 +443,8 @@ p {
         @media(max-width:575px) {
             margin-top: -40px;
         }
-        @media(min-height:1000px){
+
+        @media(min-height:1000px) {
             margin-top: -200px;
         }
     }
@@ -766,6 +775,7 @@ p {
                 width: 100%;
                 display: inline-block;
                 position: relative;
+
                 @media(max-width:768px) {
                     padding-right: 30px;
                 }
@@ -798,8 +808,9 @@ p {
                 font-size: 15px;
                 line-height: 26px;
                 padding-bottom: 10px;
-                a{
-                    color:#f6ffeb;
+
+                a {
+                    color: #f6ffeb;
                 }
             }
         }
@@ -1141,9 +1152,10 @@ p {
     display: flex;
     gap: 20px;
 
-    @media(max-width:767px){
+    @media(max-width:767px) {
         flex-direction: column;
     }
+
     .left-block,
     .right-block {
         width: 50%;
@@ -1151,7 +1163,8 @@ p {
         background-image: linear-gradient(84deg, #d6c2f3, #ddd5e7);
 
         border-radius: 5px;
-        @media(max-width:767px){
+
+        @media(max-width:767px) {
             width: 100%;
         }
     }
@@ -1207,24 +1220,28 @@ p {
 }
 
 .tabs .tab-content p {
- 
+
     padding-bottom: 10px;
 }
 
 .tabs .tab-buttons {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .tabs .tb-3 .accordion-content {
     padding-top: 10px;
 }
+
 .tabs .tb-4 ul li {
     padding-bottom: 5px;
 }
-@media(min-width:1500px){
+
+@media(min-width:1500px) {
     .tabs .tab-buttons .tab {
         padding: 10px 15px !important;
     }
 }
+
 @media (min-width: 1501px) {
     .tabs .tab-buttons {
         justify-content: flex-start;
@@ -1233,26 +1250,30 @@ margin-bottom: 10px;
     }
 }
 
-.whatset{
+.whatset {
     display: flex;
     align-items: center;
-    img{
+
+    img {
         height: 400px;
         object-fit: cover;
-        @media(min-width:992px){
-        width: 90%;
+
+        @media(min-width:992px) {
+            width: 90%;
         }
-        @media(max-width:767px){
+
+        @media(max-width:767px) {
             margin-bottom: 30px;
-    
+
         }
     }
-    @media(max-width:767px){
+
+    @media(max-width:767px) {
         flex-direction: column;
     }
 }
 
-.to-top{
+.to-top {
     background-color: var(--black);
     width: 50px;
     height: 50px;
@@ -1266,27 +1287,162 @@ margin-bottom: 10px;
     box-shadow: 0px 5px 25px rgba(58, 64, 67, 0.2);
     cursor: pointer;
     z-index: 100;
-  
+
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
-    
-&:hover {
+
+    &:hover {
         color: #1f1f1f;
         text-decoration: underline;
     }
 }
+
 .to-top.active {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .to-top i {
-    color: #fff;
-  }
+}
 
-  .contactNumber{
+.to-top i {
+    color: #fff;
+}
+
+.contactNumber {
     display: flex;
     flex-direction: column;
     gap: 5px;
-  }
+}
+
+
+.banner-review {
+    .item {
+
+
+        p {
+            font-size: 12px;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
+        }
+    }
+
+    h2,
+    p {
+        color: #451b83;
+    }
+
+    h2 {
+        font-size: 16px;
+        max-width: 90%;
+        padding-bottom: 10px;
+        line-height: 22px;
+        @media(min-width:575px){
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+        }
+    }
+}
+
+.banner-review {
+    // position: absolute !important;
+    // bottom: 50px;
+    z-index: 3;
+    max-width: 420px;
+    left: 30px;
+    background-color: #e0d8edcf;
+    cursor: default;
+    @media(max-width:575px){
+            max-width: 320px;
+               left: unset;
+    }
+    @media(max-width:400px){
+            max-width: 260px;
+            left: unset;
+    }
+
+    @media(max-width:766px) {
+        // padding-top: 30px;
+            bottom: -260px;
+    z-index: 9;
+    }
+
+    @media(min-width:766px) {
+        left: 50px;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+        background-image: none !important;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 3px 0px #d0d0d0;
+        top: 50%;
+        margin-top: -15px;
+
+        span {
+            color: #45217d;
+        }
+    }
+
+    .carousel-control.right {
+        right: -10px;
+    }
+
+    .carousel-control.left {
+        left: -10px;
+
+    }
+
+    .carousel-inner {
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0px 0px 11px 0px #888181;
+        border-radius: 10px;
+
+        border: 5px solid #ffffff85;
+
+        .item {
+            padding: 20px;
+        }
+    }
+
+    .rating-box {
+        padding: 5px 0px;
+    }
+
+    // @media(min-height: 800px){
+    //         bottom: 20%;
+    // }
+    .stars{
+        .bx{
+                color: #FF9800;
+        }
+    }
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0px;
+
+    @media(min-width:767px) {
+        justify-content: space-between;
+    }
+    @media(max-width:575px) {
+            align-items: center;
+    }
+
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
