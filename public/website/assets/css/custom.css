@@ -309,7 +309,8 @@ p {
   height: calc(100vh - 73px);
 }
 @media (max-width: 767px) {
-  .home-page .home-banner .swiper, .home-page .home-banner .slider-item {
+  .home-page .home-banner .swiper,
+  .home-page .home-banner .slider-item {
     overflow: visible !important;
   }
 }
@@ -1121,6 +1122,7 @@ p {
 @media (min-width: 766px) {
   .banner-review {
     left: 50px;
+    min-height: 250px;
   }
 }
 .banner-review .carousel-control.right,

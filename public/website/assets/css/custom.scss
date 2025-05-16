@@ -372,11 +372,14 @@ p {
         .object-cover {
             height: calc(100vh - 73px);
         }
-  @media(max-width:767px){
-        .swiper, .slider-item{
-overflow: visible !important;
+
+        @media(max-width:767px) {
+
+            .swiper,
+            .slider-item {
+                overflow: visible !important;
+            }
         }
-    }
     }
 
     // wellbeng sec starts
@@ -385,8 +388,9 @@ overflow: visible !important;
         background-color: #f7f8f9;
         padding: 50px 0px;
         padding-bottom: 70px;
-        @media(max-width:767px){
-                padding-top: 240px;
+
+        @media(max-width:767px) {
+            padding-top: 240px;
         }
     }
 
@@ -1337,11 +1341,12 @@ overflow: visible !important;
         max-width: 90%;
         padding-bottom: 10px;
         line-height: 22px;
-        @media(min-width:575px){
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        overflow: hidden;
+
+        @media(min-width:575px) {
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
         }
     }
 }
@@ -1354,23 +1359,26 @@ overflow: visible !important;
     left: 30px;
     background-color: #e0d8edcf;
     cursor: default;
-    @media(max-width:575px){
-            max-width: 320px;
-               left: unset;
+
+    @media(max-width:575px) {
+        max-width: 320px;
+        left: unset;
     }
-    @media(max-width:400px){
-            max-width: 260px;
-            left: unset;
+
+    @media(max-width:400px) {
+        max-width: 260px;
+        left: unset;
     }
 
     @media(max-width:766px) {
         // padding-top: 30px;
-            bottom: -260px;
-    z-index: 9;
+        bottom: -260px;
+        z-index: 9;
     }
 
     @media(min-width:766px) {
         left: 50px;
+        min-height: 250px;
     }
 
     .carousel-control.right,
@@ -1421,9 +1429,9 @@ overflow: visible !important;
     // @media(min-height: 800px){
     //         bottom: 20%;
     // }
-    .stars{
-        .bx{
-                color: #FF9800;
+    .stars {
+        .bx {
+            color: #FF9800;
         }
     }
 }
@@ -1437,8 +1445,9 @@ overflow: visible !important;
     @media(min-width:767px) {
         justify-content: space-between;
     }
+
     @media(max-width:575px) {
-            align-items: center;
+        align-items: center;
     }
 
 }
