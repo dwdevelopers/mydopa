@@ -1159,6 +1159,11 @@ p {
 .banner-review .carousel-inner .item {
   padding: 20px;
 }
+@media (min-width: 766px) {
+  .banner-review .carousel-inner .item {
+    min-height: 240px;
+  }
+}
 .banner-review .rating-box {
   padding: 5px 0px;
 }

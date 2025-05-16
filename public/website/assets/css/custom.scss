@@ -1419,6 +1419,9 @@ p {
 
         .item {
             padding: 20px;
+             @media(min-width:766px) {
+                min-height: 240px; 
+            }
         }
     }
 
