@@ -21,55 +21,28 @@
 
                                 </div>
                                 <!-- ====================== banner Review starts =============================== -->
-                                <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
-                                    <!-- Indicators -->
+                               <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
+                                        @foreach ($ratings as $index => $rating)
+                                        <div class="item {{ $index == 0 ? 'active' : '' }}">
                                             <div class="banner-carousal-container">
                                                 <div class="title-sec">
-                                                    <h2>MYDOPA gave my father a second chance at life.</h2>
-                                                    <p class="autor">Anitha R </p>
+                                                    <h2>{{ $rating->title }}</h2>
+                                                    <p class="autor">{{ $rating->name }}</p>
                                                 </div>
 
                                                 <div class="rating-box">
                                                     <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
+                                                        @for ($i = 1; $i <= 5; $i++) <i class='bx {{ $i <= $rating->rating ? "bxs-star text-warning" : "bx-star text-muted" }} star'></i>
+                                                            @endfor
                                                     </div>
                                                 </div>
-                                                <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
-                                                    We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
-                                                    that we saw real improvement. His tremors reduced, and he started walking with confidence
-                                                    again.</p>
+
+                                                <p class="review-description">{{ $rating->review }}</p>
                                             </div>
                                         </div>
-                                        <div class="item">
-                                            <div class="banner-carousal-container">
-                                                <div class="title-sec">
-                                                    <h2>MYDOPA gave my father a second chance at life. 222</h2>
-                                                    <p class="autor">Anitha R </p>
-                                                </div>
-
-                                                <div class="rating-box">
-                                                    <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                    </div>
-                                                </div>
-                                                <p class="review-description">My father was diagnosed with Parkinson’s five years ago.
-                                                    We tried many treatments, but it was only after starting MYDOPA along with Panchakarma
-                                                    that we saw real improvement. His tremors reduced, and he started walking with confidence
-                                                    again.</p>
-                                            </div>
-                                        </div>
-
+                                        @endforeach
                                     </div>
 
                                     <!-- Controls -->
