@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@yield('title') |{{ config('app.name') }}</title>
+   <title>@yield('title', 'Mydopa | Herbal health supplement for Parkinson’s disease')</title>
+    <meta name="description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
+
+    <meta name="keywords" content="MYDOPA, Parkinson’s disease support, Parkinson’s assistive product, product for Parkinson’s patients, traditional Parkinson’s remedy, MYDOPA device, transforming lives with Parkinson’s, assistive technology, Parkinson’s mobility aid">
+    <meta name="author" content="Mydopa Team">
+
+    <!-- Open Graph for better social sharing -->
+    <meta property="og:title" content="Mydopa | Herbal health supplement for parkinson’s disease">
+    <meta property="og:description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
+    <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}"> 
+    <meta property="og:url" content="https://mydopa.com/">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://mydopa.com/" />
+
+
     <link rel="shortcut icon" href="{{ asset('website/assets/images/fav.png')}}" type="image/x-icon" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/swiper-bundle.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/style.css')}}" />
@@ -56,25 +70,27 @@
     {{-- Footer --}}
     @include('website.layouts.footer')
 
-    <a class="to-top" ><i class="ph-bold ph-caret-up"></i></a>
+    <a class="to-top"><i class="ph-bold ph-caret-up"></i></a>
 
     <script>
-  $(document).ready(function () {
-    var toTop = $('.to-top');
+        $(document).ready(function() {
+            var toTop = $('.to-top');
 
-    $(window).on('scroll', function () {
-      if ($(window).scrollTop() > 600) {
-        toTop.addClass('active');
-      } else {
-        toTop.removeClass('active');
-      }
-    });
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 600) {
+                    toTop.addClass('active');
+                } else {
+                    toTop.removeClass('active');
+                }
+            });
 
-    toTop.on('click', function () {
-      $('html, body').animate({ scrollTop: 0 }, 600);
-    });
-  });
-</script>
+            toTop.on('click', function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 600);
+            });
+        });
+    </script>
 
     <!-- Modal -->
 
@@ -695,95 +711,95 @@
 
 
 
-<!-- =================== model for videos starts================= -->
+    <!-- =================== model for videos starts================= -->
 
-<div class="modal fade modalVideo" id="video1Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal fade modalVideo" id="video1Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-         <div class="modal-body p-0">
-         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <video id="video1" width="100%" controls>
-          <source src="{{ asset('website/assets/images/videos/video1.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+                <div class="modal-body p-0">
+                    <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video id="video1" width="100%" controls>
+                        <source src="{{ asset('website/assets/images/videos/video1.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="modal fade modalVideo" id="video2Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal fade modalVideo" id="video2Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-         <div class="modal-body p-0">
-         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <video id="video1" width="100%" controls>
-          <source src="{{ asset('website/assets/images/videos/video2.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+                <div class="modal-body p-0">
+                    <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video id="video1" width="100%" controls>
+                        <source src="{{ asset('website/assets/images/videos/video2.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="modal fade modalVideo" id="video3Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal fade modalVideo" id="video3Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-         <div class="modal-body p-0">
-         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <video id="video1" width="100%" controls>
-          <source src="{{ asset('website/assets/images/videos/video03.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+                <div class="modal-body p-0">
+                    <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video id="video1" width="100%" controls>
+                        <source src="{{ asset('website/assets/images/videos/video03.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="modal fade modalVideo" id="video4Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal fade modalVideo" id="video4Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-         <div class="modal-body p-0">
-         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <video id="video1" width="100%" controls>
-          <source src="{{ asset('website/assets/images/videos/video4.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+                <div class="modal-body p-0">
+                    <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video id="video1" width="100%" controls>
+                        <source src="{{ asset('website/assets/images/videos/video4.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="modal fade modalVideo" id="video5Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal fade modalVideo" id="video5Modal" tabindex="-1" role="dialog" aria-labelledby="video1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
 
-         <div class="modal-body p-0">
-         <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <video id="video1" width="100%" controls>
-          <source src="{{ asset('website/assets/images/videos/video5.mp4') }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+                <div class="modal-body p-0">
+                    <button type="button" class="close ms-auto me-2 mt-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <video id="video1" width="100%" controls>
+                        <source src="{{ asset('website/assets/images/videos/video5.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- =================== model for videos end================= -->
+    <!-- =================== model for videos end================= -->
 
     @stack('scripts')
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
@@ -874,47 +890,47 @@
     </script>
 
 
-<script>
-  // Loop through all modal IDs
-  ['video1Modal', 'video2Modal', 'video3Modal', 'video4Modal', 'video5Modal'].forEach(function(modalId) {
-    $('#' + modalId).on('hidden.bs.modal', function () {
-      var video = this.querySelector('video');
-      if (video) {
-        video.pause();
-        video.currentTime = 0; // Optional: reset to beginning
-      }
-    });
-  });
-</script>
+    <script>
+        // Loop through all modal IDs
+        ['video1Modal', 'video2Modal', 'video3Modal', 'video4Modal', 'video5Modal'].forEach(function(modalId) {
+            $('#' + modalId).on('hidden.bs.modal', function() {
+                var video = this.querySelector('video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0; // Optional: reset to beginning
+                }
+            });
+        });
+    </script>
 
-<script>
-    gsap.registerPlugin(ScrollTrigger);
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
 
-    const cards = gsap.utils.toArray("#horizontal .card");
-    const container = document.querySelector("#horizontal");
+        const cards = gsap.utils.toArray("#horizontal .card");
+        const container = document.querySelector("#horizontal");
 
-    // Set xPercent based on screen width
-    const isMobile = window.innerWidth <= 576;
-    const xPercentValue = isMobile ? -106 * (cards.length - 1) : -90 * (cards.length - 1);
+        // Set xPercent based on screen width
+        const isMobile = window.innerWidth <= 576;
+        const xPercentValue = isMobile ? -106 * (cards.length - 1) : -90 * (cards.length - 1);
 
-    gsap.to(cards, {
-        xPercent: xPercentValue,
-        ease: "none",
-        scrollTrigger: {
-            trigger: container,
-            pin: true,
-            scrub: 1,
-            anticipatePin: 1,
-            end: () => "+=" + container.offsetWidth
+        gsap.to(cards, {
+            xPercent: xPercentValue,
+            ease: "none",
+            scrollTrigger: {
+                trigger: container,
+                pin: true,
+                scrub: 1,
+                anticipatePin: 1,
+                end: () => "+=" + container.offsetWidth
+            }
+        });
+    </script>
+    <script>
+        function redirectToReview() {
+            const baseUrl = window.location.origin;
+            window.location.href = baseUrl + "/#rating_and_review";
         }
-    });
-</script>
-<script>
-  function redirectToReview() {
-    const baseUrl = window.location.origin;
-    window.location.href = baseUrl + "/#rating_and_review";
-  }
-</script>
+    </script>
 
 </body>
 
