@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@yield('title') | 'Mydopa | Herbal health supplement for Parkinson’s disease'</title>
+    <title>@yield('title') | Mydopa | Herbal health supplement for Parkinson’s disease</title>
     <meta name="description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
 
     <meta name="keywords" content="MYDOPA, Parkinson’s disease support, Parkinson’s assistive product, product for Parkinson’s patients, traditional Parkinson’s remedy, MYDOPA device, transforming lives with Parkinson’s, assistive technology, Parkinson’s mobility aid">
