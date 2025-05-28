@@ -209,6 +209,23 @@
     padding-top: 40px;
   }
 }
+.product-container .product-details .pricing-options .plan .sale-tag {
+  background-color: #4A2E89;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.product-container .product-details .pricing-options .plan .sale-tag p {
+  padding: 0;
+  font-size: 14px;
+}
 .product-container .product-details .buy-now {
   background: black;
   color: white;

@@ -260,10 +260,13 @@
                         <!-- <span class="discount">SAVE ₹ 1,495</span> -->
                         <h3 style="padding-top: 20px;">1 Box</h3>
                         <p>30 Sachets</p>
-                        <p class="rs"><span>₹ 450</span></p>
+                        <p class="rs"><span><del style="opacity: .7;">₹ 700</del> ₹ 450</span></p>
                         <p class="pb-10">MRP (incl. of all taxes)</P>
                         <div class="blk_tag">BEST RESULT</div>
                         <p class="pb-10" style="padding-top: 30px;">( free shipping across India)</p>
+                        <div class="sale-tag">
+                            <p>Sale!</p>
+                        </div>
                     </div>
                     <!-- <div class="plan most-popular">
                         <span class="discount">SAVE ₹ 170</span>

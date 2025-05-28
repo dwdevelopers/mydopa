@@ -244,6 +244,26 @@
                 @media(max-width:991px) {
                     padding-top: 40px;
                 }
+
+                .sale-tag {
+                    background-color: #4A2E89;
+                    color: #fff;
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+
+                    p {
+                        padding: 0;
+                        font-size: 14px;
+                    }
+
+                }
             }
         }
 
@@ -391,6 +411,7 @@
 
             img {
                 width: 250px;
+
                 @media(max-width:991px) {
                     width: 190px;
                 }
@@ -411,15 +432,18 @@
             height: calc(-9.5rem + 100vh);
             padding: 4rem 1.4375rem 5rem 4.625rem;
         }
+
         @media(min-width:1921x) {
             height: calc(-9.5rem + 90vh);
             padding: 10rem 1.4375rem 10rem 4.625rem;
         }
-        @media(min-height:800px){
+
+        @media(min-height:800px) {
             height: calc(-9.5rem + 80vh);
             padding: 8rem 1.4375rem 8rem 4.625rem;
         }
-        @media(min-height:1000px){
+
+        @media(min-height:1000px) {
             height: calc(-9.5rem + 70vh);
             margin-top: -100px;
         }
@@ -436,6 +460,7 @@
                 h2 {
 
                     font-size: 55px !important;
+
                     @media(max-width:767px) {
                         font-size: 45px !important;
                     }
@@ -471,24 +496,29 @@
             height: 210px;
             position: relative;
             z-index: 1;
+
             @media(max-width:767px) {
                 height: 300px;
-                margin-top:-50px;
+                margin-top: -50px;
             }
+
             img {
                 width: 450px;
                 height: 220px;
                 border-radius: 120px;
                 object-fit: cover;
+
                 @media(min-width:992px) and (max-width:1199px) {
                     width: 100%;
                     height: auto;
-                    border-radius:50px;
+                    border-radius: 50px;
                 }
+
                 @media(max-width:991px) {
                     width: 300px;
                     height: 160px;
                 }
+
                 @media(max-width:767px) {
                     width: 310px;
                     height: 140px;
@@ -504,7 +534,7 @@
             color: #666;
             padding-top: 30px;
 
-                     @media(max-width:991px) {
+            @media(max-width:991px) {
                 font-size: 30px;
                 padding-bottom: 10px;
             }
@@ -515,6 +545,7 @@
             width: 68%;
             color: #373636;
             font-weight: 500;
+
             @media(max-width:991px) {
                 width: 100%;
                 max-width: 100%;
@@ -680,8 +711,9 @@
                     outline: none;
                     background: transparent;
                     padding-left: 20px;
-                    &:focus{
-                        border-color: transparent!important;
+
+                    &:focus {
+                        border-color: transparent !important;
                     }
                 }
 
