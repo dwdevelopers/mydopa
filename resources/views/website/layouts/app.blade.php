@@ -13,7 +13,7 @@
     <!-- Open Graph for better social sharing -->
     <meta property="og:title" content="Mydopa | Herbal health supplement for parkinson’s disease">
     <meta property="og:description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
-    <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}"> 
+    <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}">
     <meta property="og:url" content="https://mydopa.com/">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://mydopa.com/" />
@@ -57,6 +57,20 @@
             }
         }
     </style>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Mydopa",
+            "url": "https://mydopa.com/",
+            "description": "Mydopa is a herbal health supplement that supports people living with Parkinson’s disease.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Mydopa"
+            }
+        }
+    </script>
 
 </head>
 
