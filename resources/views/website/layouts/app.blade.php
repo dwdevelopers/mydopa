@@ -7,7 +7,7 @@
     <title>@yield('title') | Mydopa - Herbal health supplement for Parkinson’s disease</title>
     <meta name="description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
 
-    <meta name="keywords" content="MYDOPA, Parkinson’s disease support, Parkinson’s assistive product, product for Parkinson’s patients, traditional Parkinson’s remedy, MYDOPA device, transforming lives with Parkinson’s, assistive technology, Parkinson’s mobility aid">
+    <meta name="keywords" content="MYDOPA, Parkinson’s disease support, Parkinson’s assistive product, product for Parkinson’s patients, traditional Parkinson’s remedy, MYDOPA device, transforming lives with Parkinson’s, assistive technology, Parkinson’s mobility aid, MYDOPA – Herbal Health Supplement for Parkinson’s Disease">
     <meta name="author" content="Mydopa Team">
 
     <!-- Open Graph for better social sharing -->
@@ -15,8 +15,14 @@
     <meta property="og:description" content="MYDOPA is not just a product—it is a promise born from tradition, research, and a deep-rooted commitment to transforming the lives of people living with Parkinson’s disease.">
     <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}">
     <meta property="og:url" content="https://mydopa.com/">
+    <meta property="og:site_name" content="MYDOPA" />
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://mydopa.com/" />
+    <link rel="canonical" href="https://mydopa.com/"/><meta name="title" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/><title>VIAMS Mydopa Herbal Supplement for Parkinson&#x27;s Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care</title><meta name="description" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MYDOPA - Herbal Health Supplement for Parkinson&#039;s Disease " />
+    <meta name="twitter:description" content="This is an exclusive blend of precious herbs, meticulously formulated based on Ayurvedic wisdom. It provides natural L-dopa while stimulating dopamine production in the brain, offering a dual benefit for individuals with Parkinson’s Disease &amp; other progressive Neuro Degenerative Diseases. This safe and effective herbal supplement supports symptom management and enhances overall quality of life." />
+    <meta name="twitter:image" content="{{ asset('website/assets/images/fav.png')}}" />
 
 
     <link rel="shortcut icon" href="{{ asset('website/assets/images/fav.png')}}" type="image/x-icon" />
