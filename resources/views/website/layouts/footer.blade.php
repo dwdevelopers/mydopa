@@ -23,8 +23,16 @@
            
 
                         <p>Rate Us on Google <br><a style="cursor:pointer" onclick="redirectToReview()">Click Here to Submit Your Review</a></p>
-
+   <div class="social-Links">
+                    <div class="icon-wrapper">
+                        <a href="https://www.facebook.com/MyDopa.Parkinsons.medicine" target="_blank"> <img src="{{ asset('website/assets/images/fb.png')}}" alt="VIAMS Logo"></a>
+                    </div>
+                    <div class="icon-wrapper">
+                         <a href="https://www.instagram.com/mydopa_viams/?hl=en" target="_blank">  <img src="{{ asset('website/assets/images/instagram.png')}}" alt="VIAMS Logo"></a>
+                    </div>
                 </div>
+                </div>
+             
             </div>
 
         </div>

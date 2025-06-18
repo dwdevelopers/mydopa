@@ -780,6 +780,21 @@
                 text-decoration: none;
             }
         }
+        .social-Links{
+            display: flex;
+            gap: 10px;
+            .icon-wrapper{
+                transition: .3s;
+                // margin: 3px 0px;
+                img{
+                    width: 34px;
+                    height: 34px;
+                }
+                // &:hover{
+                //     margin-top: 0px;
+                // }
+            }
+        }
     }
 
     .footer-bottom {

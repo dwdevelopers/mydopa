@@ -666,6 +666,17 @@
   color: white;
   text-decoration: none;
 }
+.footer .footer-content .social-Links {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-content .social-Links .icon-wrapper {
+  transition: 0.3s;
+}
+.footer .footer-content .social-Links .icon-wrapper img {
+  width: 34px;
+  height: 34px;
+}
 .footer .footer-bottom {
   background: #553882;
   padding: 15px 0;
