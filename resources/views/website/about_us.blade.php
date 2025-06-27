@@ -98,6 +98,65 @@
               </div>
             </div>
           </div>
+
+          <div class="certificate-sec">
+            <h3 class="heading-2">Certifications </h3>
+            <div class="row whatset pt-40">
+              <div class="col-lg-6">
+                <a href="{{ asset('website/assets/images/report1/1.jpg') }}" class="zoom-gallery" title="Slide 1">
+                  <img src="{{ asset('website/assets/images/report1/1.jpg') }}" alt="Slide 1" class="missionIcon">
+                </a>
+              </div>
+              <div class="col-lg-6 ">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <a href="{{ asset('website/assets/images/report2/1.jpg') }}" class="zoom-gallery" title="Slide 2">
+                        <img src="{{ asset('website/assets/images/report2/1.jpg') }}" alt="Slide 2">
+                      </a>
+                    </div>
+
+                    <div class="item">
+                      <a href="{{ asset('website/assets/images/report2/2.jpg') }}" class="zoom-gallery" title="Slide 3">
+                        <img src="{{ asset('website/assets/images/report2/2.jpg') }}" alt="Slide 3">
+                      </a>
+                    </div>
+
+                    <div class="item">
+                      <a href="{{ asset('website/assets/images/report2/3.jpg') }}" class="zoom-gallery" title="Slide 4">
+                        <img src="{{ asset('website/assets/images/report2/3.jpg') }}" alt="Slide 4">
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Left and right controls -->
+                  <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -105,6 +164,40 @@
 </div>
 
 </div>
+
+<script>
+  $(document).ready(function() {
+    $('.carousel-inner').magnificPopup({
+      delegate: 'a.zoom-gallery', // child items selector, by clicking on it popup will open
+      type: 'image',
+      gallery: {
+        enabled: true, // Enable gallery mode
+        navigateByImgClick: true,
+        preload: [0, 1] // preload previous and next images
+      },
+      image: {
+        titleSrc: 'title',
+        verticalFit: true
+      }
+    });
+  });
+
+  $(document).ready(function() {
+    $('.certificate-sec').magnificPopup({
+      delegate: 'a.zoom-gallery',
+      type: 'image',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+      },
+      image: {
+        titleSrc: 'title',
+        verticalFit: true
+      }
+    });
+  });
+</script>
 
 
 

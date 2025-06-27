@@ -48,6 +48,12 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <!-- Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+
+
+
+
     <style>
         .card-bg {
             background-image: url('{{ asset(' website/assets/images/product-shop/feature.jpg') }}');
@@ -225,9 +231,9 @@
             </div>
             <div class="list-product px-6"></div>
             <div class="footer-modal p-6 border-t bg-white border-line absolute bottom-0 left-0 w-full text-center">
-                <a href="wishlist.html" class="button-main w-full text-center uppercase"> View All Wish List</a>
+                <a href="" class="button-main w-full text-center uppercase"> </a>
                 <div class="text-button-uppercase continue mt-4 text-center has-line-before cursor-pointer inline-block">
-                    Or continue shopping</div>
+                 </div>
             </div>
         </div>
     </div>
@@ -359,12 +365,12 @@
                     </div>
                     <div class="block-button text-center p-6">
                         <div class="flex items-center gap-4">
-                            <a href="cart.html" class="button-main basis-1/2 bg-white border border-black text-black text-center uppercase">
-                                View cart </a>
-                            <a href="checkout.html" class="button-main basis-1/2 text-center uppercase"> Check Out </a>
+                            <a href="" class="button-main basis-1/2 bg-white border border-black text-black text-center uppercase">
+                                 </a>
+                            <a href="" class="button-main basis-1/2 text-center uppercase">  </a>
                         </div>
                         <div class="text-button-uppercase continue mt-4 text-center has-line-before cursor-pointer inline-block">
-                            Or continue shopping</div>
+                           </div>
                     </div>
                     <div class="tab-item note-block">
                         <div class="px-6 py-4 border-b border-line">
@@ -511,7 +517,7 @@
         </div>
     </div>
 
-    <div class="modal-compare-block">
+    <!-- <div class="modal-compare-block">
         <div class="modal-compare-main py-6">
             <div class="close-btn absolute 2xl:right-6 right-4 2xl:top-6 md:-top-4 top-3 lg:w-10 w-6 lg:h-10 h-6 rounded-full bg-surface flex items-center justify-center duration-300 cursor-pointer hover:bg-black hover:text-white">
                 <i class="ph ph-x body1"></i>
@@ -521,14 +527,14 @@
                     <div class="heading5 flex-shrink-0 max-md:w-full">Compare <br class="max-md:hidden" />Products</div>
                     <div class="list-product flex items-center w-full gap-4"></div>
                     <div class="block-button flex flex-col gap-4 flex-shrink-0">
-                        <a href="compare.html" class="button-main whitespace-nowrap"> Compare Products</a>
+                        <a href="" class="button-main whitespace-nowrap"> </a>
                         <div class="button-main clear whitespace-nowrap border border-black bg-white text-black">Clear
                             All Products</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="modal-quickview-block">
         <div class="modal-quickview-main py-6">
@@ -641,10 +647,10 @@
                                     <i class="ph-bold ph-plus cursor-pointer body1"></i>
                                 </div>
                                 <div class="add-cart-btn button-main w-full text-center bg-white text-black border border-black">
-                                    Add To Cart</div>
+                                    </div>
                             </div>
                             <div class="button-block mt-5">
-                                <a href="checkout.html" class="button-main w-full text-center">Buy It Now</a>
+                                <a href="" class="button-main w-full text-center"></a>
                             </div>
                         </div>
                         <div class="flex items-center flex-wrap lg:gap-20 gap-8 gap-y-4 mt-5">
@@ -652,13 +658,13 @@
                                 <div class="compare-btn md:w-12 md:h-12 w-10 h-10 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white">
                                     <i class="ph-fill ph-arrows-counter-clockwise cursor-pointer heading6"></i>
                                 </div>
-                                <span>Compare</span>
+                                <span></span>
                             </div>
                             <div class="share flex items-center gap-3 cursor-pointer">
                                 <div class="share-btn md:w-12 md:h-12 w-10 h-10 flex items-center justify-center border border-line cursor-pointer rounded-xl duration-300 hover:bg-black hover:text-white">
                                     <i class="ph-fill ph-share-network cursor-pointer heading6"></i>
                                 </div>
-                                <span>Share Products</span>
+                                <span></span>
                             </div>
                         </div>
                         <div class="more-infor mt-6">
@@ -829,6 +835,8 @@
     <script src="{{ asset('website/assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- Magnific Popup JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <script>
         AOS.init();
