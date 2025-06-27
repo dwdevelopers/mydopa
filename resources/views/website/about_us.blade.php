@@ -103,8 +103,8 @@
             <h3 class="heading-2">Certifications </h3>
             <div class="row whatset pt-40">
               <div class="col-lg-6">
-                <a href="{{ asset('website/assets/images/report1/1.jpg') }}" class="zoom-gallery" title="Slide 1">
-                  <img src="{{ asset('website/assets/images/report1/1.jpg') }}" alt="Slide 1" class="missionIcon">
+                <a href="{{ asset('website/assets/images/report1/1-v.jpg') }}" class="zoom-gallery" title="Slide 1">
+                  <img src="{{ asset('website/assets/images/report1/1-v.jpg') }}" alt="Slide 1" class="missionIcon">
                 </a>
               </div>
               <div class="col-lg-6 ">
@@ -120,20 +120,20 @@
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <a href="{{ asset('website/assets/images/report2/1.jpg') }}" class="zoom-gallery" title="Slide 2">
-                        <img src="{{ asset('website/assets/images/report2/1.jpg') }}" alt="Slide 2">
+                      <a href="{{ asset('website/assets/images/report2/1-v.jpg') }}" class="zoom-gallery" title="Slide 2">
+                        <img src="{{ asset('website/assets/images/report2/1-v.jpg') }}" alt="Slide 2">
                       </a>
                     </div>
 
                     <div class="item">
-                      <a href="{{ asset('website/assets/images/report2/2.jpg') }}" class="zoom-gallery" title="Slide 3">
-                        <img src="{{ asset('website/assets/images/report2/2.jpg') }}" alt="Slide 3">
+                      <a href="{{ asset('website/assets/images/report2/2-v.jpg') }}" class="zoom-gallery" title="Slide 3">
+                        <img src="{{ asset('website/assets/images/report2/2-v.jpg') }}" alt="Slide 3">
                       </a>
                     </div>
 
                     <div class="item">
-                      <a href="{{ asset('website/assets/images/report2/3.jpg') }}" class="zoom-gallery" title="Slide 4">
-                        <img src="{{ asset('website/assets/images/report2/3.jpg') }}" alt="Slide 4">
+                      <a href="{{ asset('website/assets/images/report2/3-v.jpg') }}" class="zoom-gallery" title="Slide 4">
+                        <img src="{{ asset('website/assets/images/report2/3-v.jpg') }}" alt="Slide 4">
                       </a>
                     </div>
                   </div>
