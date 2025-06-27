@@ -165,6 +165,7 @@
 
 </div>
 
+
 <script>
   $(document).ready(function() {
     $('.carousel-inner').magnificPopup({
