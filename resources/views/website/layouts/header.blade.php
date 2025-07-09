@@ -1,3 +1,4 @@
+     <div class="top-header">Toll Free Customer Care Number: <a href="tel:+91 7510 333 222"> +91 7510 333 222</a></div>
      <div class="header-menu style-one relative bg-white w-full md:h-[74px] h-[56px]">
          <div class="container mx-auto h-full">
              <div class="header-main flex items-center justify-between h-full">

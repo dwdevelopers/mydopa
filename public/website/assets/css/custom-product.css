@@ -764,4 +764,15 @@
   background-image: none !important;
   top: 50%;
   margin-top: -15px;
+}
+
+.top-header {
+  text-align: center;
+  padding: 10px;
+  background-color: #8353cb;
+  color: #fff;
+  font-weight: 600;
+}
+.top-header a {
+  color: #fff;
 }/*# sourceMappingURL=custom-product.css.map */

@@ -19,6 +19,7 @@
                 <div class="address">
                     <p>Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
                     <p>Email us: <br><a href="mailto:info@mydopa.com">info@mydopa.com</a></p>
+                    <!-- <p>Toll Free Customer Care Number:<br> <div class="contactNumber" style="margin-top: -20px;"> <a href="tel: +91 7510 333 222"> +91 7510 333 222 </a></div></p> -->
                     <p>Call us:<br> <div class="contactNumber" style="margin-top: -20px;"> <a href="tel:+917034992442">+91 703499 2442</a><a href="tel:+917034882442">+91 703488 2442</a></div></p>
            
 

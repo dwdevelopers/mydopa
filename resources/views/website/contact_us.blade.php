@@ -22,7 +22,7 @@
 <div class="contact-us md:py-20 py-10">
     <div class="container">
         <div class="flex justify-between max-lg:flex-col gap-y-10 ptb-50">
-            <div class="left lg:w-2/3 lg:pr-4">
+            <div class="left lg:w-2/4 lg:pr-4">
                 <div class="heading3">Drop Us A Line</div>
                 <div class="body1 text-secondary2 mt-3">Use the form below to get in touch with the sales team</div>
                 {{-- Success message --}}
@@ -61,12 +61,13 @@
                 </form>
 
             </div>
-            <div class="right lg:w-1/4 lg:pl-4 address-sec">
+            <div class="right lg:w-2/4 lg:pl-4 address-sec">
                 <div class="item">
                     <div class="heading4">Our Store</div>
                     <p class="mt-3">Mezhathur P.O. Palakkad, Kerala, 679534, India</p>
-                    <p> <a href="tel:+91 703499 2442" class="mt-3" style="color: #000;">Phone: <span class="whitespace-nowrap">+91 703499 2442</span></a></p>
-                    <p> <a href="tel:++91 703488 2442" class="mt-3" style="color: #000;"><span style="display: inline-block;width:54px;"></span><span class="whitespace-nowrap">+91 703488 2442</span></a></p>
+                    <p> <a href="tel:+91 7510 333 222" class="mt-3" style="color: #000;">Toll Free Customer Care Number: <span style="display: inline-block;"></span><span class="whitespace-nowrap"> +91 7510 333 222 </span></a></p>
+                    <p> <a href="tel:+91 703499 2442" class="mt-3" style="color: #000;">Phone: <span class="whitespace-nowrap">+91 703499 2442</span></a>,  <a href="tel:+91 703488 2442" class="mt-3" style="color: #000;"><span style="display: inline-block;;"></span><span class="whitespace-nowrap">+91 703488 2442</span></a></p>
+                    <p></p>
                     <p><a href="mailto:info@mydopa.com" class="mt-1" style="color: #000;">Email: <span class="whitespace-nowrap">info@mydopa.com</span></a></p>
                 </div>
                 <div class="item mt-10">
