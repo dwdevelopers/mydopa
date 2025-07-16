@@ -17,8 +17,8 @@
     <meta property="og:url" content="https://mydopa.com/">
     <meta property="og:site_name" content="MYDOPA" />
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://mydopa.com/"/><meta name="title" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/><title>VIAMS Mydopa Herbal Supplement for Parkinson&#x27;s Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care</title><meta name="description" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/>
-
+    <!-- <link rel="canonical" href="https://mydopa.com/"/><meta name="title" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/><title>VIAMS Mydopa Herbal Supplement for Parkinson&#x27;s Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care</title><meta name="description" content="VIAMS Mydopa Herbal Supplement for Parkinson's Disease – Natural L-Dopa &amp; Dopamine Support for Brain Health, Ayurvedic Formula to Support Motor Function &amp; Protect Brain Cells, 200mg per Sachet : Amazon.in: Health &amp; Personal Care"/> -->
+    <link rel="canonical" href="{{ url()->current() }}">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="MYDOPA - Herbal Health Supplement for Parkinson&#039;s Disease " />
     <meta name="twitter:description" content="This is an exclusive blend of precious herbs, meticulously formulated based on Ayurvedic wisdom. It provides natural L-dopa while stimulating dopamine production in the brain, offering a dual benefit for individuals with Parkinson’s Disease &amp; other progressive Neuro Degenerative Diseases. This safe and effective herbal supplement supports symptom management and enhances overall quality of life." />
@@ -49,7 +49,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <!-- Magnific Popup CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
 
 
@@ -233,7 +233,7 @@
             <div class="footer-modal p-6 border-t bg-white border-line absolute bottom-0 left-0 w-full text-center">
                 <a href="" class="button-main w-full text-center uppercase"> </a>
                 <div class="text-button-uppercase continue mt-4 text-center has-line-before cursor-pointer inline-block">
-                 </div>
+                </div>
             </div>
         </div>
     </div>
@@ -366,11 +366,11 @@
                     <div class="block-button text-center p-6">
                         <div class="flex items-center gap-4">
                             <a href="" class="button-main basis-1/2 bg-white border border-black text-black text-center uppercase">
-                                 </a>
-                            <a href="" class="button-main basis-1/2 text-center uppercase">  </a>
+                            </a>
+                            <a href="" class="button-main basis-1/2 text-center uppercase"> </a>
                         </div>
                         <div class="text-button-uppercase continue mt-4 text-center has-line-before cursor-pointer inline-block">
-                           </div>
+                        </div>
                     </div>
                     <div class="tab-item note-block">
                         <div class="px-6 py-4 border-b border-line">
@@ -647,7 +647,7 @@
                                     <i class="ph-bold ph-plus cursor-pointer body1"></i>
                                 </div>
                                 <div class="add-cart-btn button-main w-full text-center bg-white text-black border border-black">
-                                    </div>
+                                </div>
                             </div>
                             <div class="button-block mt-5">
                                 <a href="" class="button-main w-full text-center"></a>
@@ -835,8 +835,8 @@
     <script src="{{ asset('website/assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<!-- Magnific Popup JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <script>
         AOS.init();

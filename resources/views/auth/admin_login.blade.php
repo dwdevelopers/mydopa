@@ -116,7 +116,7 @@ display: flex !important;
                                 <div class="d-flex flex-column h-100 rightSec">
                                     {{-- <div class="auth-brand p-2">
 
-                                        <a href="index.html" class="logo-dark">
+                                        <a href="#" class="logo-dark">
                                             <img src="{{ asset('storage/' .  $settings[0]->logo_image) }}" alt="dark logo" height="150" width="150">
                                     </a>
                                 </div> --}}

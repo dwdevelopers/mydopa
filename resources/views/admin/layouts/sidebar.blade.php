@@ -1,6 +1,6 @@
 <div class="leftside-menu">
     <!-- Brand Logo Light -->
-    <a href="index.html" class="logo logo-light">
+    <a href="#" class="logo logo-light">
         <span class="logo-lg">
             <img src="{{ asset('website/assets/images/logo.png')}}" alt="logo" style="height:40px">
         </span>
