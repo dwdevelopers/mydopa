@@ -239,7 +239,7 @@
                                             @foreach($questions as $key => $question)
                                             <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer" style="    margin-top: 15px;">
                                                 <div class="heading flex items-center justify-between gap-6">
-                                                    <div class="heading6">{{ $question->question }}</div>
+                                                    <div class="heading6" style="font-size: 16px;">{{ $question->question }}</div>
                                                     <i class="ph ph-caret-right text-2xl transition-transform duration-300"></i>
                                                 </div>
                                                 <div class="content body1 text-secondary mt-3 hidden">
