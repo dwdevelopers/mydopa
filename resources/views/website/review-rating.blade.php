@@ -24,7 +24,7 @@
                     <div class="five_star_rating single_star_sec">
                         <div class="rating-box">
                             <div class="stars">
-                                @for($i = 1; $i <= 5; $i++) <i class='bx {{ $i <= $star ? "bxs-star text-warning" : "bx-star text-muted" }} star'></i>
+                                @for($i = 1; $i <= 5; $i++) <i class='bx {{ $i <= $star ? "bxs-star text-warning" : "bx-star text-muted" }} star' style="    cursor: default;"></i>
                                     @endfor
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                                             <div class="single_review">
                                                 <div class="rating-box">
                                                     <div class="stars">
-                                                        @for ($i = 1; $i <= 5; $i++) <i class='bx {{ $i <= $rating->rating ? "bxs-star text-warning" : "bx-star text-muted" }} star'></i>
+                                                        @for ($i = 1; $i <= 5; $i++) <i class='bx {{ $i <= $rating->rating ? "bxs-star text-warning" : "bx-star text-muted" }} star' style="    cursor: default;"></i>
                                                             @endfor
                                                     </div>
                                                 </div>
@@ -218,11 +218,11 @@
                                             <div class="single_review">
                                                 <div class="rating-box">
                                                     <div class="stars">
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
-                                                        <i class='bx bx-star star'></i>
+                                                        <i class='bx bx-star star' style="    cursor: default;"></i>
+                                                        <i class='bx bx-star star' style="    cursor: default;"></i>
+                                                        <i class='bx bx-star star' style="    cursor: default;"></i>
+                                                        <i class='bx bx-star star' style="    cursor: default;"></i>
+                                                        <i class='bx bx-star star' style="    cursor: default;"></i>
                                                     </div>
                                                 </div>
                                                 <h4 class="author_name">Avisweta Dash </h4>
