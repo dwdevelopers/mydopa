@@ -586,10 +586,10 @@ p {
   border-bottom: 1px solid #a09f9f;
   padding-bottom: 20px;
 }
-.reviewsec .review_tabs_sec .tab-content .tab-question .heading6 {
+.reviewsec .review_tabs_sec .tab-content .tab-questions .heading6 {
   font-size: 16px;
 }
-.reviewsec .review_tabs_sec .tab-content .tab-question .content {
+.reviewsec .review_tabs_sec .tab-content .tab-questions .content {
   font-size: 14px;
   line-height: 24px;
 }

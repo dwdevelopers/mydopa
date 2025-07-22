@@ -322,4 +322,8 @@
   .about .text {
     width: 100%;
   }
+}
+
+.faqs-block .tab-question {
+  display: block !important;
 }/*# sourceMappingURL=custom-content.css.map */

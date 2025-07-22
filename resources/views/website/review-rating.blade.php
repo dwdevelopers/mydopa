@@ -182,7 +182,7 @@
                                     </div>
 
                                     <div class="right list-question ">
-                                        <div class="tab-question flex flex-col " data-item="how to buy">
+                                        <div class="tab-questions flex flex-col " data-item="how to buy" style="display: block;">
                                             @foreach ($ratings as $rating )
                                             <div class="single_review">
                                                 <div class="rating-box">
@@ -235,9 +235,9 @@
                                             </div> --}}
 
                                         </div>
-                                        <div class="tab-question flex flex-col gap-5 pt-30" data-item="payment methods">
+                                        <div class="tab-questions flex flex-col gap-5 pt-30" data-item="payment methods" style="display: none;" >
                                             @foreach($questions as $key => $question)
-                                            <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer">
+                                            <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer" style="    margin-top: 15px;">
                                                 <div class="heading flex items-center justify-between gap-6">
                                                     <div class="heading6">{{ $question->question }}</div>
                                                     <i class="ph ph-caret-right text-2xl transition-transform duration-300"></i>

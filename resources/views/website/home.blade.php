@@ -21,7 +21,7 @@
 
                                 </div>
                                 <!-- ====================== banner Review starts =============================== -->
-                               <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
+                                <div id="carousel-example-generic" class="carousel slide banner-review" data-ride="carousel">
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         @foreach ($ratings as $index => $rating)
@@ -91,7 +91,7 @@
                 <div class="left_sec w-50">
                     <div class="left-content-wrapper">
 
-                        <p class="doctors_message">VIAMS MYDOPA is an exclusive blend of precious herbs,
+                        <p class="doctors_message">VIAMS MYDOPA<sup style="font-size: 9px;">TM</sup> is an exclusive blend of precious herbs,
                             meticulously formulated based on Ayurvedic wisdom. It
                             provides natural L-dopa while stimulating dopamine
                             production in the brain, offering a dual benefit for individuals with Parkinson’s Disease. This safe and effective herbal
@@ -157,7 +157,7 @@
                     <div class="cards" id="horizontal">
                         <div class="card">
                             <div class="text ">
-                                <h2>MYDOPA <br> The Freedom to Move</h2>
+                                <h2>MYDOPA<sup style="font-size: 22px; top: -26px;">TM</sup> <br> The Freedom to Move</h2>
                             </div>
                         </div>
                         <div class="card">
@@ -167,8 +167,8 @@
                             <button class="image" data-toggle="modal" data-target="#video1Modal">
                                 <img src="{{ asset('website/assets/images/videos/video2.gif')}}" alt="Doctor">
                             </button>
-                            <h3>Why choose Mydopa?</h3>
-                            <p>MYDOPA is a unique Ayurvedic formulation developed after 12 years of research to support
+                            <h3>Why choose MYDOPA<sup style="font-size: 22px; top: -26px;">TM</sup>?</h3>
+                            <p>MYDOPA<sup style="font-size: 9px;">TM</sup> is a unique Ayurvedic formulation developed after 12 years of research to support
                                 individuals with Parkinson’s disease and other neurodegenerative disorders. It is available in
                                 granule sachets (1500 mg) and capsules (500 mg) for easy and flexible use. </p>
                             <span class="number">01</span>
@@ -181,7 +181,7 @@
                                 <img src="{{ asset('website/assets/images/videos/video1.gif')}}" alt="Doctor">
                             </button>
                             <h3>Who can take it?</h3>
-                            <p>MYDOPA is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism,
+                            <p>MYDOPA<sup style="font-size: 9px;">TM</sup> is suitable for patients diagnosed with Parkinson’s disease, Parkinsonism,
                                 or other neurodegenerative conditions that involve tremors, stiffness, or motor deficits. </p>
                             <span class="number">02</span>
                         </div>
@@ -193,7 +193,7 @@
                                 <img src="{{ asset('website/assets/images/videos/video3.gif')}}" alt="Doctor">
                             </button>
                             <h3>How to use?</h3>
-                            <p>MYDOPA is available as 1500 mg granules (mix with warm water or milk) and 500 mg capsules (taken with warm water 2–3 times daily). Use under medical supervision, ideally within our integrated care model.</p>
+                            <p>MYDOPA<sup style="font-size: 9px;">TM</sup> is available as 1500 mg granules (mix with warm water or milk) and 500 mg capsules (taken with warm water 2–3 times daily). Use under medical supervision, ideally within our integrated care model.</p>
                             <span class="number">03</span>
                         </div>
                         <div class="card">
@@ -204,7 +204,7 @@
                                 <img src="{{ asset('website/assets/images/videos/video4.gif')}}" alt="Doctor">
                             </button>
                             <h3>How it works?</h3>
-                            <p>MYDOPA is designed to help balance dopamine levels naturally, improve motor
+                            <p>MYDOPA<sup style="font-size: 9px;">TM</sup> is designed to help balance dopamine levels naturally, improve motor
                                 coordination, reduce tremors, and support overall brain and nerve function. It works by
                                 combining potent Ayurvedic herbs traditionally used for neurological health. </p>
                             <span class="number">04</span>
@@ -217,7 +217,7 @@
                                 <img src="{{ asset('website/assets/images/videos/video05.gif')}}" alt="Doctor">
                             </button>
                             <h3>Who should consult?</h3>
-                            <p>Anyone considering taking MYDOPA, especially those already on standard Parkinson’s
+                            <p>Anyone considering taking MYDOPA<sup style="font-size: 9px;">TM</sup>, especially those already on standard Parkinson’s
                                 medications should consult their doctor or an Ayurvedic specialist. This ensures
                                 proper dosage adjustments and safe integration with existing treatments. </p>
                             <span class="number">05</span>
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <div class="product-details">
-                <h1>Mydopa</h1>
+                <h1>MYDOPA<sup style="font-size: 15px; top: -20px;">TM</sup></h1>
                 <p></p>
                 <ul>
                     <li>✔ Controls tremors and improves motor function.</li>
@@ -423,19 +423,19 @@
         $('body').css('padding-right', '');
     });
 </script>
-{{-- <script>
+ <script>
     document.querySelectorAll('.tab-item').forEach(tab => {
         tab.addEventListener('click', () => {
             document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
             const target = tab.getAttribute('data-item');
-            document.querySelectorAll('.tab-question').forEach(content => {
+            document.querySelectorAll('.tab-questions').forEach(content => {
                 content.style.display = content.getAttribute('data-item') === target ? 'block' : 'none';
             });
         });
     });
-</script> --}}
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll('.question-item .heading').forEach(heading => {
