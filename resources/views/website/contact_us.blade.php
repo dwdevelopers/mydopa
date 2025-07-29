@@ -8,11 +8,11 @@
         <div class="container  pt-24 pb-10 relative" style="padding-bottom: 6rem;">
             <div class="main-content w-full h-full flex flex-col items-center justify-center relative z-[1]">
                 <div class="text-content">
-                    <div class="heading2 text-center">Contact Us</div>
+                    <h1 class="heading2 text-center">Contact Us</h1>
                     <div class="link flex items-center justify-center gap-1 caption1 mt-3">
                         <a href="{{route('website.home')}}" style="color: #000;">Homepage</a>
                         <i class="ph ph-caret-right text-sm text-secondary2"></i>
-                        <h1 class="text-secondary2 capitalize">Contact Us</h1>
+                        <div class="text-secondary2 capitalize">Contact Us</div>
                     </div>
                 </div>
             </div>
