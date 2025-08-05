@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="{{ asset('website/dist/output-tailwind.css')}}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/custom.css')}}?v={{ time() }}" />
     <link rel="stylesheet" href="{{ asset('website/assets/css/bootstrap.min.css')}}" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="{{ asset('website/assets/css/themify-icons.css')}}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -846,16 +846,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="{{ asset('website/assets/js/phosphor-icons.js')}}"></script>
     <script src="{{ asset('website/assets/js/swiper-bundle.min.js')}}"></script>
     <script src="{{ asset('website/assets/js/main.js')}}"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="{{ asset('website/assets/js/bootstrap.min.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@1.2.0/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Magnific Popup JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
-    <script>
+    <!-- <script>
         AOS.init();
-    </script>
+    </script> -->
     <script>
         // Primary slider.
         var primarySlider = new Splide('#primary_slider', {

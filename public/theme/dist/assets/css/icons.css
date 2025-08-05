@@ -9978,10 +9978,11 @@ File: Icons Css File
  * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE.md)
  */
 @font-face {
-  font-display: block;
   font-family: "bootstrap-icons";
   src: url("../fonts/bootstrap-icons.woff2?1fa40e8900654d2863d011707b9fb6f2") format("woff2"), url("../fonts/bootstrap-icons.woff?1fa40e8900654d2863d011707b9fb6f2") format("woff");
+    font-display: swap;
 }
+
 .bi::before,
 [class^=bi-]::before,
 [class*=" bi-"]::before {
@@ -17816,6 +17817,7 @@ File: Icons Css File
   src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=7.2.96") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=7.2.96") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=7.2.96") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=7.2.96") format("truetype");
   font-weight: normal;
   font-style: normal;
+    font-display: swap;
 }
 .mdi:before,
 .mdi-set {
