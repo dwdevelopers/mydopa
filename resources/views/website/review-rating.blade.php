@@ -235,15 +235,17 @@
                                             </div> --}}
 
                                         </div>
-                                        <div class="tab-questions flex flex-col gap-5 pt-30" data-item="payment methods" style="display: none;" >
-                                            @foreach($questions as $key => $question)
+                                        <div class="tab-questions flex flex-col gap-5 " data-item="payment methods" style="display: none;" >
+                                           <h4 style="    padding: 14px 0px;font-weight:600">Customer Asked Questions</h4>    
+                                        @foreach($questions as $key => $question)
                                             <!-- add question-item instead of question-items for collapse accordion  -->
                                             <div class="question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer" style="margin-top: 15px;">
                                                 <div class="heading flex items-center justify-between gap-6">
                                                     <div class="heading6" style="font-size: 16px;">{{ $question->question }}</div>
                                                     <!-- <i class="ph ph-caret-right text-2xl transition-transform duration-300"></i> -->
                                                 </div>
-                                                <div class="content body1 text-secondary mt-3 hidden">
+                                             
+                                                <div class="content body1 text-secondary mt-3 ">
                                                     {{ $question->answer ?? '' }}
                                                 </div>
                                             </div>
