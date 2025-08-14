@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{{ $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') }}</title>
+<title>{!! $__env->yieldContent('meta_title', 'Default Title') !!}</title>
+<meta name="description" content="{!! $__env->yieldContent('meta_description', 'Default description') !!}">
 
-<meta name="description" content="{{ $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') }}">
-<meta name="keywords" content="{{ $__env->yieldContent('meta_keywords', 'MYDOPA, Parkinson’s disease, herbal supplement, brain health') }}">
+
+<meta name="keywords" content="{!! $__env->yieldContent('meta_keywords', 'MYDOPA, Parkinson’s disease, herbal supplement, brain health') !!}">
 
 
     <meta name="author" content="Mydopa Team">
 
     <!-- Open Graph for better social sharing -->
-  <meta property="og:title" content="{{ $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') }}">
-<meta property="og:description" content="{{ $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') }}">
+   <meta property="og:title" content="{!! $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') !!}">
+<meta property="og:description" content="{!! $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') !!}">
     <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="MYDOPA" />
@@ -54,13 +55,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
 
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WGHGGFMD');</script>
-<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WGHGGFMD');
+    </script>
+    <!-- End Google Tag Manager -->
 
 
     <style>
@@ -97,10 +109,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGHGGFMD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGHGGFMD"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 
