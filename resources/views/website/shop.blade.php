@@ -1,7 +1,7 @@
 @extends('website.layouts.app')
 
-@section('title', 'Product')
-@section('meta_title', 'Trusted natural supplement for Parkinson's patients | Mydopa')
+<!-- @section('title', 'Product') -->
+@section('meta_title', 'Trusted natural supplement for Parkinson\'s patients | Mydopa')
 @section('meta_description', 'Mydopa is a trusted natural supplement for Parkinson’s patients, supporting brain health, mobility, and cognitive function with herbal ingredients. Order now.')
 
 
