@@ -1,6 +1,8 @@
 @extends('website.layouts.app')
 
 @section('title', 'About Us')
+@section('meta_title', 'Best supplement for brain health and Parkinson's in India')
+@section('meta_description', 'An ayurvedic remedy for Parkinson’s and brain support. Trusted in India for natural brain support supplements and Parkinson’s care. Best herbal neuro support.')
 
 @section('content')
 <!-- <div class="breadcrumb-block style-shared">
