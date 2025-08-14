@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>{!! $__env->yieldContent('meta_title', 'Default Title') !!}</title>
-<meta name="description" content="{!! $__env->yieldContent('meta_description', 'Default description') !!}">
-
-
-<meta name="keywords" content="{!! $__env->yieldContent('meta_keywords', 'MYDOPA, Parkinson’s disease, herbal supplement, brain health') !!}">
-
-
+    <title>{!! $__env->yieldContent('meta_title', 'Default Title') !!}</title>
+    <meta name="description" content="{!! $__env->yieldContent('meta_description', 'Default description') !!}">
+    <meta name="keywords" content="{!! $__env->yieldContent('meta_keywords', 'MYDOPA, Parkinson’s disease, herbal supplement, brain health') !!}">
     <meta name="author" content="Mydopa Team">
 
     <!-- Open Graph for better social sharing -->
-   <meta property="og:title" content="{!! $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') !!}">
-<meta property="og:description" content="{!! $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') !!}">
+    <meta property="og:title" content="{!! $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') !!}">
+    <meta property="og:description" content="{!! $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') !!}">
     <meta property="og:image" content="{{ asset('website/assets/images/fav.png')}}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="MYDOPA" />
