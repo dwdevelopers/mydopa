@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ $__env->yieldContent('meta_title', 'Herbal supplement for Parkinson\'s and brain health | Mydopa') }}</title>
+
 <meta name="description" content="{{ $__env->yieldContent('meta_description', 'MYDOPA is a herbal supplement for Parkinson’s and brain health. Trusted as the best medicine for Parkinson’s and top brain health supplement in Kerala and India') }}">
 <meta name="keywords" content="{{ $__env->yieldContent('meta_keywords', 'MYDOPA, Parkinson’s disease, herbal supplement, brain health') }}">
 
