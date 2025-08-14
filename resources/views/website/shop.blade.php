@@ -2,7 +2,7 @@
 
 <!-- @section('title', 'Product') -->
 @section("meta_title", "Trusted natural supplement for Parkinson's patients | MYDOPA")
-@section('meta_description', 'MYDOPA is a trusted natural supplement for Parkinson’s patients, supporting brain health, mobility, and cognitive function with herbal ingredients. Order now.')
+@section("meta_description", "MYDOPA is a trusted natural supplement for Parkinson's patients, supporting brain health, mobility, and cognitive function with herbal ingredients. Order now.")
 
 
 @section('content')
