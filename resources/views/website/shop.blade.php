@@ -1,8 +1,8 @@
 @extends('website.layouts.app')
 
 <!-- @section('title', 'Product') -->
-@section('meta_title', 'Trusted natural supplement for Parkinson\'s patients | Mydopa')
-@section('meta_description', 'Mydopa is a trusted natural supplement for Parkinson’s patients, supporting brain health, mobility, and cognitive function with herbal ingredients. Order now.')
+@section("meta_title", "Trusted natural supplement for Parkinson's patients | MYDOPA")
+@section('meta_description', 'MYDOPA is a trusted natural supplement for Parkinson’s patients, supporting brain health, mobility, and cognitive function with herbal ingredients. Order now.')
 
 
 @section('content')
@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="product-details">
-            <h1>Mydopa</h1>
+            <h1>MYDOPA</h1>
             <p>VIAMS MYDOPA is an exclusive blend of precious herbs, meticulously
                 formulated based on Ayurvedic wisdom. It provides natural L-dopa while
                 stimulating dopamine production in the brain, offering a dual benefit for
@@ -183,7 +183,7 @@
                         <button class="image" data-toggle="modal" data-target="#video1Modal">
                             <img src="{{ asset('website/assets/images/videos/video2.gif')}}" alt="Doctor">
                         </button>
-                        <h3>Why choose Mydopa?</h3>
+                        <h3>Why choose MYDOPA?</h3>
                         <p>MYDOPA is a unique Ayurvedic formulation developed after 12 years of research to support
                             individuals with Parkinson’s disease and other neurodegenerative disorders. It is available in
                             granule sachets (1500 mg) and capsules (500 mg) for easy and flexible use. </p>
@@ -530,11 +530,11 @@
 
     <div class="tab-content tb-2" id="why">
         <ul>
-            <li>Mydopa is a complete herbal health supplement for people with PARKINSON’S DISEASE.</li>
-            <li>The key ingredients in Mydopa are the natural source of L-Dopa approximately 200 mg per sachet.</li>
-            <li>Mydopa promotes overall brain health, protects healthy brain cells, and repairs degenerated brain cells. </li>
-            <li>Mydopa promotes natural DOPAMINE production.</li>
-            <li>Mydopa arrests further degeneration of brain cells.</li>
+            <li>MYDOPA is a complete herbal health supplement for people with PARKINSON’S DISEASE.</li>
+            <li>The key ingredients in MYDOPA are the natural source of L-Dopa approximately 200 mg per sachet.</li>
+            <li>MYDOPA promotes overall brain health, protects healthy brain cells, and repairs degenerated brain cells. </li>
+            <li>MYDOPA promotes natural DOPAMINE production.</li>
+            <li>MYDOPA arrests further degeneration of brain cells.</li>
         </ul>
     </div>
 

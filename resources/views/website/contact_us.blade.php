@@ -1,8 +1,8 @@
 @extends('website.layouts.app')
 
 
-@section('meta_title', 'Best Parkinson’s medicine in Kerala and India | Mydopa')
-@section('meta_description', 'Mydopa is the best L-DOPA supplement and Ayurvedic medicine for tremors. Trusted Parkinson’s medicine in Kerala and India for natural brain support. Order Now.')
+@section('meta_title', 'Best Parkinson’s medicine in Kerala and India | MYDOPA')
+@section('meta_description', 'MYDOPA is the best L-DOPA supplement and Ayurvedic medicine for tremors. Trusted Parkinson’s medicine in Kerala and India for natural brain support. Order Now.')
 
 
 @section('content')
